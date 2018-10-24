@@ -1,0 +1,536 @@
+Traductor: Sebastian Betti
+Revisor: Ciro Gomez
+[Alejandro Nieponice: 
+Cómo fabricar partes del cuerpo]
+Hace 100 años, si a alguno de Uds. 
+había que sacarle el esófago,
+la única forma de reemplazarlo
+—ese órgano que nos ayuda a llevar la 
+comida desde la boca hasta el estómago—
+era con una manguera, como la 
+que pueden ver en ese señor,
+que la pueden comprar 
+en cualquier ferretería.
+Eso era bastante básico, pero era 
+el manotazo del ahogado
+en ese momento.
+Después de 100 años 
+imagínense Uds., por ejemplo,
+lo que evolucionó la telefonía 
+desde Graham Bell
+hasta los smartphones de hoy.
+Nosotros en 100 años, 
+como cirujanos, lo máximo
+que llegamos a hacer es agarrar 
+el estómago, subirlo por el tórax
+y unirlo con el cuello 
+para reemplazar el esófago.
+Ha ayudado a muchos miles 
+de pacientes, pero está lejos
+de ser lo ideal.
+Por lo tanto, hay muchísimo 
+lugar ahí para mejorar,
+y es ahí donde la medicina regenerativa, 
+en mi experiencia personal,
+tiene un rol muy importante.
+Y hoy voy a tratar 
+de compartir con Uds.
+parte de esa experiencia.
+En 1950 Isaac Asimov describió 
+las tres Leyes de la Robótica,
+y si uno en ese momento empezaba 
+a pensar "qué bueno si pudiéramos
+con la mejor tecnología empezar 
+a reemplazar partes del cuerpo",
+hubiéramos pensado 
+que cualquier robot iba
+a tener una apariencia muy humana, 
+como la que vemos en esa foto.
+Pero si hoy hacemos, 
+con todas las prótesis
+que tenemos a disposición en 
+el quirófano o en los laboratorios,
+las implantamos en el cuerpo 
+para reemplazar las partes perdidas
+y le hacemos una radiografía,
+tenemos esto, que no pasa por 
+el escáner de ningún aeropuerto.
+O sea que está lejos de 
+ser lo que necesitamos.
+Nosotros como investigadores,
+y como cirujanos haciendo 
+medicina regenerativa,
+queremos llegar a esto: que nuestro 
+propio cuerpo pueda regenerarse
+o usar nuestros propios elementos para 
+ayudar a reparar o regenerar los órganos
+o los tejidos dañados.
+No voy a abundar en detalles 
+científicos para no marearlos,
+pero necesito contarles 
+cuáles son, para nosotros,
+los tres pilares en los que 
+se basa la medicina regenerativa.
+Todo elemento, todo invento 
+que uno pueda empezar a pensar
+tiene que tener 
+o una matriz o un soporte,
+un componente celular y/o biorreactores 
+o factores de crecimiento que ayuden
+a interactuar a estos soportes 
+con estas células.
+Todos juntos forman lo que 
+se llama "la ingeniería de tejidos",
+pero cada uno de estos 
+pilares funciona por separado.
+Y yo voy a tratar de darles 
+algún ejemplo de cada uno.
+Por ejemplo, las células.
+Hoy uno puede cultivar, 
+sacar células del propio paciente,
+cultivarlas en una placa de Petri,
+como las que estudiaron 
+seguramente en algún momento
+en el colegio secundario 
+cuando cursaban biología,
+dejarla en el laboratorio 
+y cuando está lista, levantarla
+—hay muchas técnicas muy 
+novedosas para lograr eso—
+y así aplicarlas donde 
+hay un órgano dañado.
+Hoy ya hay muchos ejemplos 
+en los cuales se está utilizando
+y esto está ayudando a los pacientes.
+Lo que viene ahora es bastante impresionable,
+así que si alguno le tiene miedo es momento 
+de empezar a chequear mails
+y hacer que no miran.
+El mejor ejemplo que encontré 
+para mostrarles sobre las células
+es este paciente que tenía 
+un daño en la córnea y que,
+como estaba en Japón
+—esto es un grupo de investigadores 
+en Japón con el cual colaboramos—
+la donación de órganos 
+en Japón es muy limitada,
+especialmente la de córnea.
+Entonces, a este paciente 
+con sus propias células
+le regeneraron el epitelio de córnea
+y se lo pusieron como si fuera un sticker.
+O sea que realmente esto es real,
+ya hay más de 50 pacientes 
+implantados con esta técnica.
+Pero yo les comenté también 
+que otro de los pilares
+eran los biorreactores.
+Los biorreactores es cualquier 
+dispositivo que nos permita
+a nosotros mantener, 
+en un laboratorio,
+un componente vivo como las células 
+en su ambiente natural para después
+volver a ser implantado.
+Esta cajita que Uds. vieron 
+circular con un tubito
+es una cosa que diseñamos con 
+un amigo ingeniero en Pittsburgh
+para tratar de sembrar las células 
+en un soporte tubular.
+Ese tubito blanco es un soporte 
+donde, mediante vacío,
+hay una técnica de pollo al espiedo,
+ponemos las células que van 
+en esa suspensión rosada
+y vamos sembrando todo 
+el soporte hasta obtener,
+por ejemplo, una arteria.
+Y esto podría permitir 
+reemplazar la arteria
+del corazón o del brazo o la pierna, 
+cualquier arteria que esté dañada.
+Este es el mismo soporte que 
+les mostré antes, pero ya sembrado.
+Para que se den una idea todos esos 
+puntitos verdes o azules son células.
+Esto es un minuto después 
+de haber hecho el sembrado.
+Y si lo dejamos en el 
+laboratorio en cultivo,
+las células solas empiezan a crecer 
+y van poblando todo el soporte.
+Con una tecnología muy similar a esta 
+y usando esta técnica de sembrado,
+ya hay más de 50 pacientes 
+pediátricos que han recibido
+reemplazos de su arteria pulmonar 
+por malformaciones congénitas
+y que esos conductos permiten 
+que, cuando crecen los chicos,
+crecen los conductos y no hay 
+necesidad por ahí de reoperarlos
+en un futuro porque las prótesis sintéticas 
+no crecerían con el propio cuerpo.
+Esto es uno de los tantos ejemplos 
+y es solo para mostrarles
+que ya es realidad.
+Y el último pilar, y en mi experiencia personal 
+el que más relevancia tuvo,
+es el de la matriz extracelular, 
+que son estos soportes que les dije
+pueden funcionar por sí solos.
+La matriz extracelular es básicamente 
+todas las sustancias
+que las propias células van liberando 
+para hacer su red y así
+formar los tejidos y los órganos.
+Si nosotros volvemos para atrás 
+y agarramos esos órganos,
+por ejemplo, de la vejiga de un chancho, 
+y le sacamos todas las células,
+sacamos todo y dejamos 
+solamente esa laminita que
+Uds. ven en la foto, 
+eso mantiene intactos todos
+los factores de crecimiento.
+Y hace como si fuera un bordado 
+que le permite a las células que
+están en la vecindad saber 
+por dónde tienen que ir creciendo.
+O sea, es un material inteligente.
+Pero para mostrarles 
+cómo funciona,
+yo les voy a contar 
+la historia de Manuel
+—que es este chico 
+que Uds. ven en la foto—
+y que yo conocí en la terapia 
+intensiva de un sanatorio
+cuando estaba él 
+luchando por su vida.
+Manuel es un chico que 
+le gusta escribir, periodista,
+juega al fútbol, sano como 
+cualquiera de Uds.,
+que un día estaba comiendo 
+un guiso de lentejas y no notó que
+había un vidrio adentro 
+que nunca supo cómo llegó.
+Y accidentalmente tragó ese vidrio 
+y ese vidrio le perforó el esófago.
+Manuel no se dio cuenta.
+Sintió nada más algo que le raspaba.
+Y cinco días después entró 
+de urgencia a un sanatorio
+con una infección muy grande.
+Y fue ahí donde luchó con su vida 
+durante 23 días en un respirador.
+Cumplió sus 29 años en terapia intensiva.
+Y luchó muy fuerte contra la muerte y le ganó.
+Y le ganó, pero pagó un precio caro que 
+fue que hubo que desconectarle el esófago.
+En ese momento, los médicos 
+que lo estaban atendiendo,
+que lo hicieron muy bien 
+y le salvaron la vida,
+tuvieron que desconectarle el esófago,
+para que no pasara más comida 
+y no perpetuara la infección.
+Entonces, yo lo conocí 
+a Manuel en el momento
+de reconstruir ese esófago.
+Y cuando fuimos a hacer 
+la cirugía nos encontramos que
+todo no era tan fácil.
+Pero el final de la historia se los 
+voy a contar en un ratito porque
+les quiero mostrar que esta 
+matriz no es solamente para
+regenerar un órgano.
+Como tiene este mapa para que 
+las células se vayan incorporando
+pueden servir para más de una aplicación.
+Y para que Uds. entiendan el concepto,
+yo les voy a explicar qué pasaría 
+si Uds. utilizaran un material
+como el que hoy tenemos en el quirófano,
+que está en muchos de Uds..
+Hoy los tienen puesto en sus camperas.
+Hay muchos materiales 
+que Uds. usan normalmente que
+nosotros usamos para tratar 
+de reemplazar parte de los tejidos.
+Y para las células es como un muro 
+para esa caricatura que está
+tratando de subir.
+Necesita muchos elementos 
+externos para poder agarrarse.
+Y las células no los tienen.
+En cambio, la matriz extracelular 
+es como la montaña para las células,
+donde se van agarrando 
+y pueden ir creciendo.
+Y con estos factores de crecimiento, 
+que se van liberando,
+las órdenes van llegando 
+para que el crecimiento sea sitio
+específico.
+Esto ya ayudó a más de 
+3 millones de pacientes
+en diferentes aplicaciones.
+Y no solo pacientes humanos, 
+sino también animales.
+Por ejemplo, nuestro caballo Ted 
+—que cualquier coincidencia
+con el nombre de este evento 
+no es pura casualidad—
+hace dos años tuvo un accidente 
+con un alambre de púa
+y tuvo una infección de sus senos 
+paranasales muy importante que
+durante un año y medio no cerró 
+con ningún tratamiento estándar.
+Le hicieron todo lo posible, 
+al punto que pensaban en
+el sacrificio de Ted.
+Y fue ahí donde se pusieron 
+en contacto con el instituto donde
+trabajamos, en Pittsburg, 
+y con esta matriz extracelular
+se le cubrió el área para ver 
+si podíamos ayudar a su piel
+a regenerar.
+Y dos meses más tarde, Ted tenía 
+cerrados los senos paranasales
+y podía volver a correr 
+y a hacer una vida normal.
+Entonces, ¿por qué no pensar que 
+con el esófago puede pasar lo mismo?
+Y así hicimos muchos experimentos,
+tratando de reemplazar 
+partes del esófago.
+Ese círculo rojo que les muestra donde 
+antes había una matriz solamente,
+donde estaba esa laminita, 
+ahora hay un esófago.
+Ese no es el esófago de Manuel.
+Esto es lo que hacíamos antes 
+para ver si realmente podía
+funcionar.
+Entonces, cuando llegamos 
+a la cirugía de Manuel
+nos encontramos que el esófago 
+estaba muy chiquito,
+porque estaba cicatrizado, 
+porque todo el proceso que había sufrido
+durante las cirugías anteriores 
+y en la internación.
+Si lo cerrábamos así iba a quedar 
+muy chiquito el calibre
+y lo íbamos a condenar a Manuel 
+a muchas dilataciones,
+muchas cirugías, y por ahí 
+nunca volver a comer normalmente.
+Entonces, una vez que 
+le había ganado a la vida,
+su sueño era volver 
+a comer normalmente.
+Y por eso hicimos esto de tratar 
+de ayudar a Manuel con
+la matriz extracelular.
+Esa flecha les marca esa plancha 
+que nosotros pusimos.
+Imagínense un caño de 360 grados,
+unos 80 grados de esa pared 
+están reemplazados por la matriz
+extracelular.
+Y Uds. ven ahí en el circulito 
+que les marca cómo el parche
+está todo suturado.
+Dos meses después, 
+fíjense la endoscopía
+—no tienen que saber mucha medicina—
+este es un tubito, una cámara que 
+está mostrando por dentro del
+esófago, y si ven que 
+está todo rosadito,
+hay un área sobre la izquierda 
+que está más blanquecina,
+con unas ramitas rojas, que son 
+las arterias que están creciendo
+por esa matriz y que le dieron 
+a Manuel un esófago casi normal.
+Y que pudo volver a comer 
+normalmente después de dos meses
+y después de haberle ganado 
+a la muerte una dura batalla.
+Hace seis años me habían 
+hecho una nota en un diario
+preguntando cuánto creía yo que 
+iba a tardar esta tecnología en
+llegar a los pacientes.
+Todavía no habíamos 
+hecho ningún paciente,
+y yo en ese momento pensé
+lo que piensa creo que la mayoría 
+cuando le hacen estas preguntas:
+"Si digo un año no me van a creer, 
+si digo 10 años a nadie le va a interesar".
+Entonces, dije 5.
+Y por suerte me equivoqué, 
+porque 4 años más tarde,
+en Pittsburg, el primer paciente 
+ya se estaba beneficiando en
+el esófago con esta tecnología.
+Y 6 años más tarde Manuel 
+es uno de los pacientes que
+se ha beneficiado.
+Ahora el desafío es ver cuándo 
+vamos a poder reemplazar todo
+el esófago.
+O sea que les tengo que decir 
+dentro de 5 años.
+Pero lo que yo quiero 
+transmitirles para el final de
+la charla es cuál es para mí 
+la clave de cómo se pueda llegar
+a evolucionar en la investigación 
+y regenerar órganos o cualquier
+otra cosa que uno quiera 
+hacer en investigación.
+Y la clave es trabajar en equipo.
+Alguno puede conocer 
+estos dos nombres:
+Charles Lindbergh le puede 
+sonar a alguno porque fue muy
+famoso por ser el primero 
+que cruzó en avión
+el Océano Atlántico.
+Pero además de un avezado 
+piloto era un muy buen
+ingeniero.
+Y se juntó con Alexis Carrel, 
+que es un premio Nobel en medicina,
+y en 1938 publicaron este libro: 
+"El cultivo de órganos".
+O sea que lo que yo hoy les muestro
+—y que todos están diciendo 
+"esto es ciencia ficción"—
+en 1938 había dos personas que 
+ya lo pensaban y lo estaban
+haciendo.
+Y la clave era que no tenían 
+nada que ver entre sí,
+pero estaban trabajando en equipo.
+Y eso hoy se mantiene.
+Y creo que se mantiene para 
+todas las especialidades.
+Pero en el mundo donde 
+yo me muevo pasa esto:
+cuando estoy entre los 
+investigadores piensan que
+los cirujanos pierden el tiempo, 
+que no piensan, que van para delante,
+que solo cortan.
+Y cuando estoy con los cirujanos 
+piensan que los investigadores
+toman café todo el día y que 
+en realidad ellos son los que salvan
+las vidas y los que tienen 
+la gran tarea por delante.
+Y en realidad, ninguna de las dos 
+es completamente correcta.
+Y la manera que yo encontré 
+por ahora de interactuar con ambos
+es investigar en Pittsburg 
+y operar en Buenos Aires.
+No, mentira.
+Estamos tratando de unir ambos mundos, 
+que por ahora es con avión,
+pero cada vez más 
+hay interacción entre
+los investigadores y los cirujanos 
+para que historias como las
+de Manuel sean posibles.
+Pero no solo se necesita 
+trabajo en equipo,
+sino que también se necesita 
+gente visionaria,
+como William McGowan.
+La historia de él 
+es muy particular.
+Era un señor que tenía una 
+empresita muy chiquita
+de telefonía y que consideraba 
+que AT&T era una empresa
+monopólica y decidió hacerle un juicio.
+Se lo ganó y se hizo multimillonario.
+Pero William McGowan necesitó 
+un trasplante de corazón por
+una enfermedad crónica y vino al centro 
+de Pittsburg para recibir
+ese trasplante.
+Y en agradecimiento donó 
+un millón de dólares.
+Pero dijo: "Yo voy a donar 
+un millón de dólares,
+pero quiero a las mejores 
+personas y al mejor grupo
+de trabajo para trabajar en medicina 
+regenerativa y llevar esto
+adelante".
+Y así se creó el Instituto McGowan,
+que fue el primer centro de ingeniería 
+de tejidos nacional de Estados Unidos,
+donde con un millón de dólares 
+hoy ya tiene un budget
+de USD 95 millones.
+Y cada vez más investigadores se suman 
+a esta difícil tarea y a esta
+interesante tarea de tratar 
+de regenerar otros órganos.
+O sea que necesitamos 
+mucho de ese equipo.
+Pero en realidad nada de esto 
+es posible sin los que realmente
+cuentan la historia, sin los 
+verdaderos héroes de esta historia,
+como Manuel.
+Que hoy está, le pedí que 
+viniera con nosotros para que
+lo conozcan.
+(Aplausos)
+Manuel es realmente el que luchó, 
+el que se bancó todo.
+Gracias por estar y compartir hoy 
+con nosotros, y a toda la familia
+de Manuel que lo acompañó 
+en cada segundo.
+Y esto es realmente lo que 
+queríamos transmitirles con
+esta charla.
+Con Manuel nos gusta pensar 
+qué hubiera pasado,
+porque historias como las 
+de Manuel nos permiten soñar
+en qué puede pasar 
+y qué podemos hacer,
+si podemos evolucionar con 
+esta regeneración de tejidos.
+Pero también nos gusta 
+pensar qué hubiera pasado
+si la medicina regenerativa hubiera 
+existido muchos años antes.
+Probablemente Lepanto 
+no hubiera tenido su manco,
+Van Gogh hubiera 
+recuperado su oreja,
+Borges hubiera podido leer 
+sus propios cuentos y, quien sabe,
+Farinelli hubiera 
+llegado a ser tenor.
+Muchas gracias.
+(Aplausos)
+

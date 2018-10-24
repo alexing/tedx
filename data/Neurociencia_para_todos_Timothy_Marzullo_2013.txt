@@ -1,0 +1,356 @@
+Timothy C. Marzullo: cerebros del barrio: neurociencia para todos.
+Supongamos que estás interesado en la neurociencia
+y visitas la universidad.
+Y lo que típicamente verás
+es una sala como esta:
+muy equipada.
+Se ve muy intimidante.
+Parece muy difícil de usar
+y es además muy costosa.
+Pero mis padres eran docentes,
+mis abuelos fueron docentes,
+mis tíos fueron docentes en colegios.
+Y mientras estudiaba para mi título universitario
+iba a los colegios,
+una o dos veces al mes a enseñar neurociencia.
+Pero me molestaba realmente
+tener que llevar cerebros muertos de la Facultad de Medicina
+o crear demostraciones con las pelotitas anti-stress.
+Soy electrofisiólogo,
+y estudio la electricidad que el cerebro genera
+para comprender cómo funciona el cerebro.
+Así es que me fastidiaba no poder traer este equipo al colegio,
+porque es grande, no es portátil,
+y es muy difícil de usar en el ambiente del aula.
+Y para mí esto es una especie de tragedia,
+porque 1 de cada 5 personas en el mundo
+se verá afectada por una enfermedad neurológica
+en algún momento de su vida.
+Y es probable que haya personas en esta sala
+que tengan un ser querido que padece un trastorno cerebral.
+Y llevaron a su ser querido al médico
+y al regresar, éste les dice:
+"Viste los problemas de memoria que he estado padeciendo,
+pues resulta que es un principio de Alzheimer,
+pero tengo unas recetas y me han dado unos ejercicios para la memoria.”
+Y en los próximos dos o tres meses
+todo está bien. 
+Desearía que eso existiera, pero
+para casi cada enfermedad cerebral
+que conocemos, no hay cura.
+Y una de las razones es que la barrera de entrada es muy grande
+y la otra es que el cerebro es muy complicado;
+es un órgano electroquímico.
+En campos como la ciencia espacial,
+o la física, o ciencias de la computación,
+o ingeniería eléctrica,
+puedes comenzar tan pronto como desees.
+Puedes ir a Walmart -es un negocio en los Estados Unidos -
+y comprar un telescopio de 10 dólares
+y comenzar a observar la luna.
+Seguramente, no será un telescopio muy bueno,
+pero te ayudará a comienzar.
+En física, ingeniería eléctrica, ciencias de la computación
+hemos visto todos los días
+con Arduino y otros que,
+que se están reduciendo las barreras en algunos campos,
+pero no sucede lo mismo con las ciencias de la vida.
+Y todos conocemos este invento,
+es la primer computadora doméstica.
+Ahora, podías comprar una computadora en los años 70,
+si eras profesor en una universidad, como la Universidad de Buenos Aires.
+Podrías solicitar una beca de 40 o 50 mil dólares,
+y si tenías suerte y talento, quizás obtendrías la beca
+para luego comprar esa computadora.
+Y hoy en neurociencia, sucede lo mismo con los equipos de muy alta tecnología.
+Pero si se reduce el costo,
+y la barrera de entrada,
+se avanzaría en el campo y las revoluciones que vemos hoy en computadoras,
+son precisamente porque se convirtió en objeto de consumo.
+Mientras estaba finalizando mi doctorado, 
+junto a un buen amigo y colega, Gregory Gage,
+fundamos este proyecto, llamado:
+"The Hundred Dollar Spike" (El impulso eléctrico de cien dolares).
+Un impulso eléctrico es lo que los neurocientíficos denominan potencial de acción.
+Este es el impulso que utilizan las neuronas para comunicarse,
+y miren nuestros altos valores de producción
+-es muy similar a los valores de producción de TED hoy-.
+Y podemos ver toda esta madera sofisticada
+y nada funcionaba 
+en esta demo, 3 a 4 años atrás.
+Pero los educadores estaban muy entusiasmados
+que nos alentaron a seguir luchando por
+este proyecto de hacer neurociencia de bajo costo,
+accesible para maestros y profesores en todo el mundo.
+Este es nuestro primer invento.
+Se llama
+la Caja Spiker [Spiker Box].
+Y es simplemente, un amplificador de un solo canal
+que puede amplificar los impulsos eléctricos muy pequeños
+que generan las neuronas.
+Y empleamos insectos como modelos
+porque son fáciles de llevar a las aulas.
+Y también desarrollamos un software móvil
+para que los niños pudieran conectar sus teléfonos y registrar los impulsos eléctricos.
+De hecho, un chico me dijo que quería uno en su teléfono,
+yo no fui lo suficientemente inteligente de pensarlo.
+Así que un poco de teoría.
+Las neuronas son muy especiales.
+Hablo rápido, ustedes piensan rápido.
+Yo no me muevo muy rápido, estoy aquí de pie,
+pero la razón de que tu cerebro sea tan rápido, es que tiene estos procesos largos
+llamados axones que disparan impulsos eléctricos que llamamos potenciales de acción.
+Y viajan lejos, desde tu cerebro a la médula espinal a los dedos de tus pies,
+y ésta es una danza delicada de canales de iones que mueven potasio y sodio
+a través de la membrana de la neurona.
+Así que vamos a tratar de hacer un experimento in vivo, aquí.
+Usamos cucarachas de Bolivia y Perú.
+Las cucarachas tienen neuronas muy grandes en sus patas,
+que generan extensos campos eléctricos que son muy fáciles de registrar,
+y si le cortan la pata a una cucaracha
+cuando es joven,
+le crecerá nuevamente.
+Estamos en constante búsqueda en el reino animal
+para demostrar neurociencia de manera muy simple y humana.
+Y la cucaracha es la mejor.
+Esta mañana, puse una cucaracha en agua helada para anestesiarla.
+Corté una de sus patas.
+La cucaracha está bien,
+aún puede caminar con cinco patas.
+Mis disculpas a la cucaracha.
+Bien, tratemos de hacer este trabajo.
+Así que aquí está la invención,
+se llama la Caja Spiker [Spiker Box].
+Tengo una pata de cucaracha aquí,
+lo encenderé y veremos si funciona.
+Vamos a ver si logramos alguna buena señal, así que conectémoslo
+al parlante para que se escuche mejor.
+Suena como estática, pero si toco partes de la pata,
+deberíamos escuchar una descarga de potenciales de acción.
+(sonido parecido a estática)
+¿Escuchan?
+Suena como palomitas de maíz,
+pero también podemos verlo:
+así que permítanme conectarlo a mi iPad,
+así podremos ver los potenciales de acción también.
+Sólo un momento.
+Cuando toco la pata podemos ver los impulsos.
+OK.
+Y esto está sucediendo, realmente, en sus cerebros en estos momentos.
+Ahora mismo, ahora, ahora, Y ahora.
+Hay cientos de miles de millones de neuronas en sus cerebros
+emitiendo impulsos eléctricos
+y es un misterio que científicos argentinos están estudiando.
+Vuelvo a conectarlo. ¿Lo escuchamos nuevamente?
+D.G.: Sí, por favor. T.M.: OK, seguro.
+Siempre demuestro más impulsos.
+(Ruido)
+Eso es acople, bien...
+pero eso era real; ¿verdad que todos escucharon?
+OK.
+Aunque es un misterio, estamos tratando de comprender, con qué frecuencia
+las neuronas en el cerebro se comunican unas con otras
+para generar el conocimiento y el comportamiento.
+Este es un modelo simple
+que nos permite comenzar a investigar a las neuronas.
+Yo no pude ver esto hasta el final de la carrera
+y quería ser neurocientífico.
+Esta tecnología tiene, aproximadamente, 90 años
+en registro de potenciales de acción.
+Pero hay una tecnología que se dirige a los músculos
+y neuronas, que tiene 250 años,
+de un científico italiano, llamado Luigi Galvani.
+Y descubrió por accidente que si se estimulan los nervios 
+de la pata de una rana, ésta se sacude.
+Podemos hacerlo con la pata de la cucaracha también.
+No tengo una batería y equipo grandes,
+pero tengo esta tecnología en mi bolsillo,
+que nos permitirá estimular las neuronas con bastante facilidad.
+Se llama...
+¿Alguien sabe qué es esto?
+Yo no inventé esto - me hubiera gustado -
+Es el iPod Nano
+y es capaz de generar suficiente voltaje
+como para excitar las neuronas de la pata de la cucaracha.
+Así que vamos a probarlo.
+Voy a conectarlo a esta pata, aquí...
+Bienvenidos a mi laboratorio.
+Así que voy a poner un poco de música 
+y si tenemos suerte...
+debería funcionar.
+Así que esta pata aquí
+(Música)
+Se mueve la pata de la cucaracha.
+(Risas y aplausos)
+A la cucaracha no le gusta el hip hop. No hemos hecho un descubrimiento aquí,
+pero el hip hop tiene frecuencias bajas,
+y las frecuencias bajas de música -entre 20 y 200 HTZ-
+y los impulsos que vimos en la pata de la cucaracha antes,
+emiten el mismo tipo de frecuencia,
+aproximadamente de 1 a 200 veces por segundo.
+Las frecuencias del hip hop son similares a las frecuencias de las neuronas.
+Si utilizamos música clásica, música típica argentina
+-que es preciosa- no funcionaría porque está compuesta de frecuencias más altas.
+Ahora, les mostré dos tecnologías:
+registro y estimulación.
+Pueden imaginar que es posible combinar estas cosas,
+y si estuviera registrando desde sus cerebros
+y si por desgracia se rompieran la médula espinal,
+podríamos registrar desde su cerebro,
+y luego estimular los músculos.
+Y tengo muchos colegas trabajando en esto ahora.
+Esta tecnología demostrada con la pata de la cucaracha
+también funciona con el calamar.
+Hice algunos experimentos en el Laboratorio de Biología Marina,
+en Woods Hole, junto a mi colega Greg Gage.
+Y estoy hablando con ustedes, lo estoy haciendo.
+Hablo y ésta es mi manera de comunicarme con ustedes:
+en Inglés; lo siento cada día estoy practicando,
+leyendo Condorito, cada día. 
+(Risas)
+Un calamar
+se comunica cambiando el color de su piel,
+y voy a intentar mostrarles esto.
+Bueno, este es un calamar
+de Massachusetts -no es de Chile, que allí son muy grandes.
+Es el mismo experimento de estimulación con música,
+y pueden ver lo rápido que está cambiando.
+Tenemos un video en YouTube que llegó a 2 millones de visitas en una semana,
+en el que se podía ver a través de un microscopio y es muy hermoso.
+Así que por ahora vamos a dejar a las cucarachas.
+Ellas tienen cerebro,
+tienen neuronas que emiten potenciales de acción,
+pero ustedes y yo también lo hacemos
+y no solo son las neuronas, 
+también los músculos pueden hacerlo.
+Así que cuando pienso en mover mi mano, puedo generar una orden en mi cerebro,
+que viaja desde la neurona motora superior a mi médula espinal
+y luego hace sinapsis con la neurona motora inferior
+que llega al músculo.
+Y cuando esa neurona motora inferior llega al músculo,
+emite neurotransmisores,
+llamados acetilcolina,
+que es un neurotransmisor muy conocido,
+porque las criaturas venenosas alteran con ese sistema por razones obvias.
+Y así, cuando la acetilcolina se une al músculo,
+el músculo emite un potencial de acción.
+Y cuando el músculo dispara un potencial de acción,
+los músculos son células muy especiales
+-como las neuronas-,
+pero ellos cambian de forma al emitir los potenciales de acción.
+Y es por eso que podemos mover el brazo.
+Así que tenemos un invento nuevo y acabamos de terminarlo
+la semana pasada, así que la primera demostración pública
+es aquí, hagamos la prueba.
+Esta es un poco diferente:
+se llama la Caja Spiker Humana [Human Spiker Box].
+Veamos si podemos escuchar.
+Voy a poner un electrodo en mis músculos
+y al hacerlo, deberíamos escuchar alguna actividad.
+Un momento.
+Debido a que estamos tratando de registrar desde mi músculo,
+y no directamente desde el tejido, como lo hicimos con la cucaracha;
+tenemos que utilizar gel conductor,
+si alguno de ustedes se efectuó un chequeo,
+probablemente ha visto estos parches.
+Solo un poco de gel en los electrodos
+y esperamos que funcione; es una nueva invención.
+(sonido como estática)
+Escuchan algo
+(el sonido se intensifica)
+Así que cuanto más lo contraigo, más potenciales de acción se suscitan en los músculos
+y si pienso con intensidad y me muevo ligeramente,
+puedo generar una contracción única o un potencial de acción individual.
+Tenemos este nuevo invento,
+lo llamamos el RobotRoach.
+Y sé que muchos de ustedes
+puede ser que se encuentren el día de Acción de Gracias, o equivalente en Argentina,
+y su abuela pregunta, "¿por qué no han curado el Alzheimer?"
+"¿Por qué no han curado el cáncer?"
+"¿Por qué no hay cucarachas ciborg?"
+Y tú: "Espera, espera, ahora...
+Dale mérito a los científicos, creo que están trabajando en la última.”
+Entonces, ¿podemos pasar a los monitores, por favor?
+Y lo que tenemos aquí
+es nuestra cucaracha ciborg,
+nuestra misión es: neurociencia para todos.
+También es: mochilas para todos.
+Entonces, le ponemos una pequeña mochila a la cucaracha,
+y agregamos unos pequeños electrodos en la antena,
+así, cuando la cucaracha se mueva
+y la antena toque una pared,
+se dará vuelta y correrá a lo largo de esa pared.
+Estamos tratando de engañar a la cucaracha.
+Hemos tenido prototipos de esto en los últimos años.
+Cada vez son más y más y más pequeños,
+pero es electrónica analógica,
+sólo estimula a una frecuencia:
+55 Hz
+Y para ser un instrumento científico útil,
+desearás controlar los paradigmas de estimulación.
+Pero funciona; hice una demo en un colegio de Santiago
+y se puede ver aquí a algunos estudiantes
+jugando con la cucaracha ciborg.
+(Inicio de video)
+"¡Ah! ¡Se mueve! "
+"¡Ahora!"
+"¡Ahora!"
+Obviamente, 
+cualquier estudiante sentirá curiosidad de saber cómo funciona realmente.
+Así que es una demo bonita para explicar cómo diseñamos objetos electrónicos,
+301
+00:16:18,010 --> 00:16:19,770,
+cómo funcionan las neuronas, el comportamiento,
+pero soy un mal ingeniero.
+Vivo en Chile ahora. Tengo una beca de Corfo,
+a través del programa “StartUp Chile”.
+Y quería patrocinar a algunos estudiantes de ingeniería
+para que me ayuden a diseñar -junto a Greg y a mí- un RobotRoach mejor.
+Un RobotRoach digital.
+Estos son los estudiantes:
+Alejandro, Rimsky
+y Yanco están en la platea ahora; están aquí abajo.
+Así que si tienen preguntas realmente técnicas, pregúnteles,
+porque no sé cómo lo hicieron.
+Es increíble, ¿sí?
+Este es el primer prototipo,
+tenemos uno aquí.
+Este es también... Rimsky y Yanko están sudando, porque es su trabajo, ¿no?
+¿Funciona?
+Sí, funciona.
+Bien, tenemos una cucaracha gigante aquí,
+y vamos a tratar de hacer esto.
+Este es el primer prototipo.
+En lugar de usar un control remoto, usamos un iPad o un iPhone.
+Tampoco he programado esto, los estudiantes lo hicieron.
+Ellos deberían estar aquí -no yo-, está todo en Español,
+y me gusta.
+Ahora, voy a poner la batería en la cucaracha
+y veamos si conecta...
+¡Guau! Se mueve
+Muy bien, estamos conectados Yanko, estamos conectados, Rimsky.
+Así que intentémoslo.
+Déjenme ponerla por acá.
+Es una cucaracha grande,
+Es de Bolivia.
+¡Felicitaciones! ¡Funciona!
+(Aplausos)
+¡No pensé que funcionaría!
+Muy bien, la cucaracha está bien.
+Le quitaré la mochila.
+También pueden ver que tiene un buen comportamiento.
+Pero es muy grande para volar, por eso no vuela.
+Así que, en conclusión,
+el único límite para el descubrimiento científico
+debe ser su creatividad y trabajo duro,
+no debería ser el acceso al equipamiento.
+Así que continuamos trabajando arduamente
+para hacer el equipamiento lo más accesible posible,
+para que los niños y estudiantes de todo el mundo
+puedan estudiar el cerebro si les gusta.
+Y estamos en los 6 continentes,
+y muy cerca de la Antártida.
+Así que tal vez lleguemos allí también con más trabajo.
+Muchas gracias.
+(Aplausos)
+

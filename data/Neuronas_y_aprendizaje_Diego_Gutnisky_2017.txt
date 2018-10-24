@@ -1,0 +1,407 @@
+Traductor: Sebastian Betti
+Revisor: Viviana Daniel
+A todos nos gusta aprender cosas.
+A algunos les gusta aprender un idioma,
+a otros aprender instrumentos musicales
+y a otros un deporte nuevo.
+Y a todos hay cosas
+que no nos gusta aprender,
+pero nos encantaría saber,
+A mí, por ejemplo, me encantaría
+saber tocar la guitarra,
+pero no me da ganas de tomar ninguna clase.
+Quizás también aprender chino ya que
+está.
+En verdad, ¿a quién no le gustaría
+poder aprender
+cualquier cosa que queramos
+con el mínimo esfuerzo posible?
+Bueno, no los quiero entusiasmar mucho,
+porque hoy no tengo la receta mágica.
+Sin embargo, lo que sabemos
+sobre el cerebro
+está cambiando a una velocidad increíble.
+Todavía nos falta bastante
+para poder aprender
+las claves del aprendizaje,
+pero hoy les quiero contar
+cómo estamos avanzando en este camino.
+Yo estudié ingeniería electrónica
+y lo que más me interesaba, era
+el área de inteligencia artificial
+y de cómo crear máquinas inteligentes
+que puedan aprender cosas por sí solas.
+Después me empezó a interesar
+cómo nosotros, los humanos,
+y los animales aprendemos.
+Ahí me pasé a estudiar neurociencias
+y aprendí a medir actividad neuronal
+y a entrenar animales de laboratorio:
+ratones, monos y estudiantes.
+(Risas)
+Ahora, la tarea de un neurocientífico
+no es nada sencilla.
+De hecho, el cerebro es el aparato
+más complejo e inteligente que conocemos.
+Está compuesto por 80 000 millones
+de neuronas, como unas de estas.
+Para peor, cada neurona recibe,
+en promedio, hasta 10 000 conexiones
+de otras neuronas.
+Esto es como si cada uno de Uds.
+pudiese escuchar al mismo tiempo
+y ser influenciado por toda la gente
+presente hoy en TEDxRíodelaPlata.
+Cuando aprendemos algo,
+nuestros cerebros cambian
+y cambian físicamente.
+Aunque ustedes no se dan cuenta,
+su cerebro está cambiando ahora mismo.
+¿Qué quiere decir esto?
+Quiere decir que nuestro cerebro,
+cuando aprendemos,
+genera nuevas conexiones.
+Hay neuronas que se empiezan
+a conectar con otras neuronas.
+Y algunas de estas conexiones
+se hacen más fuertes
+o se hacen más débiles.
+¿Cómo podemos estudiar
+qué pasa en el cerebro
+cuando aprendemos algo nuevo?
+Bueno, necesitamos una manera
+de poder medir actividad neuronal
+de manera muy precisa.
+Pero lo más difícil
+es que tenemos que seguir
+exactamente las mismas neuronas por
+todos los días que dura un aprendizaje.
+Esto es algo que hasta hace
+muy poco no podíamos hacer.
+La nueva tecnología
+que nos permite hacer esto
+se llama microscopía de dos fotones
+y nos ha abierto el panorama
+para que podamos estudiar
+qué pasa en el cerebro cuando aprende.
+En este video les estoy mostrando
+las neuronas respondiendo.
+Esos relampagueos son neuronas activas.
+Esos destellos de luz,
+cuando son más intensos,
+indican que la neurona está cada vez
+más activa y respondiendo más.
+Gran parte de mi tarea
+como neurocientífico
+es tratar de relacionar
+cómo esa intensidad de cada neurona
+se relaciona con el
+comportamiento de un animal.
+Estos microscopios nos permiten ver
+estas mismas neuronas
+que estoy mostrando acá durante semanas.
+Las mismas, las mismas.
+Esto nos abrió el panorama
+para que podamos estudiar
+qué pasa en un cerebro por primera vez.
+¿Y cómo podemos hacer esto?
+¿Cómo podemos estudiar
+cómo un animal aprende?
+Bueno, tenemos que agarrar
+un animal de laboratorio
+y enseñarle algo que no sabía
+mientras, al mismo tiempo, 
+medimos sus neuronas
+cómo van cambiando a medida que aprenden.
+Bueno, les voy a contar cómo 
+hicimos esto en el laboratorio.
+Nosotros agarramos un ratón
+y le enseñamos a que detecte
+la posición de un objeto
+usando los bigotes.
+Uds. se deben preguntar:
+¿por qué los bigotes?
+Bueno, los ratones son animales nocturnos
+y, encima, no ven muy bien,
+así que usan los bigotes
+para navegar en su entorno.
+Para ellos, los bigotes,
+son como nuestros propios dedos.
+Acá en el video les voy a mostrar
+cómo un ratón resuelve esta tarea.
+Ese palito negro que ven que aparece
+es el objeto que tienen que detectar.
+Y el ratón empieza a mover los bigotes
+como loco para tratar de ubicarlo.
+El objeto puede aparecer
+en diferentes posiciones.
+Ahora, lo que necesitamos
+es que el ratón nos diga
+dónde estaba el objeto.
+¿Cómo le pudimos enseñar eso?
+Bueno, le enseñamos
+a que utilice la lengua
+para decirnos si lo había detectado o no.
+El experimento, en concreto, era así,
+el objeto podía estar en dos posiciones:
+cerca del rostro o lejos del rostro.
+Si estaba cerca, 
+tenían que sacar la lengua
+y si estaba lejos, la tenían
+que dejar guardada.
+Y todo esto lo resolvían
+en completa oscuridad.
+Lo más loco de todo es que al ratón
+no le dimos ninguna instrucción
+en particular.
+Lo único que le dimos es un premio
+si lo hacía correctamente.
+Y de a poco, el ratón pudo ir aprendiendo.
+Ahora, cuando empezamos la tarea,
+el ratón no entendía nada.
+Así que trataba de hacer
+cualquier cosa a ver si la pegaba.
+Al principio, movía los bigotes como loco
+buscando si estaba el palito o no,
+no le importaba nada.
+Después se cansaban
+y dejaban de responder por todo el día,
+no había manera de motivarlos.
+Y a veces, cuando estaban motivados,
+se volvían a motivar de vuelta,
+se la jugaban y sacaban la lengua
+todo el tiempo
+a ver si sacaban algún premio de garrón.
+(Risas)
+Y mientras medíamos las neuronas,
+vimos exactamente lo mismo:
+las neuronas en caos total,
+muy difícil de entender qué hacían.
+Pero a medida que
+el animal iba aprendiendo,
+el comportamiento se hacía
+cada vez más consistente.
+Esperaban ver que
+el objeto se posicionaba,
+recién ahí movían los bigotes
+y lo buscaban con mucho cuidado.
+Una vez que lo detectaban,
+recién ahí, nos daban su respuesta.
+Y las neuronas también
+empezaron a ser mucho más ordenadas.
+Se dividían la tarea.
+Había neuronas que
+aprendían a responder
+sólo cuando movía los bigotes.
+Otro grupo que respondía
+cuando contactaba el objeto.
+Y otro tanto que respondía
+cuando el ratón sacaba la lengua.
+¿Qué aprendimos de este experimento?
+Aprendimos que el aprendizaje
+es una tarea cooperativa a nivel neuronal.
+Necesitan que muchas neuronas
+hagan exactamente lo mismo.
+Porque un día pueden desaparecer
+y dejar de responder.
+Que las neuronas
+hagan exactamente lo mismo,
+que muchas neuronas
+hagan exactamente lo mismo,
+hace que el aprendizaje sea robusto
+y no dependa tanto
+de neuronas individuales.
+Si una neurona se muere, 
+hay otra que puede salir al rescate.
+También, lo que descubrimos es que,
+si bien el aprendizaje es muy flexible
+y las neuronas van cambiando
+a medida que vamos aprendiendo,
+esta flexibilidad tiene límites.
+¿Qué quiere decir esto?
+Quiere decir que en el cerebro
+hay una estructura prearmada
+que, a veces, no puede cambiar.
+Por ejemplo, la neurona que respondía
+al movimiento de los bigotes
+siempre hacía exactamente lo mismo:
+por más aprendizaje que hacía,
+no pasaba a ser nunca
+una neurona que respondía
+al contacto con el objeto.
+Cada neurona respetaba su propia tarea
+y su propio sindicato.
+Ahora, ya sabemos cómo funciona
+un cerebro, aproximadamente,
+cuando el ratón sabe algo.
+Estamos más cerca de plantearnos
+el gran desafío:
+¿Podríamos agarrar un ratoncito nuevo
+y, artificialmente, modificarle
+la actividad neuronal de tal manera
+que cuando lo pongamos en una tarea
+ya lo sepa hacer de una?
+Es decir, ¿podemos esculpir
+la actividad neuronal
+mientras el ratón está pancho y relajado,
+y que la primera vez que le pongamos
+una tarea ya la sepa hacer de una?
+Bueno, esto todavía
+es bastante ambicioso,
+pero estamos en el camino
+de lograr hacer esto.
+Entonces, en el laboratorio
+nos planteamos hacer algo
+un poquito más sencillo:
+¿Podemos agarrar una neurona,
+una sola neurona de todo el cerebro
+y enseñarle a hacer algo
+que nosotros queremos?
+Les voy a contar lo que hicimos.
+Agarramos y le dimos una señal al ratón,
+que el tiempo empezaba a correr
+y lo que tenían que hacer
+era incrementar la actividad
+de esa neurona hasta un objetivo
+y si lo hacían recibían un premio.
+¿Y cómo hacíamos esto?
+Bueno, lo que hacíamos, y que acá
+lo pueden ver en la línea verde,
+es enseñarle al ratón que esa neurona
+tenía que incrementar esa actividad
+hasta llegar a un objetivo, 
+que es ese pico que ven,
+y ahí recibía un premio.
+Para ayudar a la neurona,
+le dábamos un sonido.
+Un sonido más grave que le decía
+si estaba lejos del objetivo
+y un sonido más agudo
+cuando estaba más cerca.
+De la misma manera que el ratón
+con sus bigotes, al principio,
+el ratón no sabía qué hacer mucho
+para cambiar la actividad neuronal.
+Por insistir entre la asociación,
+el objetivo
+-- incrementar la actividad neuronal --
+y el premio, la neurona aprendía
+a responder cada vez más rápido.
+Si bien, esto fue agarrar una sola neurona,
+esto es el primer paso
+para que en algún momento
+podamos incorporar conocimiento
+artificial en cerebros.
+También, lo que aprendimos
+de este experimento
+es que para que la neurona aprenda,
+lo único que tuvimos que darle
+era información de su estado,
+decirle qué tan lejos estaba
+de un objetivo
+y darle un premio si lo lograba.
+Básicamente, para enseñar
+a esta neurona,
+no hicimos nada muy diferente
+de lo que hacemos
+cuando nosotros aprendemos algo:
+practicar mucho, que alguien
+nos diga si las cosas están bien o mal
+y recibir, eventualmente,
+un premio si lo hacemos bien.
+Espero haberlos convencido,
+por ahora, de que el cerebro
+es enormemente flexible
+y que nuestros circuitos neuronales
+pueden cambiar en cualquier momento.
+Gracias a esto es que podemos
+aprender a usar un montón de herramientas
+casi como si fuesen extensiones
+de nuestro cuerpo.
+Si sabés tocar la guitarra
+es porque en tu cerebro
+hay circuitos que saben
+qué movimientos de los dedos hacer
+para obtener cada nota.
+Para tu cerebro, al fin y al cabo,
+no es tan diferente tu mano
+que una herramienta.
+Ahora, si para tu cerebro
+no es tan diferente
+aprender a controlar tu brazo
+que una herramienta,
+¿quiere decir que nos podríamos
+agregar nuevos periféricos?
+Por ejemplo, ¿podríamos agregarnos
+un módulo, un chip,
+que nos permita controlar un brazo robótico?
+O más loco, ¿algo que nos agregue
+más capacidad de aprendizaje, más memoria,
+que venga pre-cargado con idiomas,
+chino en mi caso,
+o que nos ayude a hacer
+cálculos mentales mucho más rápido?
+Aunque parezca de ciencia ficción,
+estos hombres y mujeres ciborgs,
+ya empiezan a estar entre nosotros.
+En pacientes parapléjicos
+se están empezando a hacer
+implantes neuronales para que
+los pacientes puedan controlar
+un brazo robótico con su propio
+cerebro y ganar independencia.
+Estos implantes miden actividad
+de unas pocas neuronas,
+decodifican esa información
+y controlan las articulaciones
+de brazos robóticos.
+De la misma manera que antes,
+al principio el cerebro
+no sabe cómo controlarlo,
+pero mediante esfuerzo y práctica,
+prueba y error, lo puede aprender.
+Acá lo que ven es una paciente
+con uno de estos implantes:
+esa cajita que ven arriba de la cabeza.
+Con su propio cerebro ella
+está controlando ese brazo robótico.
+Gracias a la enorme
+flexibilidad del cerebro,
+ella ha logrado cambiar
+sus circuitos neuronales
+de tal manera de controlar
+ese brazo robótico de manera eficiente.
+Con mucha práctica, los movimientos
+se empiezan a hacer más naturales
+y empiezan a ser parte
+de su propio cuerpo.
+Y, por primera vez, en muchos años,
+la paciente puede lograr
+tomar una bebida por su propia cuenta.
+(Aplausos)
+La sonrisa final de la paciente
+nos hace acordar lo lindo
+que es aprender algo nuevo
+por primera vez.
+Lograr hacer algo
+que nos parecía imposible.
+Lo vivimos, quizás, cuando de bebés
+nos salen las primeras palabras 
+y logramos caminar,
+de niños cuando aprendemos a escribir
+y, quizás, a jugar a la pelota,
+a los veinte y pico cuando estudiamos 
+una carrera, una profesión.
+A veces de adulto ya no nos da tanto 
+la paciencia ni el tiempo, para aprender
+pero si te da el bichito de la curiosidad
+y querés aprender algo nuevo,
+acordate lo lindo que es
+y no dudes que tu cerebro
+está preparado para eso.
+Porque, al fin y al cabo,
+si una neurona puede aprender,
+¿no van a poder 80 000 millones?
+¡Gracias!
+(Aplausos)
+

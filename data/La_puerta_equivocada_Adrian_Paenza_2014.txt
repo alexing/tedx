@@ -1,0 +1,453 @@
+Traductor: Fernando Beitia
+Revisor: Sebastian Betti
+Qué notable que haya habido durante
+tantos años una percepción
+tan notablemente en contra
+de la matemática,
+y entonces uno debería decir:
+"No entremos por ahí",
+"no entremos por los tecnicismos".
+Uno debería decir: "Estás entrando
+por la puerta equivocada".
+No es que no sea matemática,
+no contiene la belleza de la matemática.
+Uno no invita a la casa a una persona
+y le dice: "Pase, señora, por acá"
+y la hace entrar en el baño.
+O entra a un restaurante
+por el lugar donde están
+los desechos. ¡No, viejo!
+O a alguien que no jugó nunca al fútbol.
+Vos tomás 10 chicos y le decís:
+"Enseñale", a alguien que nunca vio fútbol,
+"¿por dónde empezarías vos?"
+"Vamos a formar una barrera.
+Uds. pónganse acá que
+voy a patear un pelotazo.
+(Risas)
+No pueden usar las manos".
+¡Loco! ¿Quién quiere jugar al fútbol así?
+La matemática tiene una
+particularidad extraordinaria
+y nos la muestran de una manera
+que no la podemos agarrar.
+Nadie dice con tanto orgullo...
+¿Uds. conocen un adulto que diga
+"Yo soy un desastre, no sé leer"?
+¿O "Yo en realidad me comunico
+muy mal con la gente"?
+En cambio, decir:
+"Yo para la matemática, no"...
+Entro yo a un lugar cualquiera
+y lo primero que hace la gente es
+"Mucho gusto, yo lo veo siempre".
+Nadie ve nada, ¿no? (Risas)
+"Yo veo siempre su programa".
+Queda bien decir que me ve en el programa.
+"Pero no me pregunte nada porque yo soy
+un burro, de esto no entiendo nada..."
+Y parece que uno lo dice con tanto orgullo
+como si hubiera un pequeño grupito de personas
+que tiene acceso a entender algo,
+como que estuviera alejado del gran público.
+¿Uds. creen
+que soy alguien especial?
+Lo único que tenemos nosotros,
+aquellos que tuvimos la oportunidad
+de hacer algo de matemática, tiene
+que ver con que logramos atravesar
+por todas las barreras que nos pusieron.
+Créanme que es una cosa extraordinaria.
+A mí me gustaría que cuando terminara la
+charla de hoy Uds. se pudieran ir cada uno
+a su casa diciendo:
+"Hoy aprendí algo que no sabía".
+Si yo lograra que cada una de las personas
+que está acá se fuera de Tecnópolis hoy
+pensado: "Estuvimos en TED
+y aprendí algo que no sabía".
+Eso sería más que suficiente.
+¿Se dan cuenta?
+Si uno pudiera incorporar una idea por día,
+tendría 365 ideas por año.
+Sería una barbaridad.
+Fíjense que la matemática tiene una
+particularidad: es como los magos.
+¿Por qué los magos atraen?
+¿Por qué siempre un mago concita
+la atención de todos los adultos
+y de todos los chicos?
+Porque uno lo primero que quiere hacer
+es saber cómo lo hizo, descubrir el truco.
+Uno sabe que la magia en sí misma no
+existe, pero quiere saber cómo lo hace.
+Es lo mismo que los detectives.
+La matemática no está toda descubierta.
+De hecho, se escriben en el orden
+de 200 000 teoremas por año.
+O sea, se cierran problemas
+en el orden de 200 000 por año.
+Quiere decir que hay un montón
+por saberse que no se sabe.
+A uno siempre le gustan
+las series de detectives,
+las películas de detectives,
+porque uno quiere descubrir el asesino.
+En matemática hay un montón
+de cosas escondidas que no se saben.
+Yo podría pasarme horas hablándoles
+de los problemas que todavía están abiertos.
+Sin embargo parece que eso está vedado.
+Hay cosas que atentan contra la intuición.
+Yo voy a hacer ahora sí una pregunta,
+pero necesito, por favor, que quienes
+conozcan la respuesta,
+y seguramente muchas de las personas
+que están acá la conocen,
+en serio, no la digan.
+Si yo les dijera lo siguiente,
+y fíjense cómo esto atenta contra
+la intuición, supongan que alguien compra
+lo que no existe más,
+un compact disc que tiene
+10 canciones en algún orden.
+Ahora van a ver por qué pregunto esto.
+1, 2, 3, 4, 5, 6, 7, 8, 9 y 10.
+¿Está bien?
+Ese es el orden en el que
+vienen las canciones.
+Supongamos que una persona
+va todos los días a su trabajo
+y escucha las 10 canciones de esa forma.
+Pero un día dice "todos los que reproducen
+compacts o lo que fuere tienen
+la función random", ¿cuál es?, ¿qué hace?,
+elige las canciones en forma aleatoria,
+¿conocen eso, sí?
+Entonces vamos a suponer
+que la persona, como le lleva
+todo el tiempo que va desde
+la casa hasta llegar al trabajo,
+le alcanza justo para
+escuchar las 10 canciones,
+las quiere escuchar todos los días
+en un orden distinto,
+usa la función random.
+Supongamos que todos los días
+escucha un orden distinto.
+¿Cuántos días tienen que pasar
+hasta que no le quede
+más remedio que repetir alguno
+de los órdenes anteriores?
+Antes que avance ¿se entiende la pregunta?
+¿Todo el mundo entiende?
+¿Cuántos días tendrían 
+que pasar hasta que
+una persona que quiere 
+escucharlas todos los días
+en un orden distinto no le quede
+más remedio que repetir?
+Fíjense si fueran 2 canciones,
+¿cuántos días pasarían?
+¿Si hay 2 canciones nada más?
+Dos, porque un día escucha 1-2,
+y al otro día 2-1.
+Si son 3, ¿cuántas quedan?
+Ahora son 6, porque son 1-2-3, 1-3-2,
+2-1-3, 2-3-1, 3-1-2 y 3-2-1.
+¿Estamos de acuerdo? Son 6.
+Con 4, son 24. Con 5, dan 120.
+¿Saben cuánto es con 10?
+Con 10 son 3 628 800.
+Y está bien. Para los que dicen que es
+una barbaridad, fíjense que la gente
+se muere antes de poder
+repetir el orden. (Risas)
+Porque son casi 10 000 años.
+La gente va en auto así, desesperada,
+pensando "¿se me va a repetir o no?
+Porque me estoy muriendo, mamá".
+(Aplausos)
+Ahora lo curioso es que uno podría
+preguntarse qué importancia tiene.
+Bueno, uno podría tener en una biblioteca,
+por ejemplo, un librero tiene
+en una biblioteca 10 libros.
+En realidad imagínense que
+con 10 libros hay 3 628 800.
+Simplemente con un panel con 100 libros
+habría más posibilidades
+que átomos que en el universo.
+Digamos, pobres libreros,
+tratando de cambiarlos.
+Un bibliotecario que se aburre
+y los empieza a querer cambiar...
+Ahora, ¿por qué también
+estoy contando esto?
+Porque atenta contra la intuición.
+Si yo les hubiera preguntado esto a Uds.
+antes de entrar acá,
+al que no sabía cuánto daba la respuesta,
+estoy seguro de que esto
+es una respuesta sorprendente.
+Pero no nos cuentan esto, no nos cuentan.
+El otro día apareció una cosa con respecto
+al torneo de tenis de Roland Garros,
+en el que hay en general 128 participantes,
+pero esto que voy a decir ahora
+lo podría decir para cualquier torneo
+y no hace falta que sea de tenis.
+Supongamos que hay 128 participantes.
+Yo les quiero hacer a Uds. una pregunta.
+¿Cuántos partidos tienen que programar?
+¿Cuántos partidos se van a jugar
+hasta que termine el torneo?
+¿Se entiende la pregunta?
+Uds. saben que al tenis se juega haciendo
+que el que pierde queda eliminado.
+La palabra "eliminado" se entiende.
+(Risas) Juegan, compiten,
+el que queda eliminado se va.
+Si hay 128...
+¡Yo los veo acá! Con esas caras...
+"No me mire a mí, porque yo no...
+Yo vine acá porque estaban las ideas..."
+(Risas)
+Si son 128, ¿el primer día cuántos
+partidos se tienen que jugar? 64.
+Y ahí quedaron eliminados 64,
+y al día siguiente se juegan 32,
+y al siguiente 16, y después 8...
+¿estamos de acuerdo?
+Uno tendría que sumar
+64+32+16+8+4+2+1.
+¿El 1 qué es? El partido final.
+¿Estamos de acuerdo?
+Bien. Uno podría hacer esa cuenta.
+Ahora yo les voy a mostrar
+lo que puede proveer la matemática.
+Esto también es hacer matemática.
+Pero ahora yo les hago esta pregunta:
+los 128 participantes que participan
+en Roland Garros, ¿cuántos partidos
+van a perder, salvo el campeón?
+Todos los otros,
+¿cuántos partidos van a perder?
+Uno. Para perder tuvieron que haber jugado,
+no pueden perder sin jugar.
+¿Cuántos partidos tuvieron que jugar
+todos los participantes, salvo el campeón?
+¿Cuántos partidos se perdieron?
+Los 127 participantes restantes,
+que no son el campeón,
+tuvieron que haber perdido, ¿o no?
+Entonces, ¿cuántos partidos se jugaron?
+Sin hacer la cuenta... ¡127!
+Porque el único que no perdió es el campeón.
+Todos los demás perdieron uno.
+¿Estamos de acuerdo?
+Elaborar una estrategia de este tipo
+es hacer matemática.
+Solo que no nos cuentan esto.
+Ahora, si uno tiene
+2500 millones de participantes,
+¿cuántos partidos se van a jugar?
+Uno podría hacer otra vez la cuenta.
+2500 millones dividido 2,
+y etcétera.
+(Risas) Pero después de esto
+no la vamos a hacer más.
+Y buscar ese tipo de patrones
+es hacer matemática.
+Es más, y esto sí me gustaría que
+cuando termine esta charla
+se lo puedan llevar con Uds.
+Si uno parara una persona por la calle
+y le dice: "Dígame, ¿qué hace un matemático?
+¿A qué se dedica un doctor en matemática?"
+"Hace cuentas". (Risas)
+"Muy rápido". (Risas)
+"Cuentas muy grandes, señor". (Risas)
+"Yo los he visto".
+No. No. Hay una percepción
+de que los matemáticos
+hacemos algo que no hacemos.
+Que ni somos buenos...
+Aparte sería un idiota si hiciera cuentas,
+si están la computadora y la calculadora.
+¿Para qué voy a hacer esas cuentas?
+Y fíjense que en otra época, yo parezco viejo,
+y soy, tengo 65 años, pero no 400,
+cuando yo nací no había televisión,
+pero lo que yo escuchaba de chico es que
+mi viejo me contaba que los sabios
+eran las personas que sabían muchas cosas
+y de muchas cosas.
+Y yo me los imaginaba,
+qué sé yo, en otra estratósfera.
+¿Qué es lo que sabrían esos tipos?
+Pero eso nos llevó a todos
+a una cultura enciclopedista.
+Es mejor, entre comillas,
+la persona que sabe más.
+¿Qué quiere decir saber más?
+¿Qué es lo que hay que saber?
+Lo pongo en Google.
+Lo que hay que tener es creatividad.
+Lo que deberíamos excluir de las escuelas
+es la palabra "no".
+Esa cosa que ponen en rojo: "está mal".
+¿Qué es lo que está mal?
+¿En matemática está mal?
+Los científicos nunca publican los errores.
+No publican lo que salió mal.
+Aparece publicado el final, la estación final.
+¿Y todas las estaciones intermedias?
+¿Pero saben cuál es el problema?
+La sociedad está todo el tiempo buscando
+a la persona que llega primero,
+al que corre más rápido,
+al que salta más alto, al que es mejor.
+¿Quién es mejor?
+¿Y el que sale segundo, quinto,
+décimo noveno, 143?
+¿Somos todos fracasados?
+No podemos legislar para un grupo
+pequeño de personas.
+Estamos buscando al niño prodigio.
+¿Qué niño prodigio? Niño privilegiado.
+Nosotros necesitamos en alguna parte
+ser generosos en distribuir
+el conocimiento, socializarlo, si alguien
+sabe algo lo tiene que compartir.
+Y nosotros, en alguna parte, rompamos el mito
+de que aquel que hace algo es mejor
+que el que no lo hizo.
+No es ni mejor ni peor.
+Aprendamos todos de todos.
+Entonces la matemática ofrece además
+una rama que se llama teoría de juegos.
+Un niño quiere jugar, quiere seguir
+jugando en su vida.
+Y los adultos también.
+Es más, de hecho de esto se trataba
+cuando hablaba recién de como dividir una torta.
+Eso forma parte de la teoría de juegos.
+Como tratar de entender el comportamiento humano.
+Yo podría mostrarles a Uds. cómo podríamos demostrar
+que en la Capital Federal hay 2 personas que tienen
+el mismo número de pelos en la cabeza.
+Otra vez. La palabra "cabeza", sí,
+pero "pelos" ya me complica.
+Y excluyamos a los pelados,
+porque esos tendrían cero pelos.
+Miren como la matemática puede venir
+en socorro de esta pregunta.
+¿Cómo se puede demostrar que 2 personas
+en la Capital Federal, por lo menos,
+tienen el mismo número de pelos?
+¿Cómo se puede hacer?
+Yo les voy a dar la respuesta.
+¿Tienen alguna idea de cuántos pelos tiene
+una persona en la cabeza, más o menos?
+Si uno estirara el cuero cabelludo,
+no lo intenten en sus casas hoy
+(Risas) no me refería a eso,
+pero si uno lo lograra,
+aparecería que una persona
+que tiene 200 000 pelos
+es un tipo que le salen pelos
+por todos lados.
+O sea, uno tiene menos de 200 000 pelos.
+Pregunta: si uno no puede
+tener 200 000 pelos,
+¿demuestra eso que tiene que haber
+2 personas en la Capital, por lo menos,
+que tengan el mismo número de pelos?
+¿Por qué? Porque supongamos,
+¿cuántas personas hay en la Capital?
+¿Habrá más de 2 millones de personas?
+Si todos tuvieran números
+de pelos distintos,
+habría que gente que llevaría
+los pelos así. (Risas)
+Tendría que haber alguno con 2 millones
+de pelos, no quiero decir lo que sería.
+Entonces, inexorablemente
+tiene que repetirse.
+La matemática dice:
+"Seguí buscando, porque los vas
+a encontrar".
+No dice cuáles son, pero dice que los hay.
+Entonces hoy, ojalá que lo llegue a ver,
+que en los colegios, tanto primarios
+como secundarios, se enseña a programar,
+porque la programación es
+el lenguaje del siglo XXI.
+Cuando yo nací, alcanzaba para
+ser alfabeto saber leer y escribir.
+Hoy, saber leer y escribir, es lo mínimo
+a lo cuál uno puede aspirar.
+Pero uno tiene por lo menos
+que tener otro idioma para comunicarse,
+y el lenguaje de la programación,
+porque si no a uno le enseñan 
+a jugar a un videojuego
+y no le permiten hacer algo 
+para modificarlo.
+Yo querría saber leer, pero
+también quiero saber escribir.
+Y eso lo permite la programación.
+Entonces, de alguna manera,
+Uds. que son la gente joven,
+necesitan impulsar eso,
+aprender a decir "no sé".
+¿Qué problema hay en decir "no sé",
+"no entiendo", "dígamelo de nuevo"?
+¿Y? Si no lo entendió,
+¡¿qué problema hay?!
+¿Qué garantía hay de que
+el que lo entendió es mejor?
+Aprendamos a decir "no sé".
+Eso es lo que nos pasa 
+con la matemática.
+Necesitamos exhibirla 
+para que alguien la vea.
+Necesitamos romper 
+con la percepción de
+"No, yo con la matemática
+no tengo nada que ver.
+¡Soy un burro! Mi hijo sí,
+sabe la tabla del 15".
+(Risas)
+En todo caso, los invito a lo siguiente:
+tener en cuenta que la valoración
+pasa por la creatividad,
+por aprender a resolver problemas.
+En el colegio muchas veces nos enseñan
+primero a resolver un problema 
+que uno no tiene,
+y después lo mandan a la casa
+para que uno trate de resolverlo.
+En la vida viene al revés:
+primero uno tiene un problema,
+y después busca la solución.
+No tener la solución primero
+para problemas que uno no tiene.
+(Aplausos)
+Y la segunda es que se den
+a Uds. mismos una alternativa,
+concédanle a la matemática la alternativa
+siguiente: no entren por esa puerta,
+esa puerta no sirvió, está claro,
+no hace falta diagnosticar más.
+Ya sabemos, dejemos de decir:
+"hemos fallado".
+Démosle otra oportunidad porque el fútbol,
+la vida, también es como la magia
+y como los cuentos de detectives:
+hay un montón de cosas por hacer
+y Uds. son los que lo van a lograr.
+Gracias.
+(Aplausos)
+

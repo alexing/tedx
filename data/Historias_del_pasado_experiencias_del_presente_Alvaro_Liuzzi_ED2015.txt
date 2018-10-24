@@ -1,0 +1,506 @@
+Traductor: Gisela Giardino
+Revisor: Denise RQ
+¿Cómo contar historias para 
+audiencias del siglo XXI?
+Lo que están viendo en pantalla
+es la cueva Chauvet.
+Es un lugar mágico,
+ubicado en el corazón de un acantilado,
+en el sur de Francia.
+Fue descubierta de casualidad,
+en diciembre del año 1994.
+Escondiendo uno de los tesoros
+más increíbles en la historia
+de nuestra cultura.
+En su interior, imaginen el tamaño
+de cuatro canchas de fútbol,
+se encontraron las pinturas rupestres
+más antiguas realizadas por el hombre.
+Algunas de ellas con más
+de 35 000 años de antigüedad.
+La mayoría de las pinturas
+se conservaron en perfecto estado
+gracias a una piedra gigante
+que cayó por el acantilado,
+sellando por miles de años
+la única entrada posible.
+Esa piedra transformó a esa cueva
+en una cápsula del tiempo perfecta.
+Durante estos años muy poca gente tuvo
+acceso al interior de la cueva Chauvet.
+Pero los pocos que lo hicieron,
+salieron sorprendidos por la cantidad
+y por la variedad de las pinturas.
+Aunque a mí, cada vez que veo imágenes
+como esta, lo que más me impacta es
+la técnica con la que fueron realizadas.
+Si miran en detalle, van a encontrar
+líneas trazadas en capas
+que se adaptan a los contornos
+de las paredes de piedra
+para crear un efecto
+de profundidad increíble.
+Algunos animales, por ejemplo,
+fueron pintados con ocho patas,
+simulando tener movimiento,
+simulando correr en manada
+entre las paredes de piedra.
+Acompáñenme un instante
+en un viaje en el tiempo.
+Imaginen cómo era entrar en 
+esa cueva 30 000 años atrás.
+Cuando el sol caía,
+las tribus se acercaban a escuchar
+los relatos del chamán.
+Un fogón se encendía
+en el centro de la caverna
+y junto a los gritos y los ecos...
+ecos... ecos...
+en la garganta del chamán,
+junto a las luces y a las sombras
+reflejadas por el fuego.
+Pero sobre todo,
+junto a las paredes pintadas en capas
+-- la tecnología de la época --
+el chamán lograba orquestar
+un relato que se volvía realidad.
+Un relato que se materializaba
+entre sus manos.
+Las tribus, la audiencia, no solo
+observaban paredes pintadas,
+sentían literalmente que esos 
+animales cobraban vida caminando
+y respirando entre ellos.
+Cada vez que pienso en eso, no sé Uds.,
+yo creo que estamos ante
+el primer cine en 3 dimensiones
+con sonido envolvente de la historia.
+Hoy quiero contarles algo
+que pasó en nuestro país,
+hace poco más de medio siglo.
+Durante la madrugada
+del 10 de junio de 1956,
+la policía de la provincia de Buenos 
+Aires fusiló de manera clandestina
+a un grupo de 12 hombres en 
+un basural de José León Suárez.
+Cinco de esos hombres murieron esa noche.
+Los 7 restantes 
+lograron escapar con vida.
+Seis meses después, frente
+a un vaso de cerveza fría
+en un bar de la ciudad de La Plata,
+esa historia llegó a manos
+de un periodista.
+Ese periodista escuchó esa
+noche una frase inquietante.
+"Hay un fusilado que vive".
+Durante todo el año que siguió,
+ese periodista no pudo
+pensar en otra cosa.
+Se obsesionó con esa historia.
+Dejó su casa, se mudó de La Plata
+a una pequeña isla en el Tigre.
+Dejó su trabajo, y hasta cambió su nombre
+para llamarse Francisco Freire.
+Todo, absolutamente todo, para investigar
+los fusilamientos clandestinos
+de la Revolución Libertadora.
+El resultado de esa investigación
+se conoce como Operación Masacre.
+El libro, escrito por el periodista
+argentino Rodolfo Walsh,
+es un libro fundacional del periodismo
+de investigación argentino,
+en el que Walsh mezcló
+dos de sus pasiones:
+el periodismo y la literatura.
+Creando así, inaugurando así,
+un nuevo género: el 'non-fiction',
+conocido en español
+como novela testimonial.
+Y adelantándose, casi una década,
+al clásico norteamericano
+"A sangre fría", de Truman Capote.
+Alguna vez me dijeron que 
+en la vida de todo periodista,
+hay al menos un libro que te marca.
+En la mía, sin dudas,
+fue Operación Masacre.
+En 34 años lo leí 4 veces.
+Y cada tanto vuelvo a releer
+algunas de sus páginas marcadas.
+Yo siempre digo
+que Operación Masacre no se lee, se ve.
+Está tan bien escrito, que uno puede
+recrear en imágenes sus párrafos.
+Es una obra multimedia
+escrita en la década de los 50.
+No tengo dudas que la afición
+de Walsh a la fotografía,
+el amor que sentía por la fotografía,
+tuvo mucho que ver en esto.
+Operación Masacre es un mix
+perfecto entre palabra e imagen.
+Desde hace casi una década
+trabajo en comunicación digital
+con narrativas interactivas.
+Siempre me interesaron las nuevas
+formas de narrar historias.
+Con esta idea, durante el año 2010,
+comencé un proyecto 
+que pretendía vincular
+la obra de Walsh con 
+las nuevas tecnologías.
+La pregunta era entonces:
+¿cómo volver interactiva una obra
+que se había estructurado
+para una plataforma plana como el papel?
+¿Cómo inyectar hipertextualidad
+en un relato lineal?
+Tenía el qué: la historia,
+el libro, el guion.
+Me faltaba el cómo:
+encontrar una nueva forma
+de narrarla en Internet.
+Esa pregunta me dio vuelta en 
+la cabeza durante bastante tiempo,
+hasta que una tarde, con el libro
+de Walsh en la mano, cayó una idea.
+Era una idea que no había visto aplicada
+a ningún proyecto digital anterior,
+era una idea desafiante, pero sobre todo,
+era una idea muy divertida de hacer.
+En lugar de contar la historia,
+como lo haría un medio tradicional
+-- un programa de televisión,
+de radio, o un documental en cine --
+las nuevas tecnologías me permitían
+ahora recrear la historia.
+Y lo que era mejor: recrearla
+en primera persona,
+volviendo a Walsh a la vida,
+y en tiempo real
+como si esa historia estuviese
+sucediendo en el presente.
+La pregunta, el gran
+interrogante del proyecto,
+en el que me acompañó la colega 
+y amiga Vanina Berghella,
+era todo un cuestionamiento:
+¿qué hubiese sucedido
+si al realizar la investigación
+de los fusilamientos clandestinos
+Rodolfo Walsh hubiese tenido
+al alcance de su mano
+las herramientas digitales
+que tenemos hoy los periodistas?
+¿Se imaginan a Walsh pidiendo datos 
+de los fusilados en Twitter?
+¿Se lo imaginan buscando en Google Maps
+las direcciones del basural?
+¿O publicando en Facebook
+los adelantos de su investigación?
+Así nació Proyecto Walsh,
+como un remix, como 
+un experimento narrativo
+que desfragmentó Operación Masacre
+en un montón de plataformas digitales.
+En pocas palabras, todos los hechos
+documentados por Walsh en el libro
+se recrearon en la redes
+56 años más tarde,
+en primera persona y en tiempo
+real, a lo largo de todo un año.
+Era una especie de máquina
+del tiempo virtual
+que pretendía sincronizar
+el pasado con el presente.
+Los usuarios podían ahora seguir
+el itinerario de la investigación,
+interactuar con Rodolfo en Twitter,
+pero lo que era mejor:
+podían formar parte de la historia.
+En tiempos en que cualquier información
+puede ser encontrada en cualquier lugar,
+me parecía un juego interesante
+que el factor cronológico,
+que el tiempo tuviese un rol fundamental.
+Era un proyecto vivo, que podía seguirse
+y debía seguirse, minuto a minuto,
+en todas las pantallas,
+y en todos los dispositivos.
+En el preciso momento en el
+que Walsh publicaba un tuit,
+y vos estabas ahí,
+se tendía un puente en el tiempo.
+Se sincronizaban el pasado y el presente.
+La historia de los fusilamientos
+clandestinos, al igual la historia
+que contaba el chamán
+en la cueva Chauvet,
+se materializaban frente
+a los ojos de la audiencia.
+Cuando Proyecto Walsh
+ya tenía varios meses de rodaje,
+y los usuarios se habían apropiado
+de manera natural de los contenidos,
+-- muchos por ejemplo le dejaban datos
+de los fusilados a Walsh en Twitter,
+o lo ayudaban a encontrar las direcciones
+del basural en Google Maps
+y le preguntaban en Facebook cómo iban 
+los adelantos de la investigación --
+entendí que, además de un proyecto,
+lo que había aplicado era
+un nuevo código narrativo.
+Un código narrativo que era capaz
+de contar la historia argentina
+en primera persona y en tiempo real,
+pero sobre todo,
+era capaz de enmarcar proyectos futuros
+capaces de narrar hechos históricos
+de nuestro país de una manera diferente.
+Así fue que dos años más tarde,
+junto a Guadalupe López,
+Ezequiel Apesteguía y Romina Vázquez,
+y con motivo de cumplirse los 30 años 
+de la guerra en las islas,
+lanzamos el documental
+interactivo Malvinas30.
+Como equipo teníamos algo muy claro:
+sabíamos que este nuevo proyecto
+debía ser superador del anterior.
+Y por eso trabajamos con mayor
+cantidad de archivos audiovisuales,
+mayor cantidad de elementos multimedia,
+pero, sobre todo, creamos
+mejores estrategias
+para que los usuarios participen
+desde el inicio en las redes sociales.
+Pretendíamos que Malvinas30 se convierta
+en una especie de memoria digital
+de la Guerra de Malvinas en Internet.
+Publicando entrevistas,
+infografías interactivas,
+fotografías, cartas de la época,
+y un montón de material
+de archivo del año 1982.
+Y al igual que el Proyecto Walsh,
+Twitter nos permitió recrear el conflicto
+en tiempo real y en primera persona.
+Abrimos dos cuentas:
+en la primera cuenta,
+-- la están viendo
+en pantalla @malvinas30 --
+lo que hicimos fue narrar
+el conflicto minuto a minuto.
+En esa cuenta publicábamos
+la cantidad de bajas argentinas
+y británicas día por día.
+Publicábamos la cantidad
+de bombardeos de ambos bandos,
+y todos los días, durante la mañana,
+publicábamos las tapas de los periódicos
+argentinos, británicos e internacionales,
+que dedicaban espacio
+al conflicto de la guerra,
+el mismo día que habían
+sido publicados en 1982.
+Y en la segunda cuenta, @soldadoM30,
+lo que hicimos fue crear
+un personaje de ficción,
+que nos permitiese contar
+la guerra en primera persona.
+En esa cuenta recopilábamos
+testimonios reales, citas textuales,
+entrevistas y fotografías
+de excombatientes
+que habían prestado su testimonio
+para nuestro documental.
+Era una especie de memoria colectiva
+de los soldados argentinos
+en 140 caracteres.
+Una de las cosas más fuertes
+que nos pasó como equipo,
+quizás fue lo que sucedía
+con el material audiovisual
+de la época que publicábamos.
+Con esto que comentaba
+antes, de dejar de contar,
+para que los usuarios experimenten
+la historia en tiempo real,
+emitimos en nuestro sitio los programas 
+de TV de la época completos
+el mismo día y a la misma hora
+que habían sido emitidos en 1982;
+el mismo día y a esa misma hora,
+los emitíamos en el presente, en el 2012.
+Fue muy impactante espiar la reacción
+de los usuarios en las redes sociales,
+cada tarde, cuando a las ocho en punto,
+sintonizaban los noticieros 60 Minutos,
+o aquel domingo que, durante todo el día
+emitimos el programa ómnibus
+24 Horas por Malvinas.
+"Si quieren venir, que vengan,
+les presentaremos batalla".
+"Yo les puedo asegurar que no pasan frío,
+van a volver más gorditos
+porque comen mejor que en casa".
+Para los mayores de 40
+estas son frases que resultan familiares.
+Para los menores de 35, como es mi caso,
+ya no hacía falta editorializar.
+Los usuarios estaban viendo
+en vivo y en directo,
+cómo los medios nos habían
+mentido durante la guerra.
+Esta forma de contar fue
+tan fuerte para algunos usuarios,
+que tuvieron reacciones
+realmente inesperadas.
+Un usuario, por ejemplo,
+sacó una cuenta en Twitter
+-- esa que ven arriba: @dosdeabril2 --
+y comenzó a interactuar con 
+nuestro personaje de ficción,
+con nuestro @soldadoM30.
+Él también publicando en primera
+persona y en tiempo real
+la experiencia de la guerra.
+Durante bastante tiempo no supimos
+ni de quién se trataba,
+ni por qué lo hacía,
+pero lo que más nos intrigaba era
+de dónde sacaba datos tan precisos
+de lo que le había sucedido
+a los excombatientes
+en la Guerra de Malvinas.
+Una tarde recibimos
+un correo de Gabriel Beber,
+ese barbudo con cara de 
+bueno que ven en pantalla.
+En ese correo, Gabriel nos revelaba
+que él estaba detrás de esa cuenta,
+pero lo que era más impactante,
+nos contaba que él era
+un excombatiente real
+del grupo de artillería antiaérea
+601 de Mar del Plata,
+y que el proyecto lo había
+impulsado a desempolvar
+su vieja correspondencia de guerra,
+a escanearla, a tomarse
+el trabajo de buscar
+párrafo por párrafo,
+fecha por fecha y foto por foto,
+para compartir con nuestro proyecto,
+y con nuestro @soldadom30,
+en las redes sociales.
+La historia de Gabriel nos impactó tanto,
+que lo invitamos a que
+contara su experiencia
+en una serie de notas en nuestro sitio.
+En una de esas notas,
+realmente emocionante,
+Gabriel contaba que Malvinas30
+lo había ayudado a hacer
+la catarsis que durante 30 años
+no había podido hacer,
+de su experiencia como combatiente
+argentino de la Guerra de Malvinas.
+Si bien Proyecto Walsh y Malvinas30
+no habían sido creados
+con fines educativos,
+sucedieron varias cosas
+bastante locas en ese sentido.
+La primera fue que docentes
+de distintos puntos del país,
+nos escribieron comentando que 
+estaban utilizando los proyectos
+como material didáctico para sus
+clases de historia y literatura.
+Nos decían, entre risas
+y un poco nerviosos,
+que sus alumnos preferían
+interactuar con Rodolfo Walsh
+en Twitter y no leer el libro.
+O al menos, solapar ambos 
+dispositivos en el aula.
+En una mano, el texto,
+el libro, el relato lineal;
+y en la otra mano, el móvil,
+el relato interactivo, el hipertexto.
+Los paradójico es que quizás
+esos alumnos no se estaban dando cuenta
+de que a través de distintos caminos,
+estaban llegando al mismo destino:
+conocer la historia de los fusilamientos
+clandestinos de José León Suárez.
+Lo segundo que sucedió,
+fue que este código narrativo que 
+había aplicado para los proyectos,
+comenzó a ser utilizado tiempo después
+por instituciones educativas,
+medios de comunicación,
+museos, universidades,
+cadenas de televisión 
+alrededor del mundo,
+que recrearon en proyectos
+digitales, culturales y educativos,
+hechos históricos de sus países
+en primera persona y en tiempo real.
+Ahí ven algunos de los ejemplos.
+Realizar este tipo de proyectos
+me enseñó bastantes cosas.
+Me gustaría compartir con Uds.
+quizás 2 de las más importantes.
+La primera es que la academia nos enseña
+a comprender al periodismo y la historia
+como disciplinas, como
+productos y como servicios.
+Yo creo que también pueden ser
+comprendidas como experiencias.
+Experiencias que tienen
+un carácter intransferible.
+Ya no observás, sos parte.
+Reubican al usuario, al alumno,
+en el centro de la narrativa.
+Y eso puede ser transformador.
+Esa forma de contar
+se conecta con la razón,
+pero sobre todo, apela a la emoción.
+Y eso puede tener muchísimo poder.
+Lo segundo, es que si queremos
+crear nuevos medios,
+debemos ser capaces también
+de crear nuevos lenguajes.
+Debemos estar dispuestos a preguntar,
+pero sobre todo a preguntarnos,
+si es posible hacer
+las cosas de otra manera.
+Tenemos el privilegio
+de ser contemporáneos
+de un cruce sin precedentes:
+entre tecnologías,
+dispositivos y narrativas.
+Es un escenario que nos desafía
+a repensar nuestras disciplinas,
+repletas de prácticas obsoletas,
+para las sociedades 
+en las que aprendemos,
+en las que vivimos 
+y en las que enseñamos.
+¿Cómo contar historias para 
+audiencias del siglo XXI?
+Periodistas, historiadores,
+educadores, artistas,
+los animo a entrar en la cueva,
+a encender el fuego,
+y a dibujar en la piedra.
+El viaje, aunque desconocido,
+nos puede llevar a lugares increíbles.
+Muchas gracias.
+(Aplausos)
+

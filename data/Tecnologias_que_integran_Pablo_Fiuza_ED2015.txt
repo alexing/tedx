@@ -1,0 +1,382 @@
+Traductor: Daniela Garufi
+Revisor: Gisela Giardino
+Él es Agustín,
+y hace 3 años un día venía
+a cenar a casa con su familia,
+como lo hacen habitualmente 
+porque somos muy amigos.
+Por aquel entonces, Agus debía tener
+entre 3 y 4 años, no más.
+Y ya tenía diagnosticado TEA: 
+Trastorno del Espectro Autista.
+Esa noche, en un momento,
+estábamos cenando con los papás
+y alguien se da cuenta de que Agus
+estaba sentadito en la mesa del living,
+jugando con una tablet.
+Las tablets habían salido hacía poco,
+no se conocían demasiado.
+En ese momento, lo primero
+que hicimos fue sorprendernos
+porque en general él, cuando viene 
+a casa, aún hoy, suele dar vueltas,
+es muy difícil que esté sentado
+con algo tanto tiempo.
+Entonces le preguntamos a mis hijos
+si alguno le había explicado
+cómo prender la tablet, 
+cómo abrir las aplicaciones,
+que no es nada fácil, cómo jugar.
+La respuesta fue que no.
+Que nadie le había dicho nada.
+Esa noche, me acuerdo, terminó con 
+su mamá Laura diciendo algo así como:
+"¡Tenemos que comprarle 
+a Agustín esta tablet!"
+Porque él no interactúa tan rápidamente 
+con ninguno de los juguetes que tiene.
+Aquella no fue una noche más. No me di 
+cuenta en ese momento, la verdad.
+Pero empecé a darme cuenta después,
+con el paso del tiempo.
+Ahí empezaba a gestarse 
+una idea que yo tenía.
+Y era la de utilizar la tecnología
+para ayudar en la vida de las personas.
+Venía trabajando en desarrollo
+de software hacía más de 20 años.
+Y era esto algo que yo quería hacer,
+algo que yo sentía necesidad de hacer.
+Tiempo después tengo 
+la suerte de participar
+en una charla que daban los padres
+de chicos con Síndrome de Down.
+Entre otras cosas, 
+lo que ellos comentaban,
+es que muchos papás estaban sorprendidos
+por la facilidad que tenían los chicos
+para utilizar todo este tipo
+de dispositivos táctiles
+como es el caso de las tablets 
+y de los celulares.
+Algo que, decían, no pasaba hasta ahora
+con las computadoras tradicionales,
+que tienen el teclado,
+el mouse, la pantalla.
+De alguna forma confirmaban
+lo que yo había visto con Agustín
+unos meses atrás.
+Entonces, a partir de ese potencial
+que le veían a los chicos,
+ellos nos proponían a un grupo
+de empresas de desarrollo,
+entre las que estaba la mía,
+crear aplicaciones en las tablets
+pensadas para los chicos con discapacidad.
+Me acuerdo ese día, fue una mañana,
+yo volvía para la oficina
+y dije: "Sí, claro.
+Esto es lo que yo quiero hacer.
+Esto me encanta".
+En ese momento, de alguna forma,
+tomé como propio ese desafío
+que ellos plantearon y arranqué.
+A ver, arranqué es una forma de decir
+porque por un lado en ese momento
+yo del tema discapacidad conocía 
+muy poco, tirando a nada.
+Y encima mi empresa no desarrollaba
+en ese momento para tablets.
+La verdad no tenía muy claro
+cómo arrancar.
+Pero lo que sí sabía,
+lo que sí tenía claro,
+es que yo quería cambiar la forma
+en la que se les enseñaba a los chicos.
+Sobre todo a los chicos con discapacidad.
+Y hacerlo a través de la tecnología.
+Y una cosa más, 
+no solo para nuestro país,
+sino pensarlo para todos 
+los países de habla hispana.
+Porque yo ya había buscado algo
+y no había encontrado nada integral 
+desarrollado en esta temática.
+A medida que el proyecto arrancó
+se empezaron a sumar más personas,
+sobre todo con mucha experiencia
+en tecnología y en discapacidad.
+Y lo que me pasó fue que en un momento
+me encontré coordinado un grupo de gente
+que era de colegios, 
+de universidades, de ONGs
+y de empresas de desarrollo de software,
+que de última era lo que yo más sabía.
+Y acá había algo muy lindo.
+Me acuerdo que arrancaron empresas
+que tenían 4 personas, 10 personas.
+Pero teníamos también algunas que tenían 
+más de 3000 empleados, multinacionales.
+Y todos, todos, en forma voluntaria,
+ad honorem.
+Y eso es algo que pasa aún hoy, 
+tres años y medio después.
+Miren, hoy ya tenemos desarrolladas 
+varias aplicaciones.
+Me acuerdo que en el momento que 
+arrancamos, en las primeras reuniones,
+lo que hicimos fue decir:
+"Bueno, ¿qué características tienen que 
+tener las aplicaciones efectivamente?"
+Para que la usen todos los chicos, todos. 
+Pero en particular, poniendo énfasis
+en aquellos que tienen discapacidad.
+Una de las primeras que definimos
+es que las aplicaciones
+tendrían que utilizar imágenes.
+Imágenes, fotos, o bien 
+dibujos muy realistas
+y que no sean agresivos para los chicos.
+¿Saben por qué? Porque en general
+los chicos con discapacidad
+son muy literales.
+Entonces si Uds. en una aplicación,
+le dibujan un autito y en el capot
+dos ojitos y una boquita,
+salen a la calle y buscan el auto con 
+los dos ojos y la boquita en el capot.
+Y como no lo encuentran, 
+para ellos no es un auto,
+porque no es lo mismo que les enseñaron.
+Por eso es muy importante el tema
+de las imágenes o de las fotos.
+Otra cosa que nos pasó, me acuerdo, al 
+principio empezamos a ver a los chicos,
+cómo interactuaban 
+con las tablets, jugar.
+Y nos empezamos a dar cuenta de que 
+cuando, por ejemplo, ellos se equivocaban
+dejaban de usar la aplicación,
+por 30 segundos, por 1 minuto.
+Y eso tiene que ver con que en general,
+ellos tienen poca tolerancia al fracaso.
+A partir de ahí, hicimos
+que cuando se equivoquen,
+hacemos de cuenta que no pasó nada.
+Y en contraposición, seguramente Uds.
+conocen o incluso habrán interactuado
+por ejemplo con un chico 
+que tiene Síndrome de Down.
+Y sabrán que ellos son muy efusivos,
+enseguida van te abrazan, te besan.
+Bueno, lo que tratamos de hacer
+es replicar eso en las aplicaciones.
+Entonces, cuando ellos aciertan 
+en algo, por mínimo que fuera,
+generalmente ¿qué hacemos?
+Le ponemos aplausos, musiquita, 
+algún muñequito que los saluda.
+Y con esto se dio algo muy lindo,
+empezamos a hacer eso
+y con el tiempo nos dimos cuenta
+de que cuando a ellos
+se les festeja el acierto,
+quieren seguir jugando, quieren
+seguir aprendiendo con las tablets.
+Hay muchos chicos que nunca 
+llegan a leer y escribir,
+difícilmente puedan usar 
+las aplicaciones.
+Pero los que lo logran, el primer tipo 
+de letra que aprenden es la imprenta.
+En particular, la imprenta mayúscula.
+Y muchas veces es el único
+tipo de letra que aprenden.
+Ese es el que usamos
+en las aplicaciones.
+Y una cosa más:
+Bien grande. A nivel diseño 
+por ahí no queda tan bien,
+pero bien grande para aquellos
+que tienen algún tema
+de discapacidad visual.
+Miren, esta es una de las aplicaciones
+que desarrollamos al comienzo.
+Se llama Tuli.
+La idea de la aplicación es 
+trabajar con las emociones,
+que es un tema muy importante sobre todo
+para los chicos que tienen autismo.
+En un momento, la vamos a probar, 
+habíamos sacado una primer versión recién.
+La vamos a probar con un chico
+que tenía Síndrome de Down.
+La idea es que seleccione
+cuál es la emoción que tiene Tuli,
+en este caso estando en la plaza,
+y la arrastre a la otra punta.
+Él agarraba, seleccionaba la opción
+--correcta, "Tuli está contento"--
+la llevaba, y como tenía problemas 
+de discapacidad motriz fina
+¿qué pasaba? No llegaba a la 
+otra punta, entonces soltaba.
+Y cuando soltaba,
+--pasa en el 99 % de las aplicaciones 
+que uno puede bajar a la tablet--
+cuando uno suelta el objeto, el objeto 
+vuelve al lugar de donde salió.
+Entonces él nunca podía llegar 
+a la otra punta de la tablet.
+Obviamente a partir de ahí,
+hicimos que cuando uno suelta el objeto,
+el objeto quede en su lugar
+y él puede arrastrarlo y llevarlo
+en todos los pasos que necesite.
+¿Pero se dan cuenta de este ejemplo?
+Él sabía lo que tenía que hacer,
+no solo sabía lo que tenía que hacer,
+decía: "Tuli está contento en la plaza".
+Sí, tenés razón, está contento.
+Bueno, llevalo. No podía.
+Nunca iba a poder llevarlo 
+a la otra punta
+porque cuando se diseñó la aplicación,
+no se pensó en la discapacidad de él.
+Así como estas características, 
+hay otras tantas,
+me animo a decir, que seguramente pasan
+desapercibidas para la mayoría de Uds.
+Porque eso es lo que me pasaba a mí.
+Hace 3 años, yo no tenía ni idea de esto.
+Pero para ellos, y no solo, 
+para sus papás, los terapeutas,
+los docentes que están pendientes, 
+para los chicos es la diferencia
+entre poder usarlos o no poder usarlos.
+Entre poder aprender con 
+las tablets o no poder hacerlo.
+Les comentaba recién, hoy tenemos cerca 
+de 15 aplicaciones ya desarrolladas.
+Que pueden bajarlas todas
+en forma gratuita a las tablets.
+Hoy ya se están usando en colegios,
+en algunas terapias
+se están aprovechando también.
+Y ahora estamos haciendo
+una serie de estudios un poco 
+más rigurosos para demostrar
+lo que nos dicen los docentes.
+Y es que los chicos aprenden
+más rápido con las tablets.
+Pero una cosa más linda todavía,
+aprenden más motivados,
+siempre están más motivados
+cuando lo hacen con las tablets.
+Para muchos de los que 
+trabajamos en el proyecto,
+--les cuento mi caso en particular--
+hoy yo le dedico mucho tiempo,
+tiempo que si no, 
+dedicaría a mi descanso,
+o muchas veces a mi empresa.
+Pero tiene que ver con que me di cuenta
+de que haciendo lo que me gusta,
+lo que me encanta,
+que en mi caso es desarrollar 
+software, es lo que sé hacer,
+aporto un granito, aunque sea de arena,
+para cambiarle la vida a algunas personas.
+Cuando uno ve a una persona
+por ejemplo que tiene afasia,
+por serios problemas
+que tiene en su cerebro
+le cuesta mucho comunicarse.
+De hecho, lo hacen
+a través de garabatos,
+a través de dibujos.
+Entonces con una aplicación que hicimos,
+que transforma la tablet en algo similar
+a la pizarra mágica, magnética,
+que usábamos cuando éramos chicos,
+y eso le permite a él traer 
+la conversación pregrabada
+en la tablet a través de dibujos
+y entonces sentarse con aquella persona
+con la que se quiere comunicar.
+Y algo que antes le podía llevar una hora
+para decirle de qué quería hablar, 
+hoy le lleva menos de 10 minutos.
+Bueno, eso es cambiarle su día a día.
+O cuando, ahora acabamos de sacar
+una versión de una aplicación
+que es para el manejo del dinero,
+para el manejo de los billetes.
+Y eso entonces hace que no ya un chico,
+pero un adolescente con Síndrome de Down,
+pueda ir al supermercado 
+a hacer las compras
+y consultar en la aplicación
+con qué billetes puede pagar
+o, eventualmente,
+con qué billetes le pueden dar el vuelto.
+Bueno eso es permitirle
+ser más independiente.
+A él y a sus papás.
+Porque sus papás están pendientes
+constantemente de que él 
+pueda hacer las cosas solo.
+El proyecto tiene un efecto más,
+que para ser absolutamente honesto,
+nunca lo pensamos,
+nunca nos imaginamos que podía pasar,
+pero que hoy nos encanta.
+Y tiene que ver con 
+el grado de compromiso
+que tienen los jóvenes que programan,
+que diseñan las aplicaciones.
+Son jóvenes entre 20 y 30 años, no más.
+Y ellos lo que te dicen
+es que una vez que pasaron
+por el proyecto,
+una vez que vieron las aplicaciones
+con los chicos, las probaron con ellos,
+de ahora en más,
+ellos van a incorporar 
+todas estas características
+a las aplicaciones que hagan 
+en su vida laboral.
+Y eso es fantástico.
+Es fantástico porque eso
+es lo que tiene que ser normal
+con el tiempo.
+Eso tiene que pasar.
+Hace unas semanas atrás,
+estaba ahora con mi familia
+en la casa de Agustín.
+Y en un momento, mi hija mayor, Cande,
+estaba con la tablet de él en la mano.
+Y me dice, entre sorprendida 
+pero contenta:
+"Mira papá, Agus tiene el aplicativo
+del osito. Ese que hiciste vos".
+A lo cual su papá acota:
+"Ah ¿este lo hiciste vos, Pablo?
+Porque sabés que me lo recomendó
+la terapeuta de Agus,
+para que lo use con él".
+En ese momento yo sentí
+que si bien todo esto para mí,
+había empezado por él, 
+ahí no se terminaba la historia.
+Porque cada vez son más los chicos 
+y las chicas que utilizan las tablets
+y las aplicaciones en los colegios
+para aprender de una forma diferente.
+Mírenlos.
+(Video)
+(Fin del Video)
+(Aplausos)
+Muchas gracias.
+(Aplausos)
+

@@ -1,0 +1,336 @@
+Emiliano Kargieman: Hackeando el espacio
+Esto de acá es un teléfono público.
+Para los más jóvenes que están en la sala, es lo que usábamos
+para comunicarnos antes de que hubiera SMS.
+Íbamos a estas cajas de metal y apretábamos unos numeritos y
+hablábamos por teléfono.
+Y hace unos 20 años atrás yo me dedicaba a romperlos.
+No a romperlos con martillos o grafitis, sino a romperlos de
+manera lógica.
+A tratar de entender cómo funcionaban.
+A tratar de ver qué podíamos cambiar desde los teléfonos.
+Tratar de ver cómo funcionaba la tecnología, qué hacían, qué
+componentes tenían adentro.
+Y qué podíamos hacer con esas cosas que los teléfonos no
+estaban destinados o no estaban diseñados para hacer desde el
+principio.
+Me acuerdo que conseguimos una llave que abría los teléfonos
+estos, una llave de mantenimiento.
+Entonces los podíamos abrir y podíamos listar los componentes,
+ver lo que tenían.
+Y usar, lo que sabíamos de estos componentes, para tratar de
+entender lo que hacía el teléfono.
+Y con esto, por ejemplo, sacamos un pequeño chip que tenía el
+teléfono adentro.
+Nos bajamos el código.
+Lo empezamos a mirar, lo modificamos y logramos hacer
+que el teléfono hiciera otras cosas que no son las que hacía
+naturalmente.
+En un caso me acuerdo de una anécdota que es que había una
+conferencia de hacking en el Centro Cultural Recoleta, acá en
+Buenos Aires.
+Y modificamos un teléfono así, que estaba en la puerta, para que
+cuando uno quería hablar le pasara un manifiesto hacker que
+era muy idealista.
+Después de eso, los siguientes 17 o 20 años de mi vida me dediqué
+a usar y abusar de computadoras cada vez más avanzadas, cada
+vez con más números de circuitos integrados.
+Y me dediqué también a hacer compañías de tecnología.
+A construir tecnología, pero, sobre todo, no sólo a construir
+tecnología sino a tratar de llevar esta tecnología al mercado, tratar
+de llevarla al mundo.
+Después de hacer varias compañías en la industria del
+software -en particular, en seguridad informática- me pasé
+una temporadita invirtiendo en proyectos de tecnología.
+Buscando chicos que tuvieran ideas interesantes.
+Y tratando de apoyar los proyectos para que construyeran
+compañías de tecnología.
+Hasta que en una etapa de transición de mi vida, el año
+pasado, caí en este lugar.
+Esto es el centro de investigación de NASA en California, uno de
+los dos centros que tiene la NASA en California.
+Y fui a ahí el año pasado a hacer un programa de verano, a
+pasarme dos meses pensado en ideas que tuvieran que ver con
+tecnologías de crecimiento exponencial.
+Pero una de las cosas más importantes que me pasó es que
+tuve por primera vez en mi vida una exposición a lo que era la
+industria espacial.
+Pude ver por primera vez qué era lo que hacía la gente que hacía
+cosas que iban al espacio.
+Y en mi cabeza, el espacio era esto.
+El espacio era Star Trek, era Siberiada.
+Pero cuando empecé a mirar las cosas que hacían realmente en la
+industria espacial me di cuenta que en lugar de esto, el espacio
+se parecía más a esto.
+Y esto no está mal.
+Esto es la cabina del trasbordador espacial.
+Esto no está mal.
+Si uno mira la vista es espectacular.
+Pero si uno tapa las ventanas un poquitito y entrecierra los ojos,
+se empieza a preguntar y dice:
+"¿Estamos volando monitores de fósforo verde en el trasbordador
+espacial?"
+Esto es tecnología hace 20 años, de hace 25 años.
+Y de hecho, si uno cierra más los ojos y empieza a mirar lo que
+hay adentro de esas cajas que hay ahí, no muy distinto de lo que
+hay ahí de esto.
+Estamos volando tecnología vieja, muy vieja, por un montón
+de razones.
+Pero, sobre todo, porque está construida con una mentalidad
+que es muy aversa al riesgo.
+Pero me empecé a preguntar mucho que había pasado.
+Qué había pasado para que esto es lo que tuviera para ofrecernos
+la industria del espacio.
+Cuando la industria del espacio, la industria de la informática, por
+ejemplo, empezaron juntas más o menos al mismo tiempo y más o
+menos por las mismas razones.
+Son dos creaciones de pos guerra, que eran de uso exclusivamente
+militar al principio.
+Esto es el Sputnik.
+El Sputnik fue el primer satélite artificial que se
+lanzó en el año 57.
+En el año 58 se construyó el primer circuito integrado.
+Estamos más o menos ahí.
+En los siguientes 10 años fuimos de lanzar el Sputnik, de poner el
+primer satélite artificial, a esto.
+A poner a un hombre en la luna.
+En diez años fuimos del primer satélite artificial al primer
+hombre en la Luna ¿sí?
+Y en los mismos 10 años fuimos del primer circuito integrado a
+conectar por primera vez cuatro nodos de una red, que en aquel
+momento se llamaba Arpa Net, entre cuatro ciudades de Estados
+Unidos y que hoy se convirtió en Internet.
+Si la industria espacial hubiera seguido el camino de la industria
+informática, si hoy tuviéramos que trazar el equivalente de
+Internet contra estos cuatro nodos en la industria espacial,
+tendríamos que, claramente, haber conquistado por lo menos
+el sistema solar y probablemente algunas galaxias cercanas pero
+no es el caso y empecé a preguntarme ¿por qué?
+¿Por qué no es el caso que esto...?
+¿Por qué no sucedió?
+¿Qué fue lo que pasó que hace que en la industria del espacio
+no se haya dado este crecimiento que se dio en la industria de la
+informática?
+Y viniendo del lado de la informática se me ocurre y se me
+ocurrió que la respuesta principal para esto pasaba por la
+apropiación de la tecnología.
+Me acuerdo de una frase muy famosa que dijo, más o menos en
+esta época, algún presidente de IBM que decía que pensaba que
+en el mundo había un mercado potencial de hasta cuatro, cinco
+computadoras y en algún sentido no estaba equivocado desde su
+punto de vista.
+Las cosas que ellos estaban haciendo tenían un mercado
+potencial de cuatro, cinco computadoras, pero no fueron
+esas las computadoras que conocimos nosotros y las que
+llegaron a las manos, a todas nuestras manos ¿no?
+Y lo que pasó en el medio es que los usuarios se empezaron a
+apropiar de la tecnología.
+Esto es el Altair 8800 que fue una de las primeras
+computadoras de un kit en realidad que uno podía comprar y
+podía armarse su propia computadora.
+A partir del Altair 8800 hubo un montón de gente, aficionados,
+gente que no tenía ni siquiera formación en la mayoría de los
+casos, que empezaron a trabajar sobre estas cosas y a pensar que
+se podían hacer cosas nuevas, únicas, que esta tecnología que
+para la mayoría de la gente era un juguete -para los grandes
+fabricantes de computadoras el Altair 8800 era un juguete- podía
+transformar el mundo.
+Este es Alan Kay, el padre de muchas de las ideas que se
+llegaron a implementar después en las computadoras que usamos
+hoy en día y la primer persona a la que se le puede atribuir la frase
+que yo sepa, de que "la mejor manera de predecir el futuro es
+creándolo."
+Después de Alan Kay vinieron otros tipos que tenían la visión de
+llevar esta tecnología a las mesas y a las manos de todo el mundo y
+algunos, digamos, persiguiendo ideales de belleza otros
+construyendo un software espantoso que, de todas maneras,
+transformaría el mundo.
+Estos hackers, estos emprendedores, estos hackers
+fueron los que llevaron la tecnología de algo que usaban en
+muy pocas empresas, gobiernos y los militares a algo que hoy
+tenemos todos en los bolsillos.
+De lo que yo les quiero hablar es que hoy la industria del espacio
+está lista para que esto mismo suceda. Está lista para que haya
+un grupo de gente que pueda llevar la tecnología del espacio a
+las manos de todo el mundo, así que el nombre de mi charla era
+"Hackear el espacio".
+¿Cómo hacemos para llevar el espacio a las manos de todos?
+Ésta es una foto que no es muy distinta a lo que veían por la
+ventana del Shuttle cuando veían hace un rato, se ve la curvatura
+de la Tierra, se ve lo negro del espacio.
+Esta foto está sacada por una cámara que cuesta 50 dólares,
+que lanzaron unos aficionados en Canadá con un globo aerostático
+que subió a 35 kilómetros.
+Todo el proyecto éste, lo pueden hacer ustedes y probablemente
+no gasten más de 200, 250 dólares en implementarlo.
+Este mismo tipo de globos se están usando hoy para probar
+estas cosas. Esto es un satélite completo, es un cubito de 10 por
+10 por 10 centímetros, se llama Phonesat. Es un satélite que está
+controlado por un teléfono celular.
+Ahí adentro, que apenas se puede ver en diagonal, hay un nexus 1
+que es el que controla este satélite.
+Tiene sus baterías, tiene sus plaquitas de comunicaciones.
+Eso que ven ahí que parece una cinta métrica, eso amarillo que
+parece una cinta métrica, es una cinta métrica.
+Es lo que usan de antena y éste es el tipo de tecnología que estamos
+construyendo hoy.
+Este satélite está basado en un estándar abierto que se llama
+CubeSat, uno se puede bajar los planos de la estructura, uno se
+puede bajar los diseños de las placas.
+Es un estándar abierto que inventó un conjunto de
+universidades cuando se dieron cuenta que estaban tratando de
+entrenar ingenieros aeroespaciales, pero no les podían
+hacer hacer un satélite.
+O sea, no tenía manera de que los ingenieros aeroespaciales
+pudieran hacer algo útil.
+Claro, hacer un satélite desde tener tradicional, desde tener la
+idea hasta hacer el satélite es algo que lleva quizás 10 años y no hay
+10 años en un cuatrimestre para enseñarle a una persona a hacer
+un satélite.
+Entonces diseñaron estándar para poder llevar a los estudiantes
+durante un cuatrimestre.
+Desde la idea hasta un satélite terminado.
+Se hicieron más de 2000.
+Éste es un CubeSat volando.
+Se hicieron más de 2000 de estos en las universidades.
+Sólo llegaron a volar unos 40, menos de de 50.
+Pero de todas maneras este tipo de tecnología, poner esto en las
+manos de los estudiantes, poner esto en el público es lo que está
+cambiando la manera de pensar de la gente sobre el espacio.
+Y está llevando a muchos a pensar cosas que antes parecían
+ridículas.
+Éste que es un proyecto que encontré hace un par de semanas,
+es un satélite completo.
+Tiene sus celdas solares, tiene esos capacitores ahí que
+funcionan de baterías, un microcontrolador y una radio.
+Esto que ven ahí es esencialmente el Sputnik.
+Lanzar esto, el proyecto de estos chicos es lanzar esto por 300
+dólares.
+Sí.
+Este tipo de tecnología es la que me empezó a hacer eclosión en la
+cabeza el año pasado cuando empecé a mirar la industria del
+espacio y a preguntarme estas cosas.
+Y empecé a trabajar sobre una serie de ideas.
+Es decir, cómo podía yo aprovechar este tipo de
+tecnología, la tecnología de todos los días, la tecnología que
+construimos para los teléfonos celulares que es tan potente.
+Hoy tenemos nosotros en nuestro bolsillo, cada uno de nosotros en
+nuestro bolsillo, tiene más capacidad de cómputo que
+probablemente todos los satélites que están dando vueltas
+alrededor de la Tierra o cerca.
+En esta sala seguro hay más capacidad de cómputo que todos
+los satélites que están dando vueltas alrededor de la Tierra o
+que nunca se lanzaron.
+Cada uno de ustedes seguramente en el bolsillo tiene más capacidad
+de cómputo que la Mars Rovers lejos.
+Pero lejos: 750 megahertz corrían en la computadora del Mars
+Rovers.
+Empecé a pensar cómo podíamos aprovechar esta tecnología para
+hacer cosas útiles.
+Estos juguetes, lo que la industria espacial hoy piensa que son
+juguetes, cómo podíamos usarlos para hacer cosas importantes.
+Y llegué al proyecto en el que estoy trabajado ahora,
+que se basa en la idea de poder construir una plataforma de satélites que
+cuestan mil veces menos que los satélites que se fabrican hoy en
+día.
+Y que le sirva a cualquiera para poder construir servicios desde el
+espacio.
+Hacer una startup en la industria espacial hoy no tiene que ser
+muy distinto a hacer una startup en cualquier otra industria.
+Es mayormente un trabajo intelectual al principio.
+Uno llena de ideas todo lo que tiene alrededor y trata de
+rebotarlas con las personas que tiene cerca.
+Después empieza a hacer los primeros prototipos que pueden
+ser crudos o a la piedra.
+Y después se trata de encontrar gente que uno pueda sumar al
+proyecto; que si uno tiene suerte es gente más brillante que uno.
+Esa es en general la clave para el éxito.
+Y yo estoy tratando de juntar gente alrededor mío.
+De hecho la gente que trabaja conmigo, muchos de ellos no
+tienen ninguna experiencia en la industria espacial.
+Porque lo que uno necesita para poder hacer las cosas 1000 veces
+más baratas, o sea, radicalmente distintas es gente que no venga
+contaminada con un pensamiento previo sobre lo que es posible y
+no es posible y que sencillamente haga las cosas sin preguntarse si
+se puede.
+Los prototipos se van complejizando un poco, un
+poquitito más.
+Y nosotros estamos hoy...
+Sí, hay que hacer cálculos, hay que hacer cuentas, hay que hacer
+modelos, hay que juntar plata, hay que hacer un montón de
+cosas.
+Pero hoy estamos, apenas un año después de que yo empecé por
+primera vez a pensar en la industria espacial, estamos
+construyendo un par de prototipos que vamos a volar el
+año que viene: el primer satélite en julio o agosto y el segundo a
+fin de año, si conseguimos que alguien nos de espacio en un
+cohete.
+Esta tecnología, la tecnología de los satélites pequeños, tiene un
+potencial enorme para cambiar nuestra relación con el espacio.
+No sólo poniendo satélites alrededor de la Tierra, sino
+también haciendo otro tipo de cosas.
+Hay un proyecto de Google, un premio de Google en realidad.
+Éste es el Google Lunar X PRIZE, el premio de Google para
+la primera empresa que logre mandar a la Luna un pequeño
+robotito que pueda moverse 500 metros, sacar fotos y volver a
+mandarlas a la Tierra.
+Y hay muchos proyectos, más de 20 grupos trabajando en
+proyectos de mandar cosas a la Luna.
+Y es probable que consigan mandar robots a la Luna por una
+fracción del precio que le hubiera costado a cualquier gobierno
+hacerlo.
+Y esto esencialmente con el mismo tipo de tecnología, con
+tecnología comercial, con tecnología que podemos ir a
+comprar a una ferretería, con tecnología que podemos sacar de
+nuestros teléfonos celulares.
+Esto es algo que pueden hacer ustedes en el jardín de su casa.
+Y no tenemos por qué quedarnos en la Luna.
+El mismo tipo de tecnología, una vez que uno hace una nave
+espacial, es una nave espacial.
+Lo más difícil es salir de la Tierra, el resto es relativamente
+sencillo.
+Una vez que uno hace una nave espacial la puede mandar a
+recorrer el sistema solar, la puede mandar a hacer prospectiva de
+minerales de los asteroides de no sé, entre Júpiter y Marte.
+Éste es el tipo de tecnología que hoy yo estoy construyendo y que
+me gustaría invitar a todos ustedes a construir conmigo.
+Quería cerrar mostrándoles un fragmento de ese manifiesto aquel
+que escribimos en el teléfono este, que estaba frente al
+Centro Cultural Recoleta.
+Porque pasaron 20 años y no somos ya jóvenes e idealistas
+porque no somos tan jóvenes.
+Pero seguimos pensando esencialmente lo mismo que es que:
+si uno puede dar vuelta la tecnología, si uno puede pensar
+en la tecnología como una herramienta y entender qué
+puede hacer más allá de las etiquetas que se le ponen y si uno
+puede mirar esa tecnología y empezar a usarla para explorar
+todo su potencial son muy pocos los problemas que no estamos en
+condiciones de atacar.
+Ésta es una foto de la Tierra.
+Ésta es una foto de la Tierra tomada desde Voyager 1 a 6000
+millones de kilómetros de distancia del Costa Salguero.
+Ésa es la Tierra por si no la vieron, los del fondo por ahí
+tienen problemas.
+Ésta es una foto que sacó el Voyager a pedido de Carl Sagan.
+Carl Sagan pidió que dieran vuelta el Voyager en un
+momento para sacar esta foto.
+Y él decía cuando miraba esta foto que a él le hacía pensar en
+que todas las cosas que nos pasan, todos los grandes
+problemas de nuestra vida, todos los reyes y los grandes imperios
+y las armadas invencibles y las armadas que después las
+vencieron, toda la gente que se amó, la madre que le da un beso
+a su chico, todas esas cosas pasan en ese puntito que está colgado
+en un rayito de sol en la mitad de la nada.
+Y él decía -y a mí siempre me impresionó- que eso lo hacía
+tomar perspectiva, por supuesto, sobre la importancia de las cosas
+que lo afectaban todos los días.
+Me gusta pensar que con esa perspectiva podemos pensar en
+las cosas que hacemos, que con esa perspectiva podemos pensar
+en la dirección que tomamos en nuestra vida.
+Y me gusta pensar también que esa es la perspectiva que van a tener
+nuestros hijos o los hijos de nuestros hijos cuando miren para
+atrás y vean el planeta del que salieron sus padres el día que
+duerman en las estrellas.
+Gracias.
+[Aplausos]
+
