@@ -1,0 +1,173 @@
+Muchas veces me preguntan a qué me dedico.
+Y la verdad es que,
+la gran mayoría de las veces,
+me cuesta mucho explicar lo que hago.
+Viniendo para acá en el avión
+y buscando ejemplos 
+ví la película de los Avengers,
+La era de Ultron.
+Para aquellos que no la recuerdan,
+o que no la vieron, les hice
+un par de dibujos.
+Esta es la escena: estamos
+en un laboratorio,
+está Ultron que está tratando de bajar
+su conciencia a un nuevo cuerpo.
+Un nuevo cuerpo más humano,
+un cuerpo bioimpreso,
+con células y tejidos.
+Atrás están los Avengers que
+no entienden nada de ciencia,
+y después viene una científica que es
+la que le va a bioimprimir
+el cuerpo a Ultron.
+En la vida real, no existe Ultron,
+no existen los Avengers,
+pero eso que hizo la científica
+en esa escena,
+eso es lo que hago yo todos los días.
+Soy argentina y vivo en Estados Unidos.
+Soy médica e investigadora y hace ya
+varios años trabajo en Harvard, MIT,
+en la división de Ciencia,
+Salud y Tecnología
+imprimiendo pequeños órganos
+que vamos a poner en un chip
+para probar fármacos.
+¿A qué llamo fármacos?
+Los fármacos son los medicamentos
+que todos Uds. tienen en su botiquín.
+Para que ese medicamento
+llegue a sus manos
+se gastan mil millones de dólares.
+Les voy a repetir la cifra:
+mil millones de dólares.
+Y eso es la base, de ahí en más.
+Y se tardan más de 10 años,
+desde el primer compuesto, la molécula,
+hasta que el medicamento
+llega a sus manos.
+Para probar que ese medicamento
+sea seguro y eficaz
+tiene que pasar por tres pruebas básicas:
+la prueba en células,
+la prueba en animales
+y luego la prueba en humanos.
+Las pruebas en células
+son en dos dimensiones,
+las células se pegan
+a una frasco plástico,
+a la parte de abajo y arriba
+tienen un líquido que
+las mantiene bien y vivas.
+Como se pueden imaginar,
+están en dos dimensiones
+y en nada se parecen a la
+tridimensionalidad de un ser humano.
+Luego pasamos al modelo animal,
+a los animalitos.
+Como pueden imaginarse, es el mejor
+modelo que tenemos hasta ahora
+pero en nada nos parecemos
+a las ratas, ¿no?
+Salvo algunos, pero ese es otro tema.
+Y luego pasamos a la prueba en humanos
+y para colmo acá
+un montón de medicamentos
+fallan por un montón de razones,
+pero las dos razones más importantes son:
+por falta de eficacia,
+o sea que no son eficaces
+y no hicieron efecto en el ser humano
+y también por toxicidad,
+porque son tóxicos y hacen mal.
+Nosotros proponemos
+usar órganos en un chip.
+En el laboratorio lo que hacemos
+es agarrar células humanas
+y las combinamos con un hidrogel.
+Este hidrogel es como
+una especie de gelatina.
+Eso lo metemos en una bioimpresora
+y luego ese pedacito de tejido
+va adentro de un chip cerrado.
+El objetivo final de estos chips
+es replicar la función de
+un órgano a la micro escala,
+para saber cuán tóxico es un fármaco.
+¿Pero cómo realmente armamos los chips?
+Al laboratorio nos llega
+un frasquito chiquitito
+con células humanas, con donantes.
+Puede ser de cualquiera de Uds.
+Eso lo mezclamos con este hidrogel
+y lo vamos a meter luego adentro
+de una bioimpresora.
+A la bioimpresora, luego
+le decimos con un programa
+qué forma tridimensional queremos que
+adopten esas células con ese hidrogel.
+Y una vez que tenemos eso
+van adentro de los chips.
+Estos chips no son como
+los de computadora,
+son chips plásticos que
+están unidos a una bomba
+que le va a pasar un flujo
+y ese flujo tiene oxígeno
+y tiene alimento para las células.
+Una vez que sabemos que
+los chips están bien,
+comenzamos la prueba de los fármacos.
+Acá les traje un chip, para los
+del fondo quizás se complica.
+Entra en la palma de
+la mano como pueden ver.
+Una vez que esto está bien arrancamos
+con la prueba de los fármacos.
+Para que se den una idea
+yo trabajé mucho con un fármaco
+que se llama paracetamol.
+Es un fármaco que se utiliza
+para el dolor de cabeza,
+para el dolor de muela,
+cuando se sienten mal,
+es un anti-inflamatorio.
+Usando pequeñas dosis
+de paracetamol en el chip
+podemos saber qué es lo que
+va a pasar a gran escala
+después cuando pase al ser humano.
+Para que se den una idea,
+esto que están viendo
+es el corazón en un chip,
+lo están viendo latir,
+son fibras cardíacas antes
+de ponerle el medicamento.
+Lo más importante de todo esto
+es que los chips
+luego tienen sensores y esos sensores
+nos van a decir cómo está el chip.
+Van a medir temperatura, oxígeno, proteína
+y nos dicen en tiempo real qué le está
+pasando a esa cámara transparente.
+Hasta ahora, creamos
+un hígado, un corazón
+y vasos sanguíneos en un chip.
+(Aplausos)
+Esta es mi última creación, 
+un vaso sanguíneo en un chip.
+A futuro queremos crear órganos 
+más complejos y más grandes.
+Sobre todo queremos diversidad,
+que cada uno de Uds. esté en un chip
+para ver cómo reaccionan 
+a distintos fármacos.
+Quizás algún día podamos imprimir
+un cuerpo completo
+y transferir nuestra vieja conciencia
+a ese nuevo cuerpo bioimpreso
+como intentó Ultron.
+En eso estamos.
+(Aplausos)
+

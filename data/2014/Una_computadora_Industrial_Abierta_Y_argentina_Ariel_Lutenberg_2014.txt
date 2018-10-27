@@ -1,0 +1,227 @@
+Seguramente, cuando piensan
+en una computadora, imaginan algo así.
+Pero déjenme decirles que estamos rodeados
+de muchas otras computadoras,
+pero no las vemos.
+Lavarropas, ascensores,
+equipos médicos, autos.
+Todos tienen algún tipo
+de inteligencia electrónica,
+un cerebro al que llamamos computadora.
+Por ejemplo, en un lavarropas.
+De alguna manera, nosotros
+lo programamos para que cargue agua
+para que haga un lavado, haga un enjuague.
+vuelva a cargar agua, lavado,
+enjuague, centrifugado.
+Esto lo hace un programa que está adentro
+del lavarropas en una computadora.
+En un ascensor, según en qué piso estamos,
+qué botón tocamos o si estamos
+subiendo o bajando,
+hay una computadora que decide
+qué es lo que tiene que hacer.
+Y en algún sentido,
+la computadora del ascensor
+y del lavarropas son parecidas.
+Y hay otras computadoras
+que tienen que ser más robustas
+como por ejemplo en un equipo médico,
+donde está en juego
+la vida de una persona,
+o en un semáforo, que si tiene
+que dar una luz roja
+y de pronto da una luz verde,
+puede causar un accidente.
+O el sistema electrónico
+de frenos de un auto.
+O hay casos como por ejemplo
+en un equipo petrolero
+quizás está horas e incluso días
+de viaje de la ciudad más cercana,
+y entonces no puede fallar
+porque no pueden repararlo todo el tiempo.
+Y la pregunta es:
+¿quién diseña estas computadoras?
+¿Quién las fabrica? ¿Quién las programa?
+Y la verdad es que en nuestro país
+muchas veces dependemos de computadoras
+que son fabricadas en el exterior,
+son importadas.
+O sea, dependemos de otros.
+Y esto hace que muchas empresas argentinas
+desean no utilizar electrónica
+cuando podrían utilizarla para mejorar
+sus productos o sus procesos productivos.
+O hay otras que deciden seguir utilizando
+sus desarrollos viejos, obsoletos.
+Y hay algunas que optan por usar
+electrónica importada y dependen de otros.
+Son muy pocas las que se animan
+a desarrollar sus propias
+soluciones electrónicas.
+Con un grupo de gente
+hace un poco menos de un año
+nos pusimos de acuerdo para tratar
+de revertir esta situación,
+para ayudar a las empresas,
+a las pequeñas y medianas
+empresas de nuestro país.
+Y ustedes pensarán que somos todos
+premios Nobel o expertos de la NASA,
+pero no.
+Déjenme decirles que somos
+estudiantes, ingenieros,
+empresarios, comunicadores, diseñadores.
+Que estamos distribuidos por todo el país.
+Eso implica que hay gente
+que tiene distinta forma de vida.
+Y somos muy jóvenes.
+La edad de promedio es
+de más o menos treinta años.
+Me hubiese gustado poner una foto
+donde puedan ver a todo el grupo
+decenas y decenas de personas,
+pero la verdad es que no tengo.
+Porque hay mucha de esta gente
+que nunca se vio en su vida.
+Quizás nunca se conozcan,
+quizás nunca se vean,
+porque trabajan por Internet, compartiendo
+archivos por e-mail, por Skype.
+Y sin embargo así, vamos trabajando.
+Y entre todos hicimos la CIA o CIAA
+la Computadora Industrial
+Abierta Argentina,
+que es la que tengo acá en mi mano.
+"Computadora" ya les dije por qué,
+"industrial" ya les dije también.
+Y "abierta", ¿por qué?
+Porque toda la documentación,
+toda la información de cómo está hecha,
+de cómo se hace y demás
+está toda publicada en Internet.
+Cualquiera la pueda bajar
+y la puede utilizar libremente.
+Podemos decir
+que la CIA no tiene secretos.
+(Risas)
+¿Y esto qué implica?
+Llega por ejemplo una empresa,
+si necesita usar una computadora
+por ejemplo para un proceso productivo,
+puede ir y comprar una
+a alguien que la venda
+y sabe que no depende de esa persona,
+porque el día de mañana
+se la puede comprar a un tercero
+o la puede hacer ella misma.
+O por ejemplo si tiene que hacer
+una máquina que lleva una computadora,
+puede decir "Bueno,
+yo me la fabrico por mi cuenta".
+O puede por ejemplo decir
+"Yo me bajo la información,
+la modifico como quiero, esto es libre"
+y hace su propia versión que le sirva
+a su propio caso.
+Y eso implica que genera trabajo,
+que genera riqueza,
+valor agregado en nuestro país.
+Y existen en el mundo
+otras computadoras abiertas,
+pero que por lo general están soportadas
+por una empresa multinacional que fabrica
+los circuitos integrados, los chips.
+Y lo hace como una estrategia de marketing
+y siempre queda atado
+uno al chip de esa empresa.
+En cambio, nosotros, como no dependemos
+de ninguna empresa multinacional
+tenemos distintas versiones
+basadas en distintos procesadores,
+lo que significa
+que somos libres de verdad.
+No dependemos de ninguna
+empresa en particular.
+Pero además, esta computadora,
+que tengo acá en mi mano,
+es la primera computadora
+abierta industrial.
+Está pensada desde el comienzo
+para ser utilizada
+en aplicaciones industriales.
+Entonces, ¿qué es esto?
+En definitiva son circuitos,
+son programas, una plaqueta.
+¿Y cómo se hace?
+Bueno, viene una persona
+y dice "Yo hago esto".
+Otro dice "Okey, yo hago aquello";
+otro dice "Yo los ayudo".
+Mi trabajo en todo esto es coordinar eso.
+E incluso hay empresas,
+pequeñas empresas argentinas,
+que son competidoras
+en un determinado nicho,
+pero que se dan cuenta
+de que si participan y colaboran
+una va a vender un poco más,
+una va a vender todavía más quizás,
+pero todas van a crecer, porque
+lo que crece es la industria nacional.
+Y para hacer esto, no tenemos
+un manual, una receta,
+porque es algo que nunca antes
+se hizo en ningún lugar del mundo.
+Entonces aprendemos a medida que hacemos.
+Y esto está basado
+en trabajo colaborativo voluntario.
+Son personas que no cobran por hacer esto,
+que quizá lo hacen a la noche
+cuando vuelven del trabajo
+a sus casas, o el fin de semana.
+O algunos tienen la suerte
+que en el trabajo les permiten hacerlo.
+Y sin embargo, si sumamos la horas
+invertidas en esto,
+se llevan invertidos
+más de diez millones de pesos.
+¿Y dónde se utiliza esto?
+Bueno, por ejemplo, se están haciendo
+aplicaciones para equipos médicos,
+para equipos ferroviarios,
+equipos industriales,
+para la industria
+del petróleo, para el agro.
+Y además, algo muy importante
+para nosotros,
+es que hay una red atrás
+de más de 50 facultades
+de Ingeniería de todo el país,
+que son prácticamente todas las facultades
+del país que enseñan electrónica,
+que venimos trabajando.
+La idea es que a partir del mes
+de marzo del año que viene
+en todas se empiece a utilizar
+esta plataforma para enseñar.
+Que es una forma de difundir esto
+y además es una forma
+de que se lo puedan apropiar todos.
+Esto es un sueño.
+Es la primera computadora
+industrial abierta argentina.
+(Aplausos)
+(Fin aplausos)
+Hay gente que deja su huella
+con cosas geniales
+como un cuadro, un libro,
+música.
+Nosotros somos ingenieros.
+Nuestra magia, nuestro arte
+es hacer cosas concretas,
+como esta computadora.
+Muchas gracias.
+(Aplausos)
+

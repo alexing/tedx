@@ -1,0 +1,6 @@
+trends
+topic clustering
+level of language. distinct words, compare one with another one td-idf
+which words associated with each topics
+gender, age, degree, year
+feat engineering

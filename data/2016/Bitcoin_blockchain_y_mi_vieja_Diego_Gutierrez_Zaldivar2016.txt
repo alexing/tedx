@@ -1,0 +1,226 @@
+Es increíble cómo Internet
+nos cambió la vida.
+Hoy podemos hacer cosas que
+hasta hace no mucho tiempo
+nos parecían de ciencia ficción.
+Hoy podemos conectarnos
+con cualquier parte del planeta
+o acceder a toda la información del mundo
+desde nuestro celular;
+cosas que hace 10 o 20 años
+parecían inimaginables e imposibles.
+Pero hay cosas que aún no podemos hacer.
+Por ejemplo, no podemos enviar
+dinero sin intermediarios.
+Cuando hacemos compras en Internet,
+usamos las redes privadas de las
+tarjetas de crédito y de los bancos.
+El dinero no viaja por Internet.
+En la antigüedad,
+cuando queríamos comerciar con alguien
+nos teníamos que juntar con esa persona,
+teníamos que tener algo de valor 
+para darle a cambio, hacíamos trueque.
+Con el tiempo, a alguien
+se le ocurrió inventar el dinero
+y el comercio global empezó a fluir.
+Pero el comercio a distancia
+seguía siendo muy difícil
+porque teníamos que enviar la mercadería
+y confiar que el otro nos iba a pagar.
+Entonces surgieron los intermediarios:
+instituciones que construían confianza
+y que se encargaban de llevar los
+productos y el dinero por nosotros.
+Así le dábamos a Marco Polo
+nuestro oro en Venecia
+y él nos entregaba un cheque
+que podíamos redimir en Pekín
+por más o menos la misma cantidad de oro.
+Esa intermediación fue fundamental
+en la construcción de nuestra sociedad.
+No solo habilitó el comercio global,
+sino que es la base de las democracias
+que hoy conocemos.
+Pero esa intermediación
+tiene sus problemas.
+La confianza es algo frágil,
+y cuando cambia cualquier elemento,
+entran las dudas.
+Tal es así, que a mi mamá
+le llevó muchos años
+usar la misma tarjeta que usaba en
+el súper para comprar todos los días
+para hacer sus compras en Internet.
+Y esa intermediación
+tiene también un costo.
+Y esa es la razón, o una
+de las razones principales,
+por las cuales hoy
+la mitad de la población
+no accede a los servicios
+financieros básicos.
+Y mi mamá no estaba tan equivocada,
+porque en los últimos años vemos
+cómo el fraude de tarjetas y el robo
+de identidad crecen en Internet.
+Y si nos enfocamos en
+la intermediación política
+vemos cómo los candidatos, una vez
+elegidos, no cumplen con sus promesas
+o cómo se van corrompiendo
+a medida que acumulan poder.
+Entonces, ¿por qué si Internet nos cambió
+la vida de maneras increíbles,
+nos dio acceso a aprender a comunicarnos,
+a compartir de manera ilimitada,
+al día de hoy no pudo
+remover los intermediarios?
+La razón principal es que la información
+digital se puede replicar infinitas veces
+casi sin costo.
+¿Qué pasa si yo les pago con
+un billete digital de 100 pesos?
+¿Cómo saben Uds. que yo no voy
+a agarrar este mismo billete
+y les voy a pagar a otras mil personas
+creando dinero de la nada?
+Ese fue el problema que las discográficas
+enfrentaron cuando la gente empezó
+a compartir su música libremente.
+La realidad es que las discográficas
+no encontraron la solución;
+tuvieron que cambiar
+su modelo de negocios.
+Entonces, muchos de Uds.
+pensaran: "No hay salida.
+Vamos a depender siempre
+de intermediarios".
+Si Uds. me hubieran preguntado hace
+unos años, yo les hubiera dicho que sí;
+que esto es un callejón sin salida.
+Pero escuchen esto:
+en el 2008 sucedió algo increíble;
+alguien tuvo una idea brillante
+y construyó una plataforma
+que, de un plumazo, eliminó
+todos estos problemas.
+Esa plataforma se llama Bitcoin.
+Bitcoin es una plataforma muy compleja
+pero que se basa en
+redes descentralizadas,
+en un registro incorruptible
+y en confianza en software,
+en programas de computación.
+No en seres humanos, cuya confianza
+puede ser fácilmente traicionada.
+Al principio, la gente usaba Bitcoin 
+como una moneda, como un medio de pago
+y es lógico;
+porque cuando enfrentamos 
+una nueva tecnología,
+la asociamos con lo que conocemos.
+Nos pasó con la PC,
+cuando pensábamos que era un poco
+más que una máquina de escribir;
+nos pasó con Internet,
+cuando que pensábamos que era
+un reemplazo para el correo de papel.
+Pero, con los años, la gente dijo:
+"Ah, con Bitcoin puedo
+registrar otras cosas.
+Puedo registrar la acciones
+de una empresa,
+puedo registrar un título
+de propiedad de una casa,
+puedo registrar propiedad intelectual,
+o incluso un voto".
+Y hace unos dos o tres años,
+alguien fue más allá
+y dijo: ¿Qué tal, si usando
+la misma filosofía del Bitcoin,
+las mismas tecnologías,
+construimos una plataforma
+que además de transferir
+valor y hacer transacciones,
+nos permita registrar
+acuerdos entre las personas?"
+Así como hoy usamos los contratos legales.
+Y con esto, surgió el concepto
+de los contratos inteligentes.
+Lo interesante es que
+estos contratos inteligentes
+no solo pueden manejar dinero,
+acciones de empresas, o un voto,
+sino que, además,
+pueden controlar objetos.
+Y allí surge el concepto 
+de la propiedad inteligente.
+Para explicarles un poco
+más cómo funciona esto,
+les voy a proponer un negocio.
+Todos los que estamos acá presentes,
+con lo que tenemos en el
+bolsillo en este momento
+vamos a comprar un auto 
+de estos que se manejan solos.
+Lo vamos a pintar de taxi,
+yo le voy a poner una billetera Bitcoin,
+y le voy a programar
+un contrato inteligente
+que cada vez que un pasajero se sube,
+le empieza a comprar por segundo.
+Y cada vez que se baja, cierra la cuenta.
+Este autito, cuando ve que 
+se está quedando sin combustible
+va a la estación de servicio
+y paga de su propia billetera.
+Y una vez al mes, nos paga
+a todos la ganancia,
+proporcionalmente a lo que pusimos,
+y le manda la información al contador
+para que pague los impuestos,
+porque, obviamente, el autito
+es un ciudadano responsable.
+La realidad es que todo esto que acabo
+de describir se puede hacer hoy.
+Esta combinación de tecnologías
+da nacimiento a algo increíble
+que es la Internet del valor.
+Con esta nueva Internet,
+vamos a poder crear
+identidades basadas en la reputación.
+Cada vez que recibamos una
+calificación positiva en una venta,
+cada vez que aprendamos algo nuevo
+o que colaboremos con nuestra comunidad
+esta identidad va a crecer.
+Y esa reputación nos va a permitir
+interactuar y comerciar
+con personas de cualquier parte del mundo
+sin necesidad de que confiemos previamente
+o inclusive, de que nos conozcamos.
+Si combinamos estas tecnologías
+con un fenómeno que está
+sucediendo hoy en la sociedad,
+que es que dentro de no mucho tiempo
+muchísimas de las personas
+más pobres de este planeta
+van a tener un teléfono
+inteligente en la mano,
+vemos que esta Internet del valor
+no solo nos va a permitir revivir
+la confianza en las democracias,
+o ser actores centrales de la construcción
+de una sociedad más equitativa y próspera;
+sino que nos va a permitir integrar
+a millones de personas
+excluidas del planeta,
+dándoles acceso a los servicios
+financieros básicos,
+a una reputación y a un puente para
+conectarse con el resto de la sociedad
+que al día de hoy, nadie pudo darles.
+Gracias.
+(Aplausos)
+

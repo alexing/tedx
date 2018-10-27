@@ -1,0 +1,192 @@
+Diego Golombek: Sugata, es un honor
+tenerlo aquí en este TEDxRíodelaPlata.
+Creo que muchos seguramente lo conocemos 
+por sus viejos experimentos.
+¿Se acuerdan de "A hole in the wall"? ¿Sí?
+Eso que aparecía una computadora,
+de pronto, en una aldea.
+Pero yo le quiero preguntar
+por lo que está pasando ahora con SOLE,
+con lo que pasó con el TED Prize,
+¿cómo se está implementando?
+¿Cómo está avanzando?
+Y, ¿qué evaluación hacen de esto?
+Sugata Mitra: Creo que él quiere saber
+qué pasó después de esa película.
+Así que les contaré qué pasó.
+Construimos siete Escuelas en la Nube.
+Cinco en India y dos en Inglaterra.
+¿Qué es una Escuela en la Nube?
+Permítanme darles un pequeño ejemplo.
+Uds. saben, la gente ha viajado
+de un lugar a otro
+en carruajes tirados por caballos
+durante miles de años,
+hasta la invención del automóvil.
+Cuando se inventó el automóvil,
+el caballo y el carruaje desaparecieron
+y el cochero, el hombre que manejaba
+el carruaje y el caballo,
+también desapareció
+y los pasajeros se volvieron conductores.
+En la Escuela en la Nube 
+estamos intentando averiguar
+si es posible 
+en nuestro sistema educativo...
+si ha llegado el momento de convertir
+a los pasajeros en conductores.
+Así que lanzamos estas siete escuelas.
+La más lejana no tenía nada:
+ni electricidad, ni escuelas,
+ni servicios de salud.
+Las mejores, en Inglaterra, tenían todo.
+Y entonces, dejamos a los aprendices
+conducir el automóvil.
+¿Qué pasó?
+Quizás piensan que voy a decir
+algo romántico, pero no.
+Fui picado por un millón de mosquitos.
+(Risas)
+(Aplausos)
+Y luego, los chicos empezaron a cambiar.
+En Inglaterra, los chicos
+me escribieron un e-mail
+diciendo: "¿Por qué están enseñando?"
+En Korokati, la más lejana
+de nuestras Escuelas en la Nube,
+los chicos dijeron:
+"¿Por qué la abuelita en el Skype
+habla un inglés tan básico?
+¿No sabe que nosotros la entendemos?"
+(Risas)
+En otra aldea en Bengala, Chandrakona,
+noté un acento de Birmingham muy marcado.
+(Risas)
+Fue mucho más veloz de lo esperado.
+No sé si van a creer esto:
+en Korokati, la aldea en la que 
+los chicos no saben nada de inglés,
+al tercer día,
+uno de los maestros de Inglés
+que les habló por Skype, dijo:
+"Sabes, esos chicos son muy dulces,
+me dijeron, '¿cuándo vuelves?'"
+Le pregunté, "¿en qué idioma
+te lo preguntaron?"
+Y me dijo, "en inglés". Tres días.
+(Aplausos)
+Gracias.
+Así que les pregunté a los chicos:
+"¿Cómo aprendieron
+a hablar en inglés tan rápido?"
+Me miraron y me dijeron:
+"¿Sabes, esa mujer que 
+aparece en la pantalla?
+No entiende otra cosa que no sea inglés".
+(Aplausos)
+Ahora, las malas noticias.
+Los siete laboratorios tienen
+siete tipos de problemas diferentes.
+El problema principal no es la pedagogía,
+no es enseñar y aprender,
+es la tecnología.
+Así que estoy luchando para mantener
+esas locaciones remotas funcionando,
+pero sé que voy a encontrar la forma,
+todavía tengo un año por delante.
+Sé que voy a encontrar la manera
+de mantenerlas funcionando.
+Y sé con seguridad,
+y digo esto por primera vez al mundo
+desde un escenario TED:
+los pasajeros están
+conduciendo el automóvil.
+(Aplausos)
+Gracias.
+Y aquí una cosita más que quiero
+compartir con Uds.:
+solía ser llamado a conferencias,
+todavía me llaman,
+pero en el último año y medio
+he sido llamado
+por los Departamentos de Educación
+de gobiernos de diferentes países.
+Ellos están escuchando.
+Y tengo solo una sugerencia para ellos;
+algo que quiero que algún gobierno intente
+quizás el gobierno aquí en Argentina.
+Es muy simple:
+Quiero que se permita el uso 
+de Internet durante los exámenes.
+(Aplausos)
+Gracias.
+Sé que hay estudiantes aquí,
+y sé que los exámenes
+son el único momento en sus vidas
+en el que no tienen acceso a Internet.
+Así que espero poder cambiar esto.
+Y si Internet entra en los exámenes,
+el sistema habrá cambiado por completo.
+Entonces será una idea
+que valió la pena difundir.
+DG: Sugata, una pregunta que
+seguramente le hacen todo el tiempo.
+Con esto del aprendizaje 
+autoadministrado:
+¿Qué pasa con los maestros?
+¿Qué queda para los maestros?
+SM: Sabes, existe un error de concepto,
+que los maestros no tendrán un rol.
+Eso no es cierto, en absoluto.
+En una SOLE, los chicos encuentran
+las respuestas a las preguntas.
+Pero, ¿quién hace las preguntas?
+¿Quién escucha las respuestas?
+Y lo más importante, ¿quién dice
+"eso estuvo bien"?
+Eso es lo que el maestro tiene que hacer.
+(Aplausos)
+DG: Con respecto a lo que decía Sugata
+sobre si se va a implementar acá,
+hay un plan de al menos
+una escuela en Barracas
+que va a empezar próximamente
+con el sistema SOLE,
+de autoadministración educativa,
+de la Escuela en la Nube.
+Y una última pregunta, Sugata.
+Llegó ayer, ¿sí?
+Lo están llevando de un lado a otro
+así que es un honor
+que haya pasado este ratito por acá.
+La última pregunta es:
+Una de sus preocupaciones mayores
+es la escuela del futuro.
+Pensemos en un futuro
+a mediano plazo, en 50 años:
+¿Cómo se imagina...
+¿Cómo desea que sea la escuela?
+SM: Es difícil para mí decir
+cómo será esa escuela.
+Pero pasará algo mucho más profundo 
+y no demorará 50 años para que pase.
+Y es nuestra definición
+de la palabra "conocer".
+¿Qué significa cuando dices "yo sé algo"?
+Podría significar que lo aprendiste
+en la escuela a los siete años
+o podría significar algo que Google
+te dijo hace un minuto.
+Saber no significa nada.
+¿Debemos lamentarnos?
+No lo creo.
+Las ideas, como los objetos, caducan.
+Cuando yo empecé, pensé...
+Decía: "Las escuelas serán obsoletas".
+Y ahora estoy obligado a decir
+que el conocer será obsoleto.
+Nos quedará esto:
+La conciencia colectiva de 
+7000 millones de personas.
+(Aplausos)
+
