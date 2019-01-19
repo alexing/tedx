@@ -1,0 +1,3 @@
+- Pedir first days stats, category of the video, the length of the video
+- Comunicar cual es el stat de los features
+- TAGS CORTADOS!
