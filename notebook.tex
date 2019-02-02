@@ -1,0 +1,1411 @@
+
+% Default to the notebook output style
+
+    
+
+
+% Inherit from the specified cell style.
+
+
+
+
+    
+\documentclass[11pt]{article}
+
+    
+    
+    \usepackage[T1]{fontenc}
+    % Nicer default font (+ math font) than Computer Modern for most use cases
+    \usepackage{mathpazo}
+
+    % Basic figure setup, for now with no caption control since it's done
+    % automatically by Pandoc (which extracts ![](path) syntax from Markdown).
+    \usepackage{graphicx}
+    % We will generate all images so they have a width \maxwidth. This means
+    % that they will get their normal width if they fit onto the page, but
+    % are scaled down if they would overflow the margins.
+    \makeatletter
+    \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth
+    \else\Gin@nat@width\fi}
+    \makeatother
+    \let\Oldincludegraphics\includegraphics
+    % Set max figure width to be 80% of text width, for now hardcoded.
+    \renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=.8\maxwidth]{#1}}
+    % Ensure that by default, figures have no caption (until we provide a
+    % proper Figure object with a Caption API and a way to capture that
+    % in the conversion process - todo).
+    \usepackage{caption}
+    \DeclareCaptionLabelFormat{nolabel}{}
+    \captionsetup{labelformat=nolabel}
+
+    \usepackage{adjustbox} % Used to constrain images to a maximum size 
+    \usepackage{xcolor} % Allow colors to be defined
+    \usepackage{enumerate} % Needed for markdown enumerations to work
+    \usepackage{geometry} % Used to adjust the document margins
+    \usepackage{amsmath} % Equations
+    \usepackage{amssymb} % Equations
+    \usepackage{textcomp} % defines textquotesingle
+    % Hack from http://tex.stackexchange.com/a/47451/13684:
+    \AtBeginDocument{%
+        \def\PYZsq{\textquotesingle}% Upright quotes in Pygmentized code
+    }
+    \usepackage{upquote} % Upright quotes for verbatim code
+    \usepackage{eurosym} % defines \euro
+    \usepackage[mathletters]{ucs} % Extended unicode (utf-8) support
+    \usepackage[utf8x]{inputenc} % Allow utf-8 characters in the tex document
+    \usepackage{fancyvrb} % verbatim replacement that allows latex
+    \usepackage{grffile} % extends the file name processing of package graphics 
+                         % to support a larger range 
+    % The hyperref package gives us a pdf with properly built
+    % internal navigation ('pdf bookmarks' for the table of contents,
+    % internal cross-reference links, web links for URLs, etc.)
+    \usepackage{hyperref}
+    \usepackage{longtable} % longtable support required by pandoc >1.10
+    \usepackage{booktabs}  % table support for pandoc > 1.12.2
+    \usepackage[inline]{enumitem} % IRkernel/repr support (it uses the enumerate* environment)
+    \usepackage[normalem]{ulem} % ulem is needed to support strikethroughs (\sout)
+                                % normalem makes italics be italics, not underlines
+    
+
+    
+    
+    % Colors for the hyperref package
+    \definecolor{urlcolor}{rgb}{0,.145,.698}
+    \definecolor{linkcolor}{rgb}{.71,0.21,0.01}
+    \definecolor{citecolor}{rgb}{.12,.54,.11}
+
+    % ANSI colors
+    \definecolor{ansi-black}{HTML}{3E424D}
+    \definecolor{ansi-black-intense}{HTML}{282C36}
+    \definecolor{ansi-red}{HTML}{E75C58}
+    \definecolor{ansi-red-intense}{HTML}{B22B31}
+    \definecolor{ansi-green}{HTML}{00A250}
+    \definecolor{ansi-green-intense}{HTML}{007427}
+    \definecolor{ansi-yellow}{HTML}{DDB62B}
+    \definecolor{ansi-yellow-intense}{HTML}{B27D12}
+    \definecolor{ansi-blue}{HTML}{208FFB}
+    \definecolor{ansi-blue-intense}{HTML}{0065CA}
+    \definecolor{ansi-magenta}{HTML}{D160C4}
+    \definecolor{ansi-magenta-intense}{HTML}{A03196}
+    \definecolor{ansi-cyan}{HTML}{60C6C8}
+    \definecolor{ansi-cyan-intense}{HTML}{258F8F}
+    \definecolor{ansi-white}{HTML}{C5C1B4}
+    \definecolor{ansi-white-intense}{HTML}{A1A6B2}
+
+    % commands and environments needed by pandoc snippets
+    % extracted from the output of `pandoc -s`
+    \providecommand{\tightlist}{%
+      \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+    \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+    % Add ',fontsize=\small' for more characters per line
+    \newenvironment{Shaded}{}{}
+    \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{{#1}}}
+    \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{{#1}}}}
+    \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{{#1}}}
+    \newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{{#1}}}
+    \newcommand{\RegionMarkerTok}[1]{{#1}}
+    \newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\NormalTok}[1]{{#1}}
+    
+    % Additional commands for more recent versions of Pandoc
+    \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{{#1}}}
+    \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{{#1}}}
+    \newcommand{\ImportTok}[1]{{#1}}
+    \newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{{#1}}}}
+    \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{{#1}}}
+    \newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{{#1}}}
+    \newcommand{\BuiltInTok}[1]{{#1}}
+    \newcommand{\ExtensionTok}[1]{{#1}}
+    \newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{{#1}}}
+    \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{{#1}}}
+    \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    
+    
+    % Define a nice break command that doesn't care if a line doesn't already
+    % exist.
+    \def\br{\hspace*{\fill} \\* }
+    % Math Jax compatability definitions
+    \def\gt{>}
+    \def\lt{<}
+    % Document parameters
+    \title{tedx}
+    
+    
+    
+
+    % Pygments definitions
+    
+\makeatletter
+\def\PY@reset{\let\PY@it=\relax \let\PY@bf=\relax%
+    \let\PY@ul=\relax \let\PY@tc=\relax%
+    \let\PY@bc=\relax \let\PY@ff=\relax}
+\def\PY@tok#1{\csname PY@tok@#1\endcsname}
+\def\PY@toks#1+{\ifx\relax#1\empty\else%
+    \PY@tok{#1}\expandafter\PY@toks\fi}
+\def\PY@do#1{\PY@bc{\PY@tc{\PY@ul{%
+    \PY@it{\PY@bf{\PY@ff{#1}}}}}}}
+\def\PY#1#2{\PY@reset\PY@toks#1+\relax+\PY@do{#2}}
+
+\expandafter\def\csname PY@tok@w\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.73,0.73}{##1}}}
+\expandafter\def\csname PY@tok@c\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.74,0.48,0.00}{##1}}}
+\expandafter\def\csname PY@tok@k\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.69,0.00,0.25}{##1}}}
+\expandafter\def\csname PY@tok@o\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ow\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@ne\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.82,0.25,0.23}{##1}}}
+\expandafter\def\csname PY@tok@nv\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@no\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ni\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.60,0.60,0.60}{##1}}}
+\expandafter\def\csname PY@tok@na\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.49,0.56,0.16}{##1}}}
+\expandafter\def\csname PY@tok@nt\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@s\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sd\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@si\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@se\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sr\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@ss\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sx\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@m\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@gh\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gu\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.50,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gr\endcsname{\def\PY@tc##1{\textcolor[rgb]{1.00,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ge\endcsname{\let\PY@it=\textit}
+\expandafter\def\csname PY@tok@gs\endcsname{\let\PY@bf=\textbf}
+\expandafter\def\csname PY@tok@gp\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@go\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\expandafter\def\csname PY@tok@gt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.27,0.87}{##1}}}
+\expandafter\def\csname PY@tok@err\endcsname{\def\PY@bc##1{\setlength{\fboxsep}{0pt}\fcolorbox[rgb]{1.00,0.00,0.00}{1,1,1}{\strut ##1}}}
+\expandafter\def\csname PY@tok@kc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kd\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kr\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@bp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@fm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@vc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vg\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sa\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@dl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s2\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s1\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@mb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@il\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mo\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ch\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cm\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cpf\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@c1\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cs\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+
+\def\PYZbs{\char`\\}
+\def\PYZus{\char`\_}
+\def\PYZob{\char`\{}
+\def\PYZcb{\char`\}}
+\def\PYZca{\char`\^}
+\def\PYZam{\char`\&}
+\def\PYZlt{\char`\<}
+\def\PYZgt{\char`\>}
+\def\PYZsh{\char`\#}
+\def\PYZpc{\char`\%}
+\def\PYZdl{\char`\$}
+\def\PYZhy{\char`\-}
+\def\PYZsq{\char`\'}
+\def\PYZdq{\char`\"}
+\def\PYZti{\char`\~}
+% for compatibility with earlier versions
+\def\PYZat{@}
+\def\PYZlb{[}
+\def\PYZrb{]}
+\makeatother
+
+
+    % Exact colors from NB
+    \definecolor{incolor}{rgb}{0.0, 0.0, 0.5}
+    \definecolor{outcolor}{rgb}{0.545, 0.0, 0.0}
+
+
+
+    
+    % Prevent overflowing lines due to hard-to-break entities
+    \sloppy 
+    % Setup hyperref package
+    \hypersetup{
+      breaklinks=true,  % so long urls are correctly broken across lines
+      colorlinks=true,
+      urlcolor=urlcolor,
+      linkcolor=linkcolor,
+      citecolor=citecolor,
+      }
+    % Slightly bigger margins than the latex defaults
+    
+    \geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+    
+    
+
+    \begin{document}
+    
+    
+    \maketitle
+    
+    
+
+    
+    \section{TEDx}\label{tedx}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}3}]:} \PY{k+kn}{import} \PY{n+nn}{pandas} \PY{k}{as} \PY{n+nn}{pd}
+        \PY{k+kn}{import} \PY{n+nn}{matplotlib}\PY{n+nn}{.}\PY{n+nn}{pyplot} \PY{k}{as} \PY{n+nn}{plt}
+        \PY{o}{\PYZpc{}}\PY{k}{matplotlib} inline
+        \PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k}{as} \PY{n+nn}{np}
+        \PY{k+kn}{import} \PY{n+nn}{seaborn} \PY{k}{as} \PY{n+nn}{sns}\PY{p}{;} \PY{n}{sns}\PY{o}{.}\PY{n}{set}\PY{p}{(}\PY{p}{)}
+        \PY{k+kn}{from} \PY{n+nn}{urllib}\PY{n+nn}{.}\PY{n+nn}{request} \PY{k}{import} \PY{n}{urlretrieve}
+        \PY{k+kn}{from} \PY{n+nn}{IPython}\PY{n+nn}{.}\PY{n+nn}{display} \PY{k}{import} \PY{n}{clear\PYZus{}output}
+        \PY{k+kn}{import} \PY{n+nn}{cv2}
+        \PY{k+kn}{from} \PY{n+nn}{PIL} \PY{k}{import} \PY{n}{Image}
+        \PY{k+kn}{from} \PY{n+nn}{sklearn}\PY{n+nn}{.}\PY{n+nn}{metrics}\PY{n+nn}{.}\PY{n+nn}{cluster} \PY{k}{import} \PY{n}{entropy} \PY{k}{as} \PY{n}{sklearn\PYZus{}entropy}
+        \PY{k+kn}{from} \PY{n+nn}{skimage} \PY{k}{import} \PY{n}{io}\PY{p}{,} \PY{n}{color}\PY{p}{,} \PY{n}{img\PYZus{}as\PYZus{}ubyte}
+        \PY{k+kn}{from} \PY{n+nn}{vaderSentiment}\PY{n+nn}{.}\PY{n+nn}{vaderSentiment} \PY{k}{import} \PY{n}{SentimentIntensityAnalyzer}
+        \PY{k+kn}{import} \PY{n+nn}{string}
+        \PY{k+kn}{from} \PY{n+nn}{textblob} \PY{k}{import} \PY{n}{TextBlob}
+        \PY{k+kn}{import} \PY{n+nn}{traceback}
+        \PY{k+kn}{import} \PY{n+nn}{json}
+        \PY{k+kn}{import} \PY{n+nn}{requests}
+        \PY{k+kn}{import} \PY{n+nn}{time}
+        \PY{k+kn}{from} \PY{n+nn}{bs4} \PY{k}{import} \PY{n}{BeautifulSoup}
+\end{Verbatim}
+
+
+    Let's check how the DF looks
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}2}]:} \PY{n}{df} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}excel}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{data/data\PYZus{}ted.xlsx}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+        \PY{n}{df}\PY{o}{.}\PY{n}{head}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}2}]:}      Licensees.name                  Events.name  \textbackslash{}
+        0  TEDxRíodelaPlata        CanalTEDxRiodelaPlata   
+        1  TEDxRíodelaPlata         TEDxRiodelaPlata2013   
+        2  TEDxRíodelaPlata  TEDxJoven@RiodelaPlata 2011   
+        3  TEDxRíodelaPlata         TEDxRiodelaPlata2014   
+        4  TEDxRíodelaPlata         TEDxRiodelaPlata2015   
+        
+                                      Videos.id Videos.videoid  \textbackslash{}
+        0  72321a94-f58e-47a2-9071-40a5ae54091e    qJzRzdsGhC0   
+        1  ea1705b1-2eb7-4782-a9d3-4f88fcc0de5a    EFdEmbuikOw   
+        2  54489a1b-12e8-4e5a-b9aa-bba37452309d    nZV1uefYywI   
+        3  e5a40182-5cec-4e28-afe6-784750a83cd3    jej8qlzlAGw   
+        4  ea927c7b-c454-4fa4-ae54-86900daa0fff    c1iMoel2LxA   
+        
+                                                Videos.title  \textbackslash{}
+        0  Flash Mob en TEDxRiodelaPlata 2013 - El Brindi{\ldots}   
+        1  Nunca pidas permiso | Ronald Shakespear | TEDx{\ldots}   
+        2  Sobre fideos y jabones: Luciano Mellera at TED{\ldots}   
+        3  Las matematicas son para siempre | Eduardo Sae{\ldots}   
+        4  Secretos de la relación corazón-cerebro | Luci{\ldots}   
+        
+                                            Videos.url  \textbackslash{}
+        0  https://www.youtube.com/watch?v=qJzRzdsGhC0   
+        1  https://www.youtube.com/watch?v=EFdEmbuikOw   
+        2  https://www.youtube.com/watch?v=nZV1uefYywI   
+        3  https://www.youtube.com/watch?v=jej8qlzlAGw   
+        4  https://www.youtube.com/watch?v=c1iMoel2LxA   
+        
+                                             Videos.url\_img  \textbackslash{}
+        0  https://i.ytimg.com/vi/qJzRzdsGhC0/hqdefault.jpg   
+        1  https://i.ytimg.com/vi/EFdEmbuikOw/hqdefault.jpg   
+        2  https://i.ytimg.com/vi/nZV1uefYywI/hqdefault.jpg   
+        3  https://i.ytimg.com/vi/jej8qlzlAGw/hqdefault.jpg   
+        4  https://i.ytimg.com/vi/c1iMoel2LxA/hqdefault.jpg   
+        
+                                          Videos.description  Videos.published\_at  \textbackslash{}
+        0  Para más videos de TEDxRíodelaPlata: http://ww{\ldots}  2013-10-03 12:55:37   
+        1  Para más charlas de TEDxRíodelaPlata: http://w{\ldots}  2013-10-31 19:51:19   
+        2  Más info en www.tedxriodelaplata.org.\textbackslash{}nLuciano{\ldots}  2011-06-01 17:30:41   
+        3  Never miss a talk! SUBSCRIBE to the TEDx chann{\ldots}  2014-10-14 10:50:29   
+        4  ¿Cómo se relacionan el cerebro con el corazón?{\ldots}  2015-11-04 18:54:43   
+        
+                   Videos.channelid Videos.channel\_title  \textbackslash{}
+        0  UC2cxH4jnmI8DsosmHtCbR0Q     TEDxRiodelaPlata   
+        1  UCsT0YIqwnpJCM-mx7-gSA4Q           TEDx Talks   
+        2  UC-yTB2bUcin9mmah36sXiYA            TEDxYouth   
+        3  UCsT0YIqwnpJCM-mx7-gSA4Q           TEDx Talks   
+        4  UCsT0YIqwnpJCM-mx7-gSA4Q           TEDx Talks   
+        
+                                                 Videos.tags  Videos.view\_count  \textbackslash{}
+        0                                                NaN            2535385   
+        1  Diseño,TEDx,Español,tedx talks,Logos,tedx,Hist{\ldots}            1449486   
+        2  Luciano,Mellera,Argentina,Buenos Aires,Spanish{\ldots}            1037443   
+        3  tedx talk,Science (hard),Culture,Spanish,Mathe{\ldots}             902644   
+        4  TEDxTalks,Spanish,Argentina,Science (hard),Bra{\ldots}             879428   
+        
+           Videos.like\_count  Videos.dislike\_count  Videos.comment\_count  \textbackslash{}
+        0              13638                   247                   638   
+        1              14672                   957                   651   
+        2               5648                   233                   256   
+        3              28715                   283                   607   
+        4              14275                   498                   198   
+        
+                                Videos.users\_id  Videos.licensees\_id  \textbackslash{}
+        0  3f27df36-f72f-4466-bb82-ec9ecbdc95f8                  NaN   
+        1  3f9a6843-2784-4b94-9c41-2b38b8296702                  NaN   
+        2  3f9a6843-2784-4b94-9c41-2b38b8296702                  NaN   
+        3  3f9a6843-2784-4b94-9c41-2b38b8296702                  NaN   
+        4  3f9a6843-2784-4b94-9c41-2b38b8296702                  NaN   
+        
+                Videos.created      Videos.modified  
+        0  2017-12-06 18:32:44  2018-06-03 18:11:24  
+        1  2017-10-06 13:54:54  2018-06-03 18:11:27  
+        2  2017-12-04 16:50:37  2018-06-03 18:11:23  
+        3  2017-10-06 13:54:58  2018-06-03 18:11:27  
+        4  2017-10-06 13:55:08  2018-06-03 18:11:27  
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}3}]:} \PY{n}{df}\PY{o}{.}\PY{n}{columns}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}3}]:} Index(['Licensees.name', 'Events.name', 'Videos.id', 'Videos.videoid',
+               'Videos.title', 'Videos.url', 'Videos.url\_img', 'Videos.description',
+               'Videos.published\_at', 'Videos.channelid', 'Videos.channel\_title',
+               'Videos.tags', 'Videos.view\_count', 'Videos.like\_count',
+               'Videos.dislike\_count', 'Videos.comment\_count', 'Videos.users\_id',
+               'Videos.licensees\_id', 'Videos.created', 'Videos.modified'],
+              dtype='object')
+\end{Verbatim}
+            
+    Unique values
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}4}]:} \PY{n}{df}\PY{o}{.}\PY{n}{nunique}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}4}]:} Licensees.name            1
+        Events.name              15
+        Videos.id               265
+        Videos.videoid          265
+        Videos.title            265
+        Videos.url              265
+        Videos.url\_img          265
+        Videos.description      257
+        Videos.published\_at     259
+        Videos.channelid          3
+        Videos.channel\_title      3
+        Videos.tags             240
+        Videos.view\_count       265
+        Videos.like\_count       217
+        Videos.dislike\_count     82
+        Videos.comment\_count     97
+        Videos.users\_id           5
+        Videos.licensees\_id       0
+        Videos.created          183
+        Videos.modified           7
+        dtype: int64
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}5}]:} \PY{n}{df} \PY{o}{=} \PY{n}{df}\PY{o}{.}\PY{n}{drop}\PY{p}{(}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Licensees.name}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Videos.licensees\PYZus{}id}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{axis}\PY{o}{=}\PY{l+m+mi}{1}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}6}]:} \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Events.name}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{unique}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}6}]:} array(['CanalTEDxRiodelaPlata', 'TEDxRiodelaPlata2013',
+               'TEDxJoven@RiodelaPlata 2011', 'TEDxRiodelaPlata2014',
+               'TEDxRiodelaPlata2015', 'TEDxRiodelaPlata2011',
+               'TEDxRiodelaPlata2017', 'TEDxRiodelaPlataED2015',
+               'TEDxRiodelaPlata2016', 'TEDxRiodelaPlata2012', 'TEDxChange',
+               'TEDxBuenosAires2010', 'TEDxJoven@RiodelaPlata 2012',
+               'TEDxRiodelaPlata2010', 'TEDxRiodelaPlataSalon2016'], dtype=object)
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}7}]:} \PY{k}{def} \PY{n+nf}{graph\PYZus{}categorical\PYZus{}dist}\PY{p}{(}\PY{n}{feature}\PY{p}{,} \PY{n}{rotation}\PY{o}{=}\PY{k+kc}{False}\PY{p}{)}\PY{p}{:}
+            \PY{n}{fig}\PY{p}{,} \PY{n}{ax} \PY{o}{=} \PY{n}{plt}\PY{o}{.}\PY{n}{subplots}\PY{p}{(}\PY{n}{figsize}\PY{o}{=}\PY{p}{(}\PY{l+m+mi}{30}\PY{p}{,}\PY{l+m+mi}{15}\PY{p}{)}\PY{p}{)}
+            \PY{n}{sns}\PY{o}{.}\PY{n}{countplot}\PY{p}{(}\PY{n}{data}\PY{o}{=}\PY{n}{df}\PY{p}{,} \PY{n}{x}\PY{o}{=}\PY{n}{feature}\PY{p}{)}
+            \PY{n}{plt}\PY{o}{.}\PY{n}{xlabel}\PY{p}{(}\PY{n}{feature}\PY{p}{,} \PY{n}{fontsize}\PY{o}{=}\PY{l+m+mi}{20}\PY{p}{)}
+            \PY{n}{plt}\PY{o}{.}\PY{n}{ylabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{count}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{fontsize}\PY{o}{=}\PY{l+m+mi}{20}\PY{p}{)}
+            \PY{n}{plt}\PY{o}{.}\PY{n}{title}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Distribution of }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{feature}\PY{p}{,} \PY{n}{fontsize}\PY{o}{=}\PY{l+m+mi}{25}\PY{p}{)}
+            \PY{k}{for} \PY{n}{tick} \PY{o+ow}{in} \PY{n}{ax}\PY{o}{.}\PY{n}{xaxis}\PY{o}{.}\PY{n}{get\PYZus{}major\PYZus{}ticks}\PY{p}{(}\PY{p}{)}\PY{p}{:}
+                \PY{n}{tick}\PY{o}{.}\PY{n}{label}\PY{o}{.}\PY{n}{set\PYZus{}fontsize}\PY{p}{(}\PY{l+m+mi}{20}\PY{p}{)} 
+                \PY{k}{if} \PY{n}{rotation}\PY{p}{:}
+                    \PY{n}{tick}\PY{o}{.}\PY{n}{label}\PY{o}{.}\PY{n}{set\PYZus{}rotation}\PY{p}{(}\PY{n}{rotation}\PY{p}{)}
+            \PY{n}{sns}\PY{o}{.}\PY{n}{despine}\PY{p}{(}\PY{p}{)}
+            \PY{n}{plt}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{p}{)}\PY{p}{;}
+\end{Verbatim}
+
+
+    Let's check the distribution of events
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}8}]:} \PY{n}{graph\PYZus{}categorical\PYZus{}dist}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Events.name}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{rotation}\PY{o}{=}\PY{l+m+mi}{60}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_11_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    Let's check distribution of channels
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}9}]:} \PY{n}{graph\PYZus{}categorical\PYZus{}dist}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Videos.channel\PYZus{}title}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_13_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}10}]:} \PY{n}{df} \PY{o}{=} \PY{n}{df}\PY{o}{.}\PY{n}{drop}\PY{p}{(}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Videos.videoid}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Videos.url}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Videos.description}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Videos.users\PYZus{}id}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Videos.published\PYZus{}at}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Videos.channelid}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Videos.channel\PYZus{}title}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Videos.modified}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{axis}\PY{o}{=}\PY{l+m+mi}{1}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}11}]:} \PY{n}{df}\PY{o}{.}\PY{n}{columns} \PY{o}{=} \PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{event\PYZus{}name}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{video\PYZus{}id}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{title}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{url\PYZus{}thumb}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{tags}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{view\PYZus{}count}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{like\PYZus{}count}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{dislike\PYZus{}count}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{comment\PYZus{}count}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{created}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}
+         \PY{n}{df}\PY{o}{.}\PY{n}{head}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}11}]:}                     event\_name                              video\_id  \textbackslash{}
+         0        CanalTEDxRiodelaPlata  72321a94-f58e-47a2-9071-40a5ae54091e   
+         1         TEDxRiodelaPlata2013  ea1705b1-2eb7-4782-a9d3-4f88fcc0de5a   
+         2  TEDxJoven@RiodelaPlata 2011  54489a1b-12e8-4e5a-b9aa-bba37452309d   
+         3         TEDxRiodelaPlata2014  e5a40182-5cec-4e28-afe6-784750a83cd3   
+         4         TEDxRiodelaPlata2015  ea927c7b-c454-4fa4-ae54-86900daa0fff   
+         
+                                                        title  \textbackslash{}
+         0  Flash Mob en TEDxRiodelaPlata 2013 - El Brindi{\ldots}   
+         1  Nunca pidas permiso | Ronald Shakespear | TEDx{\ldots}   
+         2  Sobre fideos y jabones: Luciano Mellera at TED{\ldots}   
+         3  Las matematicas son para siempre | Eduardo Sae{\ldots}   
+         4  Secretos de la relación corazón-cerebro | Luci{\ldots}   
+         
+                                                   url\_thumb  \textbackslash{}
+         0  https://i.ytimg.com/vi/qJzRzdsGhC0/hqdefault.jpg   
+         1  https://i.ytimg.com/vi/EFdEmbuikOw/hqdefault.jpg   
+         2  https://i.ytimg.com/vi/nZV1uefYywI/hqdefault.jpg   
+         3  https://i.ytimg.com/vi/jej8qlzlAGw/hqdefault.jpg   
+         4  https://i.ytimg.com/vi/c1iMoel2LxA/hqdefault.jpg   
+         
+                                                         tags  view\_count  like\_count  \textbackslash{}
+         0                                                NaN     2535385       13638   
+         1  Diseño,TEDx,Español,tedx talks,Logos,tedx,Hist{\ldots}     1449486       14672   
+         2  Luciano,Mellera,Argentina,Buenos Aires,Spanish{\ldots}     1037443        5648   
+         3  tedx talk,Science (hard),Culture,Spanish,Mathe{\ldots}      902644       28715   
+         4  TEDxTalks,Spanish,Argentina,Science (hard),Bra{\ldots}      879428       14275   
+         
+            dislike\_count  comment\_count              created  
+         0            247            638  2017-12-06 18:32:44  
+         1            957            651  2017-10-06 13:54:54  
+         2            233            256  2017-12-04 16:50:37  
+         3            283            607  2017-10-06 13:54:58  
+         4            498            198  2017-10-06 13:55:08  
+\end{Verbatim}
+            
+    From "Engagement and Popularity Dynamics of YouTube Videos and
+Sensitivity to Meta-Data":
+\texttt{Meta\ features\ from\ thumbnails:\ blurriness\ (e.g.,\ CannyEdge,\ Laplace\ Frequency),\ brightness,\ contrast\ (e.g.,\ tone),\ overexposure,\ and\ entropy\ of\ the\ thumbnail.}
+blurriness:
+`https://www.pyimagesearch.com/2015/09/07/blur-detection-with-opencv/
+
+    Saturacion, profundidad de campo, balance de blancos, r, g y b, ruido,
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}12}]:} \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{blurriness}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{l+m+mf}{0.0}
+         \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{brightness}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{l+m+mf}{0.0}
+         \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{contrast}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{l+m+mf}{0.0}  \PY{c+c1}{\PYZsh{} HOW?!}
+         \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{overexposure}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{l+m+mf}{0.0}  \PY{c+c1}{\PYZsh{} HOW?}
+         \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{entropy}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{l+m+mf}{0.0}
+         \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{avg\PYZus{}color}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{empty}\PY{p}{(}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{df}\PY{p}{)}\PY{p}{,} \PY{l+m+mi}{0}\PY{p}{)}\PY{p}{)}\PY{o}{.}\PY{n}{tolist}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}13}]:} \PY{k}{def} \PY{n+nf}{blurriness}\PY{p}{(}\PY{n}{path}\PY{p}{)}\PY{p}{:}
+             \PY{c+c1}{\PYZsh{} compute the Laplacian of the image and then return the focus}
+             \PY{c+c1}{\PYZsh{} measure, which is simply the variance of the Laplacian}
+             \PY{n}{image} \PY{o}{=} \PY{n}{cv2}\PY{o}{.}\PY{n}{imread}\PY{p}{(}\PY{n}{path}\PY{p}{)}
+             \PY{n}{gray} \PY{o}{=} \PY{n}{cv2}\PY{o}{.}\PY{n}{cvtColor}\PY{p}{(}\PY{n}{image}\PY{p}{,} \PY{n}{cv2}\PY{o}{.}\PY{n}{COLOR\PYZus{}BGR2GRAY}\PY{p}{)}
+             \PY{k}{return} \PY{n}{cv2}\PY{o}{.}\PY{n}{Laplacian}\PY{p}{(}\PY{n}{image}\PY{p}{,} \PY{n}{cv2}\PY{o}{.}\PY{n}{CV\PYZus{}64F}\PY{p}{)}\PY{o}{.}\PY{n}{var}\PY{p}{(}\PY{p}{)}
+         
+         
+         \PY{k}{def} \PY{n+nf}{brightness}\PY{p}{(}\PY{n}{path}\PY{p}{)}\PY{p}{:}
+             \PY{n}{image} \PY{o}{=} \PY{n}{Image}\PY{o}{.}\PY{n}{open}\PY{p}{(}\PY{n}{path}\PY{p}{)}
+             \PY{n}{greyscale\PYZus{}image} \PY{o}{=} \PY{n}{image}\PY{o}{.}\PY{n}{convert}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{L}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             \PY{n}{histogram} \PY{o}{=} \PY{n}{greyscale\PYZus{}image}\PY{o}{.}\PY{n}{histogram}\PY{p}{(}\PY{p}{)}
+             \PY{n}{pixels} \PY{o}{=} \PY{n+nb}{sum}\PY{p}{(}\PY{n}{histogram}\PY{p}{)}
+             \PY{n}{brightness} \PY{o}{=} \PY{n}{scale} \PY{o}{=} \PY{n+nb}{len}\PY{p}{(}\PY{n}{histogram}\PY{p}{)}
+         
+             \PY{k}{for} \PY{n}{index} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,} \PY{n}{scale}\PY{p}{)}\PY{p}{:}
+                 \PY{n}{ratio} \PY{o}{=} \PY{n}{histogram}\PY{p}{[}\PY{n}{index}\PY{p}{]} \PY{o}{/} \PY{n}{pixels}
+                 \PY{n}{brightness} \PY{o}{+}\PY{o}{=} \PY{n}{ratio} \PY{o}{*} \PY{p}{(}\PY{o}{\PYZhy{}}\PY{n}{scale} \PY{o}{+} \PY{n}{index}\PY{p}{)}
+         
+             \PY{k}{return} \PY{l+m+mi}{1} \PY{k}{if} \PY{n}{brightness} \PY{o}{==} \PY{l+m+mi}{255} \PY{k}{else} \PY{n}{brightness} \PY{o}{/} \PY{n}{scale}
+         
+         \PY{k}{def} \PY{n+nf}{avg\PYZus{}color}\PY{p}{(}\PY{n}{path}\PY{p}{)}\PY{p}{:}
+             \PY{n}{img} \PY{o}{=} \PY{n}{Image}\PY{o}{.}\PY{n}{open}\PY{p}{(}\PY{n}{path}\PY{p}{)}
+             \PY{n}{width}\PY{p}{,} \PY{n}{height} \PY{o}{=} \PY{n}{img}\PY{o}{.}\PY{n}{size}
+         
+             \PY{n}{r\PYZus{}total} \PY{o}{=} \PY{l+m+mi}{0}
+             \PY{n}{g\PYZus{}total} \PY{o}{=} \PY{l+m+mi}{0}
+             \PY{n}{b\PYZus{}total} \PY{o}{=} \PY{l+m+mi}{0}
+         
+             \PY{n}{count} \PY{o}{=} \PY{l+m+mi}{0}
+             \PY{k}{for} \PY{n}{x} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,} \PY{n}{width}\PY{p}{)}\PY{p}{:}
+                 \PY{k}{for} \PY{n}{y} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,} \PY{n}{height}\PY{p}{)}\PY{p}{:}
+                     \PY{n}{r}\PY{p}{,} \PY{n}{g}\PY{p}{,} \PY{n}{b} \PY{o}{=} \PY{n}{img}\PY{o}{.}\PY{n}{getpixel}\PY{p}{(}\PY{p}{(}\PY{n}{x}\PY{p}{,}\PY{n}{y}\PY{p}{)}\PY{p}{)}
+                     \PY{n}{r\PYZus{}total} \PY{o}{+}\PY{o}{=} \PY{n}{r}
+                     \PY{n}{g\PYZus{}total} \PY{o}{+}\PY{o}{=} \PY{n}{g}
+                     \PY{n}{b\PYZus{}total} \PY{o}{+}\PY{o}{=} \PY{n}{b}
+                     \PY{n}{count} \PY{o}{+}\PY{o}{=} \PY{l+m+mi}{1}
+         
+             \PY{k}{return} \PY{p}{(}\PY{n}{r\PYZus{}total}\PY{o}{/}\PY{n}{count}\PY{p}{,} \PY{n}{g\PYZus{}total}\PY{o}{/}\PY{n}{count}\PY{p}{,} \PY{n}{b\PYZus{}total}\PY{o}{/}\PY{n}{count}\PY{p}{)}
+         
+         \PY{k}{def} \PY{n+nf}{entropy}\PY{p}{(}\PY{n}{path}\PY{p}{)}\PY{p}{:}
+             \PY{n}{rgbImg} \PY{o}{=} \PY{n}{io}\PY{o}{.}\PY{n}{imread}\PY{p}{(}\PY{n}{path}\PY{p}{)}
+             \PY{n}{grayImg} \PY{o}{=} \PY{n}{img\PYZus{}as\PYZus{}ubyte}\PY{p}{(}\PY{n}{color}\PY{o}{.}\PY{n}{rgb2gray}\PY{p}{(}\PY{n}{rgbImg}\PY{p}{)}\PY{p}{)}
+             \PY{k}{return} \PY{n}{sklearn\PYZus{}entropy}\PY{p}{(}\PY{n}{grayImg}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}14}]:} \PY{k}{for} \PY{n}{i}\PY{p}{,} \PY{n}{row} \PY{o+ow}{in} \PY{n}{df}\PY{o}{.}\PY{n}{iterrows}\PY{p}{(}\PY{p}{)}\PY{p}{:}
+             \PY{n}{name} \PY{o}{=} \PY{n}{row}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{url\PYZus{}thumb}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{/}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mi}{2}\PY{p}{]}
+             \PY{n}{link} \PY{o}{=} \PY{n}{row}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{url\PYZus{}thumb}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}
+             \PY{n}{path} \PY{o}{=} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{data/thumbnails/}\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s2}{.jpg}\PY{l+s+s2}{\PYZdq{}} \PY{o}{\PYZpc{}} \PY{n}{name}
+             \PY{n}{urlretrieve}\PY{p}{(}\PY{n}{link}\PY{p}{,} \PY{n}{path}\PY{p}{)}
+             \PY{n}{clear\PYZus{}output}\PY{p}{(}\PY{n}{wait}\PY{o}{=}\PY{k+kc}{True}\PY{p}{)}
+             \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Retrieved }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s2}{: }\PY{l+s+si}{\PYZpc{}d}\PY{l+s+s2}{\PYZdq{}} \PY{o}{\PYZpc{}} \PY{p}{(}\PY{n}{name}\PY{p}{,} \PY{n}{i}\PY{p}{)}\PY{p}{)}
+             \PY{n}{df}\PY{o}{.}\PY{n}{at}\PY{p}{[}\PY{n}{i}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{blurriness}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{blurriness}\PY{p}{(}\PY{n}{path}\PY{p}{)}
+             \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Computed blurriness }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s2}{: }\PY{l+s+si}{\PYZpc{}d}\PY{l+s+s2}{\PYZdq{}} \PY{o}{\PYZpc{}} \PY{p}{(}\PY{n}{name}\PY{p}{,} \PY{n}{i}\PY{p}{)}\PY{p}{)}
+             \PY{n}{df}\PY{o}{.}\PY{n}{at}\PY{p}{[}\PY{n}{i}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{brightness}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{brightness}\PY{p}{(}\PY{n}{path}\PY{p}{)}
+             \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Computed brightness }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s2}{: }\PY{l+s+si}{\PYZpc{}d}\PY{l+s+s2}{\PYZdq{}} \PY{o}{\PYZpc{}} \PY{p}{(}\PY{n}{name}\PY{p}{,} \PY{n}{i}\PY{p}{)}\PY{p}{)}    
+             \PY{n}{df}\PY{o}{.}\PY{n}{at}\PY{p}{[}\PY{n}{i}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{avg\PYZus{}color}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{avg\PYZus{}color}\PY{p}{(}\PY{n}{path}\PY{p}{)}
+             \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Computed avg\PYZus{}color }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s2}{: }\PY{l+s+si}{\PYZpc{}d}\PY{l+s+s2}{\PYZdq{}} \PY{o}{\PYZpc{}} \PY{p}{(}\PY{n}{name}\PY{p}{,} \PY{n}{i}\PY{p}{)}\PY{p}{)}
+             \PY{n}{df}\PY{o}{.}\PY{n}{at}\PY{p}{[}\PY{n}{i}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{entropy}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{entropy}\PY{p}{(}\PY{n}{path}\PY{p}{)}
+             \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Computed entropy }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s2}{: }\PY{l+s+si}{\PYZpc{}d}\PY{l+s+s2}{\PYZdq{}} \PY{o}{\PYZpc{}} \PY{p}{(}\PY{n}{name}\PY{p}{,} \PY{n}{i}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+Retrieved M-QkaJSMR9M: 264
+Computed blurriness M-QkaJSMR9M: 264
+Computed brightness M-QkaJSMR9M: 264
+Computed avg\_color M-QkaJSMR9M: 264
+Computed entropy M-QkaJSMR9M: 264
+
+    \end{Verbatim}
+
+    From "Engagement and Popularity Dynamics of YouTube Videos and
+Sensitivity to Meta-Data":
+\texttt{word\ count,\ punctuation\ count,\ character\ count,\ Google\ hits\ (e.g.,\ if\ the\ title\ is\ entered\ into\ the\ Google\ search\ engine\ how\ many\ results\ are\ found),\ and\ the\ Sentiment/Subjectivity\ of\ the\ title\ computed\ using\ Vader\ {[}30{]},\ and\ TextBlob.}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}16}]:} \PY{n}{df}\PY{o}{.}\PY{n}{title}\PY{o}{.}\PY{n}{sample}\PY{p}{(}\PY{l+m+mi}{10}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}16}]:} 142    Bullying -- de la culpa a la vergüenza | Paula{\ldots}
+         219    Mis alumnos y las calles del pueblo | Miguel Á{\ldots}
+         29     Te invito a creer: Manuel Lozano at TEDxRiodel{\ldots}
+         254    Transformar la educación en América Latina | G{\ldots}
+         31     La puerta equivocada | Adrián Paenza | TEDxRio{\ldots}
+         127    Los reflejos emocionales | Hernán Laperuta | T{\ldots}
+         50     No todo es puro verso | Cristina Domenech | TE{\ldots}
+         131    TEDxBuenosAires - Marcelo Moguilevsky  - 04/08/10
+         168    ¿De qué hablan los delfines? | Marcelo Magnasc{\ldots}
+         148    TEDxBuenosAires - Mercedes Salado Puerto - 04/{\ldots}
+         Name: title, dtype: object
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}86}]:} \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{word\PYZus{}count}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{l+m+mi}{0}
+         \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{punctuation\PYZus{}count}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{l+m+mi}{0}
+         \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{character\PYZus{}count}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{l+m+mi}{0}
+         \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{google\PYZus{}hits}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{l+m+mi}{0}
+         \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{sentiment\PYZus{}vader}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{l+m+mf}{0.0}
+         \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{sentiment\PYZus{}blob\PYZus{}polarity}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{l+m+mf}{0.0}
+         \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{sentiment\PYZus{}blob\PYZus{}subjectivity}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{l+m+mf}{0.0}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}92}]:} \PY{k}{def} \PY{n+nf}{get\PYZus{}hits}\PY{p}{(}\PY{n}{searchfor}\PY{p}{)}\PY{p}{:}
+             \PY{k}{try}\PY{p}{:}
+                 \PY{n}{r} \PY{o}{=} \PY{n}{requests}\PY{o}{.}\PY{n}{get}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{http://www.google.com/search}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                                  \PY{n}{params}\PY{o}{=}\PY{p}{\PYZob{}}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{q}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{searchfor}\PY{p}{,}
+                                          \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{tbs}\PY{l+s+s2}{\PYZdq{}}\PY{p}{:}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{li:1}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{c+c1}{\PYZsh{} Google doesn\PYZsq{}t guess for alternative searchs}
+                                         \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{hl}\PY{l+s+s2}{\PYZdq{}}\PY{p}{:} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{en}\PY{l+s+s1}{\PYZsq{}}\PY{p}{\PYZcb{}}
+                                 \PY{p}{)}
+                 \PY{n}{time}\PY{o}{.}\PY{n}{sleep}\PY{p}{(}\PY{l+m+mi}{3}\PY{p}{)}  \PY{c+c1}{\PYZsh{} So google doesn\PYZsq{}t think we\PYZsq{}re bots. Wait, but we are...}
+                 \PY{n}{soup} \PY{o}{=} \PY{n}{BeautifulSoup}\PY{p}{(}\PY{n}{r}\PY{o}{.}\PY{n}{text}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{lxml}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+                 \PY{n}{hits\PYZus{}string} \PY{o}{=} \PY{n}{soup}\PY{o}{.}\PY{n}{find}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{div}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{p}{\PYZob{}}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{id}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{resultStats}\PY{l+s+s1}{\PYZsq{}}\PY{p}{\PYZcb{}}\PY{p}{)}\PY{o}{.}\PY{n}{text}
+                 \PY{n}{hits} \PY{o}{=} \PY{n+nb}{int}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZsq{}}\PY{o}{.}\PY{n}{join}\PY{p}{(}\PY{p}{[}\PY{n}{c} \PY{k}{for} \PY{n}{c} \PY{o+ow}{in} \PY{n}{hits\PYZus{}string} \PY{k}{if} \PY{n}{c}\PY{o}{.}\PY{n}{isdigit}\PY{p}{(}\PY{p}{)}\PY{p}{]}\PY{p}{)}\PY{p}{)}
+             \PY{k}{except} \PY{n+ne}{Exception} \PY{k}{as} \PY{n}{e}\PY{p}{:}
+                 \PY{n+nb}{print}\PY{p}{(}\PY{n}{e}\PY{p}{)}
+                 \PY{n+nb}{print}\PY{p}{(}\PY{n}{searchfor}\PY{p}{)}
+                 \PY{n+nb}{print}\PY{p}{(}\PY{n}{hits\PYZus{}string}\PY{p}{)}
+                 \PY{k}{raise} \PY{n}{e}
+             \PY{k}{if} \PY{n}{hits} \PY{o}{==} \PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{:}
+                 \PY{n+nb}{print}\PY{p}{(}\PY{n}{r}\PY{p}{)}
+                 \PY{n+nb}{print}\PY{p}{(}\PY{n}{hits\PYZus{}string}\PY{p}{)}
+             \PY{k}{return} \PY{n}{hits}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}94}]:} \PY{n}{words\PYZus{}series} \PY{o}{=} \PY{n}{df}\PY{o}{.}\PY{n}{title}\PY{o}{.}\PY{n}{str}\PY{o}{.}\PY{n}{strip}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{str}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{[}\PY{l+s+s1}{\PYZbs{}}\PY{l+s+s1}{W\PYZus{}]+}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n}{analyzer} \PY{o}{=} \PY{n}{SentimentIntensityAnalyzer}\PY{p}{(}\PY{p}{)}
+         \PY{n}{count} \PY{o}{=} \PY{k}{lambda} \PY{n}{l1}\PY{p}{,}\PY{n}{l2}\PY{p}{:} \PY{n+nb}{sum}\PY{p}{(}\PY{p}{[}\PY{l+m+mi}{1} \PY{k}{for} \PY{n}{x} \PY{o+ow}{in} \PY{n}{l1} \PY{k}{if} \PY{n}{x} \PY{o+ow}{in} \PY{n}{l2}\PY{p}{]}\PY{p}{)}
+         \PY{k}{for} \PY{n}{i}\PY{p}{,} \PY{n}{row} \PY{o+ow}{in} \PY{n}{df}\PY{o}{.}\PY{n}{iterrows}\PY{p}{(}\PY{p}{)}\PY{p}{:}
+             \PY{n}{df}\PY{o}{.}\PY{n}{at}\PY{p}{[}\PY{n}{i}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{word\PYZus{}count}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n+nb}{len}\PY{p}{(}\PY{n+nb}{list}\PY{p}{(}\PY{n+nb}{filter}\PY{p}{(}\PY{k+kc}{None}\PY{p}{,} \PY{n}{words\PYZus{}series}\PY{o}{.}\PY{n}{loc}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{)}\PY{p}{)}\PY{p}{)}
+             \PY{n}{df}\PY{o}{.}\PY{n}{at}\PY{p}{[}\PY{n}{i}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{punctuation\PYZus{}count}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{count}\PY{p}{(}\PY{n}{row}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{title}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n+nb}{set}\PY{p}{(}\PY{n}{string}\PY{o}{.}\PY{n}{punctuation}\PY{p}{)}\PY{p}{)}
+             \PY{n}{df}\PY{o}{.}\PY{n}{at}\PY{p}{[}\PY{n}{i}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{character\PYZus{}count}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n+nb}{len}\PY{p}{(}\PY{n}{row}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{title}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+             \PY{k}{if} \PY{n}{row}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{google\PYZus{}hits}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{\PYZlt{}}\PY{o}{=} \PY{l+m+mi}{0}\PY{p}{:} \PY{c+c1}{\PYZsh{} Sensitive, let\PYZsq{}s not recalculate in case google shuts our ip down.}
+                 \PY{n}{df}\PY{o}{.}\PY{n}{at}\PY{p}{[}\PY{n}{i}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{google\PYZus{}hits}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{get\PYZus{}hits}\PY{p}{(}\PY{n}{row}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{title}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+                 \PY{n}{df}\PY{o}{.}\PY{n}{to\PYZus{}csv}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{draft\PYZus{}saved\PYZus{}just\PYZus{}in\PYZus{}case.csv}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+             \PY{n}{df}\PY{o}{.}\PY{n}{at}\PY{p}{[}\PY{n}{i}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{sentiment\PYZus{}vader}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{analyzer}\PY{o}{.}\PY{n}{polarity\PYZus{}scores}\PY{p}{(}\PY{n}{row}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{title}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{compound}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}
+             \PY{n}{df}\PY{o}{.}\PY{n}{at}\PY{p}{[}\PY{n}{i}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{sentiment\PYZus{}blob\PYZus{}polarity}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{TextBlob}\PY{p}{(}\PY{n}{row}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{title}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{o}{.}\PY{n}{sentiment}\PY{o}{.}\PY{n}{polarity}
+             \PY{n}{df}\PY{o}{.}\PY{n}{at}\PY{p}{[}\PY{n}{i}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{sentiment\PYZus{}blob\PYZus{}subjectivity}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{TextBlob}\PY{p}{(}\PY{n}{row}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{title}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{o}{.}\PY{n}{sentiment}\PY{o}{.}\PY{n}{subjectivity}
+             \PY{n}{clear\PYZus{}output}\PY{p}{(}\PY{n}{wait}\PY{o}{=}\PY{k+kc}{True}\PY{p}{)}
+             \PY{n+nb}{print}\PY{p}{(}\PY{n}{i}\PY{p}{,} \PY{n}{row}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{title}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{df}\PY{o}{.}\PY{n}{at}\PY{p}{[}\PY{n}{i}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{google\PYZus{}hits}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+264 Performance | Saxaje | TEDxRiodelaPlataED 8230000000
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}98}]:} \PY{c+c1}{\PYZsh{} df.to\PYZus{}csv(\PYZsq{}data/processed\PYZus{}v1.csv\PYZsq{})}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}102}]:} \PY{c+c1}{\PYZsh{} df = pd.read\PYZus{}csv(\PYZdq{}data/processed\PYZus{}v1.csv\PYZdq{}, index\PYZus{}col=[0])}
+\end{Verbatim}
+
+
+    Let's check distribution for the sentiment analysis.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}200}]:} \PY{n}{fig}\PY{p}{,} \PY{n}{ax} \PY{o}{=} \PY{n}{plt}\PY{o}{.}\PY{n}{subplots}\PY{p}{(}\PY{n}{figsize}\PY{o}{=}\PY{p}{(}\PY{l+m+mi}{30}\PY{p}{,}\PY{l+m+mi}{15}\PY{p}{)}\PY{p}{)}
+          \PY{n}{ax} \PY{o}{=} \PY{n}{sns}\PY{o}{.}\PY{n}{scatterplot}\PY{p}{(}\PY{n}{data}\PY{o}{=}\PY{n}{df}\PY{o}{.}\PY{n}{sentiment\PYZus{}vader}\PY{p}{)}
+          \PY{n}{plt}\PY{o}{.}\PY{n}{xlabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{sentiment\PYZus{}vader}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{fontsize}\PY{o}{=}\PY{l+m+mi}{20}\PY{p}{)}
+          \PY{n}{plt}\PY{o}{.}\PY{n}{title}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Distribution of sentiment\PYZus{}vader}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{fontsize}\PY{o}{=}\PY{l+m+mi}{25}\PY{p}{)}
+          \PY{k}{for} \PY{n}{tick} \PY{o+ow}{in} \PY{n}{ax}\PY{o}{.}\PY{n}{xaxis}\PY{o}{.}\PY{n}{get\PYZus{}major\PYZus{}ticks}\PY{p}{(}\PY{p}{)}\PY{p}{:}
+              \PY{n}{tick}\PY{o}{.}\PY{n}{label}\PY{o}{.}\PY{n}{set\PYZus{}fontsize}\PY{p}{(}\PY{l+m+mi}{20}\PY{p}{)} 
+          \PY{n}{sns}\PY{o}{.}\PY{n}{despine}\PY{p}{(}\PY{p}{)}
+          \PY{n}{plt}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{p}{)}\PY{p}{;}
+\end{Verbatim}
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_29_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}202}]:} \PY{n}{fig}\PY{p}{,} \PY{n}{ax} \PY{o}{=} \PY{n}{plt}\PY{o}{.}\PY{n}{subplots}\PY{p}{(}\PY{n}{figsize}\PY{o}{=}\PY{p}{(}\PY{l+m+mi}{30}\PY{p}{,}\PY{l+m+mi}{15}\PY{p}{)}\PY{p}{)}
+          \PY{n}{ax} \PY{o}{=} \PY{n}{sns}\PY{o}{.}\PY{n}{scatterplot}\PY{p}{(}\PY{n}{data}\PY{o}{=}\PY{n}{df}\PY{o}{.}\PY{n}{sentiment\PYZus{}blob\PYZus{}polarity}\PY{p}{)}
+          \PY{n}{plt}\PY{o}{.}\PY{n}{xlabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{sentiment\PYZus{}blob\PYZus{}polarity}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{fontsize}\PY{o}{=}\PY{l+m+mi}{20}\PY{p}{)}
+          \PY{n}{plt}\PY{o}{.}\PY{n}{title}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Distribution of sentiment\PYZus{}blob\PYZus{}polarity}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{fontsize}\PY{o}{=}\PY{l+m+mi}{25}\PY{p}{)}
+          \PY{k}{for} \PY{n}{tick} \PY{o+ow}{in} \PY{n}{ax}\PY{o}{.}\PY{n}{xaxis}\PY{o}{.}\PY{n}{get\PYZus{}major\PYZus{}ticks}\PY{p}{(}\PY{p}{)}\PY{p}{:}
+              \PY{n}{tick}\PY{o}{.}\PY{n}{label}\PY{o}{.}\PY{n}{set\PYZus{}fontsize}\PY{p}{(}\PY{l+m+mi}{20}\PY{p}{)} 
+          \PY{n}{sns}\PY{o}{.}\PY{n}{despine}\PY{p}{(}\PY{p}{)}
+          \PY{n}{plt}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{p}{)}\PY{p}{;}
+\end{Verbatim}
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_30_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}203}]:} \PY{n}{fig}\PY{p}{,} \PY{n}{ax} \PY{o}{=} \PY{n}{plt}\PY{o}{.}\PY{n}{subplots}\PY{p}{(}\PY{n}{figsize}\PY{o}{=}\PY{p}{(}\PY{l+m+mi}{30}\PY{p}{,}\PY{l+m+mi}{15}\PY{p}{)}\PY{p}{)}
+          \PY{n}{ax} \PY{o}{=} \PY{n}{sns}\PY{o}{.}\PY{n}{scatterplot}\PY{p}{(}\PY{n}{data}\PY{o}{=}\PY{n}{df}\PY{o}{.}\PY{n}{sentiment\PYZus{}blob\PYZus{}subjectivity}\PY{p}{)}
+          \PY{n}{plt}\PY{o}{.}\PY{n}{xlabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{sentiment\PYZus{}blob\PYZus{}subjectivity}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{fontsize}\PY{o}{=}\PY{l+m+mi}{20}\PY{p}{)}
+          \PY{n}{plt}\PY{o}{.}\PY{n}{title}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Distribution of sentiment\PYZus{}blob\PYZus{}subjectivity}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{fontsize}\PY{o}{=}\PY{l+m+mi}{25}\PY{p}{)}
+          \PY{k}{for} \PY{n}{tick} \PY{o+ow}{in} \PY{n}{ax}\PY{o}{.}\PY{n}{xaxis}\PY{o}{.}\PY{n}{get\PYZus{}major\PYZus{}ticks}\PY{p}{(}\PY{p}{)}\PY{p}{:}
+              \PY{n}{tick}\PY{o}{.}\PY{n}{label}\PY{o}{.}\PY{n}{set\PYZus{}fontsize}\PY{p}{(}\PY{l+m+mi}{20}\PY{p}{)} 
+          \PY{n}{sns}\PY{o}{.}\PY{n}{despine}\PY{p}{(}\PY{p}{)}
+          \PY{n}{plt}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{p}{)}\PY{p}{;}
+\end{Verbatim}
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_31_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    Not very useful... let's leave it at that for the moment
+
+    From "Engagement and Popularity Dynamics of YouTube Videos and
+Sensitivity to Meta-Data":
+
+\texttt{For\ the\ Keywords,\ seven\ meta-level\ features\ are\ computed\ which\ include:\ the\ number\ of\ keywords,\ and\ keyword\ length}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}185}]:} \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{tags}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{tags}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{apply}\PY{p}{(}\PY{n+nb}{str}\PY{p}{)}\PY{o}{.}\PY{n}{apply}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{:} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZsq{}} \PY{k}{if} \PY{n}{x}\PY{o}{==}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{nan}\PY{l+s+s1}{\PYZsq{}} \PY{k}{else} \PY{n}{x}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}191}]:} \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{n\PYZus{}keywords}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{l+m+mi}{0}
+          \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{keyword\PYZus{}length}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{l+m+mf}{0.0}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}192}]:} \PY{k}{for} \PY{n}{i}\PY{p}{,} \PY{n}{row} \PY{o+ow}{in} \PY{n}{df}\PY{o}{.}\PY{n}{iterrows}\PY{p}{(}\PY{p}{)}\PY{p}{:}
+              \PY{k}{if} \PY{n}{row}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{tags}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{:}
+                  \PY{n}{tags} \PY{o}{=} \PY{n}{row}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{tags}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{,}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+                  \PY{n}{df}\PY{o}{.}\PY{n}{at}\PY{p}{[}\PY{n}{i}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{n\PYZus{}keywords}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n+nb}{len}\PY{p}{(}\PY{n}{tags}\PY{p}{)}
+                  \PY{n}{df}\PY{o}{.}\PY{n}{at}\PY{p}{[}\PY{n}{i}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{keyword\PYZus{}length}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n+nb}{sum}\PY{p}{(} \PY{n+nb}{map}\PY{p}{(}\PY{n+nb}{len}\PY{p}{,} \PY{n}{tags}\PY{p}{)} \PY{p}{)} \PY{o}{/} \PY{n+nb}{len}\PY{p}{(}\PY{n}{tags}\PY{p}{)}
+                  \PY{n}{clear\PYZus{}output}\PY{p}{(}\PY{n}{wait}\PY{o}{=}\PY{k+kc}{True}\PY{p}{)}
+                  \PY{n+nb}{print}\PY{p}{(}\PY{n}{i}\PY{p}{,} \PY{n}{row}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{title}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n+nb}{sum}\PY{p}{(} \PY{n+nb}{map}\PY{p}{(}\PY{n+nb}{len}\PY{p}{,} \PY{n}{tags}\PY{p}{)} \PY{p}{)} \PY{o}{/} \PY{n+nb}{len}\PY{p}{(}\PY{n}{tags}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+264 Performance | Saxaje | TEDxRiodelaPlataED 9.4
+
+    \end{Verbatim}
+
+    From "Engagement and Popularity Dynamics of YouTube Videos and
+Sensitivity to Meta-Data":
+
+\texttt{In\ addition,\ to\ the\ above\ 49\ meta-level\ features,\ we\ also\ include\ auxiliary\ user\ meta-level\ features\ including:\ the\ number\ of\ subscribers,\ resolution\ of\ the\ thumbnail\ used,\ category\ of\ the\ video,\ the\ length\ of\ the\ video,\ and\ the\ first\ day\ view\ count\ of\ the\ video.}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}195}]:} \PY{n}{df}\PY{o}{.}\PY{n}{columns}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}195}]:} Index(['event\_name', 'video\_id', 'title', 'url\_thumb', 'tags', 'view\_count',
+                 'like\_count', 'dislike\_count', 'comment\_count', 'created', 'blurriness',
+                 'brightness', 'contrast', 'overexposure', 'entropy', 'avg\_color',
+                 'word\_count', 'punctuation\_count', 'character\_count', 'google\_hits',
+                 'sentiment\_vader', 'sentiment\_blob\_polarity',
+                 'sentiment\_blob\_subjectivity', 'n\_keywords', 'keyword\_length'],
+                dtype='object')
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}18}]:} \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{created}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{to\PYZus{}datetime}\PY{p}{(}\PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{created}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+         \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{created\PYZus{}day}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{p}{[}\PY{n}{d}\PY{o}{.}\PY{n}{day} \PY{k}{for} \PY{n}{d} \PY{o+ow}{in} \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{created}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}
+         \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{created\PYZus{}month}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{p}{[}\PY{n}{d}\PY{o}{.}\PY{n}{month} \PY{k}{for} \PY{n}{d} \PY{o+ow}{in} \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{created}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}
+         \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{created\PYZus{}year}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{p}{[}\PY{n}{d}\PY{o}{.}\PY{n}{year} \PY{k}{for} \PY{n}{d} \PY{o+ow}{in} \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{created}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}
+         \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{created\PYZus{}hour}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{p}{[}\PY{n}{d}\PY{o}{.}\PY{n}{hour} \PY{k}{for} \PY{n}{d} \PY{o+ow}{in} \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{created}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}
+         \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{created\PYZus{}minute}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{p}{[}\PY{n}{d}\PY{o}{.}\PY{n}{minute} \PY{k}{for} \PY{n}{d} \PY{o+ow}{in} \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{created}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}
+         \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{created\PYZus{}second}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{p}{[}\PY{n}{d}\PY{o}{.}\PY{n}{second} \PY{k}{for} \PY{n}{d} \PY{o+ow}{in} \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{created}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}20}]:} \PY{c+c1}{\PYZsh{}df.to\PYZus{}csv(\PYZsq{}data/processed\PYZus{}v2.csv\PYZsq{})}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}204}]:} \PY{c+c1}{\PYZsh{} df = pd.read\PYZus{}csv(\PYZdq{}data/processed\PYZus{}v2.csv\PYZdq{}, index\PYZus{}col=[0])}
+\end{Verbatim}
+
+
+    \section{Let's start analyzing and doing stuff. Add features
+later.}\label{lets-start-analyzing-and-doing-stuff.-add-features-later.}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}205}]:} \PY{n}{df} \PY{o}{=} \PY{n}{df}\PY{o}{.}\PY{n}{drop}\PY{p}{(}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{video\PYZus{}id}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{title}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{url\PYZus{}thumb}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{tags}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{created}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{axis}\PY{o}{=}\PY{l+m+mi}{1}\PY{p}{)}
+\end{Verbatim}
+
+
+    Split color
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}206}]:} \PY{n}{df}\PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{avg\PYZus{}color\PYZus{}r}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{avg\PYZus{}color\PYZus{}g}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{avg\PYZus{}color\PYZus{}b}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]} \PY{o}{=} \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{avg\PYZus{}color}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{apply}\PY{p}{(}\PY{n+nb}{eval}\PY{p}{)}\PY{o}{.}\PY{n}{apply}\PY{p}{(}\PY{n}{pd}\PY{o}{.}\PY{n}{Series}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}207}]:} \PY{n}{df} \PY{o}{=} \PY{n}{df}\PY{o}{.}\PY{n}{drop}\PY{p}{(}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{avg\PYZus{}color}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{axis}\PY{o}{=}\PY{l+m+mi}{1}\PY{p}{)}
+\end{Verbatim}
+
+
+    One hot encode event
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}208}]:} \PY{n}{df}\PY{o}{.}\PY{n}{event\PYZus{}name}\PY{o}{.}\PY{n}{unique}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}208}]:} array(['CanalTEDxRiodelaPlata', 'TEDxRiodelaPlata2013',
+                 'TEDxJoven@RiodelaPlata 2011', 'TEDxRiodelaPlata2014',
+                 'TEDxRiodelaPlata2015', 'TEDxRiodelaPlata2011',
+                 'TEDxRiodelaPlata2017', 'TEDxRiodelaPlataED2015',
+                 'TEDxRiodelaPlata2016', 'TEDxRiodelaPlata2012', 'TEDxChange',
+                 'TEDxBuenosAires2010', 'TEDxJoven@RiodelaPlata 2012',
+                 'TEDxRiodelaPlata2010', 'TEDxRiodelaPlataSalon2016'], dtype=object)
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}209}]:} \PY{n}{df} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{get\PYZus{}dummies}\PY{p}{(}\PY{n}{df}\PY{p}{,} \PY{n}{prefix}\PY{o}{=}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{event}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{columns}\PY{o}{=}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{event\PYZus{}name}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}210}]:} \PY{n}{df}\PY{o}{.}\PY{n}{columns} \PY{o}{=} \PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{view\PYZus{}count}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{like\PYZus{}count}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{dislike\PYZus{}count}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{comment\PYZus{}count}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                 \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{blurriness}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{brightness}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{contrast}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{overexposure}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{entropy}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                 \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{word\PYZus{}count}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{punctuation\PYZus{}count}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{character\PYZus{}count}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{google\PYZus{}hits}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                 \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{sentiment\PYZus{}vader}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{sentiment\PYZus{}blob\PYZus{}polarity}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                 \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{sentiment\PYZus{}blob\PYZus{}subjectivity}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{n\PYZus{}keywords}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{keyword\PYZus{}length}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                 \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{created\PYZus{}day}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{created\PYZus{}month}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{created\PYZus{}year}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{created\PYZus{}hour}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                 \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{created\PYZus{}minute}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{created\PYZus{}second}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{avg\PYZus{}color\PYZus{}r}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{avg\PYZus{}color\PYZus{}g}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                 \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{avg\PYZus{}color\PYZus{}b}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{event\PYZus{}CanalTEDxRiodelaPlata}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                 \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{event\PYZus{}TEDxBuenosAires2010}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{event\PYZus{}TEDxChange}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                 \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{event\PYZus{}TEDxJoven@RiodelaPlata2011}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                 \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{event\PYZus{}TEDxJoven@RiodelaPlata2012}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{event\PYZus{}TEDxRiodelaPlata2010}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                 \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{event\PYZus{}TEDxRiodelaPlata2011}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{event\PYZus{}TEDxRiodelaPlata2012}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                 \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{event\PYZus{}TEDxRiodelaPlata2013}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{event\PYZus{}TEDxRiodelaPlata2014}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                 \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{event\PYZus{}TEDxRiodelaPlata2015}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{event\PYZus{}TEDxRiodelaPlata2016}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                 \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{event\PYZus{}TEDxRiodelaPlata2017}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{event\PYZus{}TEDxRiodelaPlataED2015}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                 \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{event\PYZus{}TEDxRiodelaPlataSalon2016}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}211}]:} \PY{n}{y} \PY{o}{=} \PY{n}{df}\PY{o}{.}\PY{n}{view\PYZus{}count}
+          \PY{n}{X} \PY{o}{=} \PY{n}{df}\PY{p}{[}\PY{n}{df}\PY{o}{.}\PY{n}{columns}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{:}\PY{p}{]}\PY{p}{]}
+\end{Verbatim}
+
+
+    From "Engagement and Popularity Dynamics of YouTube Videos and
+Sensitivity to Meta-Data":
+
+\texttt{Models:\ he\ machine\ learning\ methods\ we\ utilize\ include:\ the\ Extreme\ Learning\ Machine(ELM),\ Feed-Forward\ \ \ Neural\ \ \ Network\ (FFNN),\ Stacked\ \ Auto-Encoder\ \ Deep\ \ Neural-Network\ ,\ Elasticnet,\ Lasso,\ Relaxed\ Lasso\ ,\ Quantile\ Regression\ with\ Lasso,\ Conditional\ Inference\ Random\ Forest\ (CIRF),\ Boosted\ Generalized\ Additive\ Model,\ Bagged\ MARS\ using\ gCV\ Pruning,\ Generalized\ Linear\ Model\ with\ Stepwise\ Feature\ Selection\ using\ Akaike\ information\ criterion,\ and\ Spike\ and\ Slab\ Regression.}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}212}]:} \PY{k+kn}{from} \PY{n+nn}{sklearn\PYZus{}extensions}\PY{n+nn}{.}\PY{n+nn}{extreme\PYZus{}learning\PYZus{}machines}\PY{n+nn}{.}\PY{n+nn}{elm} \PY{k}{import} \PY{n}{ELMRegressor}
+          \PY{k+kn}{from} \PY{n+nn}{sklearn}\PY{n+nn}{.}\PY{n+nn}{linear\PYZus{}model} \PY{k}{import} \PY{n}{ElasticNet}\PY{p}{,} \PY{n}{Lasso}\PY{p}{,} \PY{n}{LinearRegression}
+          \PY{k+kn}{from} \PY{n+nn}{sklearn}\PY{n+nn}{.}\PY{n+nn}{ensemble} \PY{k}{import} \PY{n}{GradientBoostingRegressor}
+          \PY{k+kn}{from} \PY{n+nn}{pygam} \PY{k}{import} \PY{n}{LinearGAM}
+          \PY{k+kn}{from} \PY{n+nn}{sklearn}\PY{n+nn}{.}\PY{n+nn}{ensemble} \PY{k}{import} \PY{n}{AdaBoostRegressor}
+          \PY{k+kn}{from} \PY{n+nn}{xgboost} \PY{k}{import} \PY{n}{XGBRegressor}
+          \PY{k+kn}{from} \PY{n+nn}{sklearn}\PY{n+nn}{.}\PY{n+nn}{tree} \PY{k}{import} \PY{n}{DecisionTreeRegressor}
+          \PY{k+kn}{from} \PY{n+nn}{sklearn}\PY{n+nn}{.}\PY{n+nn}{neighbors} \PY{k}{import} \PY{n}{KNeighborsRegressor}
+          
+          \PY{k+kn}{from} \PY{n+nn}{sklearn}\PY{n+nn}{.}\PY{n+nn}{model\PYZus{}selection} \PY{k}{import} \PY{n}{train\PYZus{}test\PYZus{}split}\PY{p}{,} \PY{n}{KFold}\PY{p}{,} \PY{n}{cross\PYZus{}val\PYZus{}score}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}213}]:} \PY{n}{correlation} \PY{o}{=} \PY{n}{df}\PY{o}{.}\PY{n}{corr}\PY{p}{(}\PY{n}{method}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{pearson}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+          \PY{n}{columns} \PY{o}{=} \PY{n}{correlation}\PY{o}{.}\PY{n}{nlargest}\PY{p}{(}\PY{l+m+mi}{10}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{view\PYZus{}count}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{o}{.}\PY{n}{index}
+          \PY{n}{columns}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}213}]:} Index(['view\_count', 'comment\_count', 'like\_count', 'dislike\_count',
+                 'event\_CanalTEDxRiodelaPlata', 'created\_month', 'word\_count',
+                 'created\_second', 'event\_TEDxJoven@RiodelaPlata2011', 'created\_minute'],
+                dtype='object')
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}214}]:} \PY{n}{correlation\PYZus{}map} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{corrcoef}\PY{p}{(}\PY{n}{df}\PY{p}{[}\PY{n}{columns}\PY{p}{]}\PY{o}{.}\PY{n}{values}\PY{o}{.}\PY{n}{T}\PY{p}{)}    
+          \PY{n}{fig}\PY{p}{,} \PY{n}{ax} \PY{o}{=} \PY{n}{plt}\PY{o}{.}\PY{n}{subplots}\PY{p}{(}\PY{n}{figsize}\PY{o}{=}\PY{p}{(}\PY{l+m+mi}{30}\PY{p}{,}\PY{l+m+mi}{15}\PY{p}{)}\PY{p}{)}
+          \PY{n}{sns}\PY{o}{.}\PY{n}{set}\PY{p}{(}\PY{n}{font\PYZus{}scale}\PY{o}{=}\PY{l+m+mf}{1.0}\PY{p}{)}
+          \PY{n}{heatmap} \PY{o}{=} \PY{n}{sns}\PY{o}{.}\PY{n}{heatmap}\PY{p}{(}\PY{n}{correlation\PYZus{}map}\PY{p}{,} \PY{n}{cbar}\PY{o}{=}\PY{k+kc}{True}\PY{p}{,} \PY{n}{annot}\PY{o}{=}\PY{k+kc}{True}\PY{p}{,} \PY{n}{square}\PY{o}{=}\PY{k+kc}{True}\PY{p}{,} \PY{n}{fmt}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{.2f}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{yticklabels}\PY{o}{=}\PY{n}{columns}\PY{o}{.}\PY{n}{values}\PY{p}{,} \PY{n}{xticklabels}\PY{o}{=}\PY{n}{columns}\PY{o}{.}\PY{n}{values}\PY{p}{)}
+          \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_55_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    We don't have a lot of correlated features
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}215}]:} \PY{n}{df}\PY{o}{.}\PY{n}{hist}\PY{p}{(}\PY{n}{figsize}\PY{o}{=}\PY{p}{(}\PY{l+m+mi}{30}\PY{p}{,}\PY{l+m+mi}{30}\PY{p}{)}\PY{p}{)}\PY{p}{;}
+\end{Verbatim}
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_57_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}216}]:} \PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}test} \PY{o}{=} \PY{n}{train\PYZus{}test\PYZus{}split} \PY{p}{(}\PY{n}{X}\PY{p}{,} \PY{n}{y}\PY{p}{,} \PY{n}{test\PYZus{}size} \PY{o}{=} \PY{l+m+mf}{0.20}\PY{p}{,} \PY{n}{random\PYZus{}state}\PY{o}{=}\PY{l+m+mi}{42}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}218}]:} \PY{k+kn}{from} \PY{n+nn}{sklearn}\PY{n+nn}{.}\PY{n+nn}{preprocessing} \PY{k}{import} \PY{n}{StandardScaler}
+          \PY{n}{scalerX} \PY{o}{=} \PY{n}{StandardScaler}\PY{p}{(}\PY{p}{)}
+          \PY{n}{scalery} \PY{o}{=} \PY{n}{StandardScaler}\PY{p}{(}\PY{p}{)}
+          \PY{n}{X\PYZus{}train} \PY{o}{=} \PY{n}{scalerX}\PY{o}{.}\PY{n}{fit\PYZus{}transform}\PY{p}{(}\PY{n}{X\PYZus{}train}\PY{p}{)}
+          \PY{n}{y\PYZus{}train} \PY{o}{=} \PY{n}{scalery}\PY{o}{.}\PY{n}{fit\PYZus{}transform}\PY{p}{(}\PY{n}{y\PYZus{}train}\PY{o}{.}\PY{n}{reshape}\PY{p}{(}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)}
+          \PY{n}{X\PYZus{}test} \PY{o}{=} \PY{n}{scalerX}\PY{o}{.}\PY{n}{fit\PYZus{}transform}\PY{p}{(}\PY{n}{X\PYZus{}test}\PY{p}{)}
+          \PY{n}{y\PYZus{}test} \PY{o}{=} \PY{n}{scalery}\PY{o}{.}\PY{n}{fit\PYZus{}transform}\PY{p}{(}\PY{n}{y\PYZus{}test}\PY{o}{.}\PY{n}{reshape}\PY{p}{(}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    Let's check performance of the different models
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}220}]:} \PY{n}{models} \PY{o}{=} \PY{p}{[}
+              \PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{ELMRegressor}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{ELMRegressor}\PY{p}{(}\PY{p}{)}\PY{p}{)}\PY{p}{,} \PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{ElasticNet}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{ElasticNet}\PY{p}{(}\PY{p}{)}\PY{p}{)}\PY{p}{,} \PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Lasso}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{Lasso}\PY{p}{(}\PY{p}{)}\PY{p}{)}\PY{p}{,} 
+              \PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{LinearRegression}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{LinearRegression}\PY{p}{(}\PY{p}{)}\PY{p}{)}\PY{p}{,} \PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{GradientBoostingRegressor}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{GradientBoostingRegressor}\PY{p}{(}\PY{p}{)}\PY{p}{)}\PY{p}{,} 
+              \PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{GradientBoostingRegressor w/quantile loss}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{GradientBoostingRegressor}\PY{p}{(}\PY{n}{loss}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{quantile}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{)}\PY{p}{,} 
+              \PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{LinearGAM}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{LinearGAM}\PY{p}{(}\PY{p}{)}\PY{p}{)}\PY{p}{,} \PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{AdaBoostRegressor}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{AdaBoostRegressor}\PY{p}{(}\PY{p}{)}\PY{p}{)}\PY{p}{,} \PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{XGBRegressor}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{XGBRegressor}\PY{p}{(}\PY{p}{)}\PY{p}{)}\PY{p}{,} 
+              \PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{DecisionTreeRegressor}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{DecisionTreeRegressor}\PY{p}{(}\PY{p}{)}\PY{p}{)}\PY{p}{,} \PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{KNeighborsRegressor}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{KNeighborsRegressor}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+          \PY{p}{]}
+          
+          \PY{k+kn}{import} \PY{n+nn}{warnings}
+          \PY{n}{warnings}\PY{o}{.}\PY{n}{filterwarnings}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{ignore}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+          
+          \PY{n}{results} \PY{o}{=} \PY{p}{[}\PY{p}{]}
+          \PY{n}{names} \PY{o}{=} \PY{p}{[}\PY{p}{]}
+          \PY{k}{for} \PY{n}{name}\PY{p}{,} \PY{n}{model} \PY{o+ow}{in} \PY{n}{models}\PY{p}{:}
+              \PY{n}{kfold} \PY{o}{=} \PY{n}{KFold}\PY{p}{(}\PY{n}{n\PYZus{}splits}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{,} \PY{n}{random\PYZus{}state}\PY{o}{=}\PY{l+m+mi}{21}\PY{p}{)}
+              \PY{n}{cv\PYZus{}results} \PY{o}{=} \PY{n}{cross\PYZus{}val\PYZus{}score}\PY{p}{(}\PY{n}{model}\PY{p}{,} \PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{,} \PY{n}{cv}\PY{o}{=}\PY{n}{kfold}\PY{p}{,} \PY{n}{scoring}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{neg\PYZus{}mean\PYZus{}squared\PYZus{}error}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+              \PY{n}{results}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{n}{cv\PYZus{}results}\PY{o}{.}\PY{n}{mean}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+              \PY{n}{names}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{n}{name}\PY{p}{)}
+              \PY{n}{msg} \PY{o}{=} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s2}{: }\PY{l+s+si}{\PYZpc{}f}\PY{l+s+s2}{ (}\PY{l+s+si}{\PYZpc{}f}\PY{l+s+s2}{)}\PY{l+s+s2}{\PYZdq{}} \PY{o}{\PYZpc{}} \PY{p}{(}\PY{n}{name}\PY{p}{,} \PY{n}{cv\PYZus{}results}\PY{o}{.}\PY{n}{mean}\PY{p}{(}\PY{p}{)}\PY{p}{,} \PY{n}{cv\PYZus{}results}\PY{o}{.}\PY{n}{std}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+              \PY{n+nb}{print}\PY{p}{(}\PY{n}{msg}\PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Best model: }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s2}{\PYZdq{}} \PY{o}{\PYZpc{}} \PY{n+nb}{str}\PY{p}{(}\PY{n+nb}{sorted}\PY{p}{(}\PY{n+nb}{list}\PY{p}{(}\PY{n+nb}{zip}\PY{p}{(}\PY{n}{results}\PY{p}{,} \PY{n}{names}\PY{p}{)}\PY{p}{)}\PY{p}{,} \PY{n}{key}\PY{o}{=}\PY{k}{lambda} \PY{n}{tup}\PY{p}{:} \PY{n}{tup}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{,} \PY{n}{reverse}\PY{o}{=}\PY{k+kc}{True}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+ELMRegressor: -0.889908 (1.012574)
+ElasticNet: -0.809974 (1.318992)
+Lasso: -1.010317 (1.393977)
+LinearRegression: -0.454327 (0.810584)
+GradientBoostingRegressor: -0.308878 (0.634281)
+GradientBoostingRegressor w/quantile loss: -0.353544 (0.509432)
+LinearGAM: -0.760800 (1.079107)
+AdaBoostRegressor: -0.420131 (0.634911)
+XGBRegressor: -0.312693 (0.680793)
+DecisionTreeRegressor: -0.929138 (1.286812)
+KNeighborsRegressor: -0.684558 (1.000135)
+Best model: (-0.30887841110299236, 'GradientBoostingRegressor')
+
+    \end{Verbatim}
+
+    Grid search for hyperparameters:
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}222}]:} \PY{k+kn}{from} \PY{n+nn}{sklearn}\PY{n+nn}{.}\PY{n+nn}{model\PYZus{}selection} \PY{k}{import} \PY{n}{GridSearchCV}
+          
+          
+          \PY{n}{param\PYZus{}grid} \PY{o}{=} \PY{n+nb}{dict}\PY{p}{(}\PY{n}{n\PYZus{}estimators}\PY{o}{=}\PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{l+m+mi}{50}\PY{p}{,}\PY{l+m+mi}{100}\PY{p}{,}\PY{l+m+mi}{200}\PY{p}{,}\PY{l+m+mi}{300}\PY{p}{,}\PY{l+m+mi}{400}\PY{p}{]}\PY{p}{)}\PY{p}{,} 
+                            \PY{n}{loss}\PY{o}{=}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{ls}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{lad}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{huber}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{quantile}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} 
+                            \PY{n}{learning\PYZus{}rate}\PY{o}{=}\PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{l+m+mf}{0.1}\PY{p}{,} \PY{l+m+mf}{0.05}\PY{p}{,} \PY{l+m+mf}{0.01}\PY{p}{]}\PY{p}{)}\PY{p}{,} 
+                            \PY{n}{max\PYZus{}depth}\PY{o}{=}\PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{l+m+mi}{3}\PY{p}{,}\PY{l+m+mi}{5}\PY{p}{,}\PY{l+m+mi}{10}\PY{p}{]}\PY{p}{)}\PY{p}{)}
+          \PY{n}{model} \PY{o}{=} \PY{n}{GradientBoostingRegressor}\PY{p}{(}\PY{n}{random\PYZus{}state}\PY{o}{=}\PY{l+m+mi}{21}\PY{p}{)}
+          \PY{n}{kfold} \PY{o}{=} \PY{n}{KFold}\PY{p}{(}\PY{n}{n\PYZus{}splits}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{,} \PY{n}{random\PYZus{}state}\PY{o}{=}\PY{l+m+mi}{21}\PY{p}{)}
+          \PY{n}{grid} \PY{o}{=} \PY{n}{GridSearchCV}\PY{p}{(}\PY{n}{estimator}\PY{o}{=}\PY{n}{model}\PY{p}{,} \PY{n}{param\PYZus{}grid}\PY{o}{=}\PY{n}{param\PYZus{}grid}\PY{p}{,} \PY{n}{scoring}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{neg\PYZus{}mean\PYZus{}squared\PYZus{}error}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{cv}\PY{o}{=}\PY{n}{kfold}\PY{p}{)}
+          \PY{n}{grid\PYZus{}result} \PY{o}{=} \PY{n}{grid}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{)}
+          
+          \PY{n}{means} \PY{o}{=} \PY{n}{grid\PYZus{}result}\PY{o}{.}\PY{n}{cv\PYZus{}results\PYZus{}}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{mean\PYZus{}test\PYZus{}score}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}
+          \PY{n}{stds} \PY{o}{=} \PY{n}{grid\PYZus{}result}\PY{o}{.}\PY{n}{cv\PYZus{}results\PYZus{}}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{std\PYZus{}test\PYZus{}score}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}
+          \PY{n}{params} \PY{o}{=} \PY{n}{grid\PYZus{}result}\PY{o}{.}\PY{n}{cv\PYZus{}results\PYZus{}}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{params}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}
+          \PY{k}{for} \PY{n}{mean}\PY{p}{,} \PY{n}{stdev}\PY{p}{,} \PY{n}{param} \PY{o+ow}{in} \PY{n+nb}{zip}\PY{p}{(}\PY{n}{means}\PY{p}{,} \PY{n}{stds}\PY{p}{,} \PY{n}{params}\PY{p}{)}\PY{p}{:}
+              \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+si}{\PYZpc{}f}\PY{l+s+s2}{ (}\PY{l+s+si}{\PYZpc{}f}\PY{l+s+s2}{) with: }\PY{l+s+si}{\PYZpc{}r}\PY{l+s+s2}{\PYZdq{}} \PY{o}{\PYZpc{}} \PY{p}{(}\PY{n}{mean}\PY{p}{,} \PY{n}{stdev}\PY{p}{,} \PY{n}{param}\PY{p}{)}\PY{p}{)}
+          
+          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Best: }\PY{l+s+si}{\PYZpc{}f}\PY{l+s+s2}{ using }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s2}{\PYZdq{}} \PY{o}{\PYZpc{}} \PY{p}{(}\PY{n}{grid\PYZus{}result}\PY{o}{.}\PY{n}{best\PYZus{}score\PYZus{}}\PY{p}{,} \PY{n}{grid\PYZus{}result}\PY{o}{.}\PY{n}{best\PYZus{}params\PYZus{}}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+-0.291833 (0.633911) with: \{'learning\_rate': 0.1, 'loss': 'ls', 'max\_depth': 3, 'n\_estimators': 50\}
+-0.289982 (0.632731) with: \{'learning\_rate': 0.1, 'loss': 'ls', 'max\_depth': 3, 'n\_estimators': 100\}
+-0.289588 (0.632717) with: \{'learning\_rate': 0.1, 'loss': 'ls', 'max\_depth': 3, 'n\_estimators': 200\}
+-0.289528 (0.632892) with: \{'learning\_rate': 0.1, 'loss': 'ls', 'max\_depth': 3, 'n\_estimators': 300\}
+-0.289590 (0.633003) with: \{'learning\_rate': 0.1, 'loss': 'ls', 'max\_depth': 3, 'n\_estimators': 400\}
+-0.603071 (1.126002) with: \{'learning\_rate': 0.1, 'loss': 'ls', 'max\_depth': 5, 'n\_estimators': 50\}
+-0.603566 (1.125133) with: \{'learning\_rate': 0.1, 'loss': 'ls', 'max\_depth': 5, 'n\_estimators': 100\}
+-0.603530 (1.125008) with: \{'learning\_rate': 0.1, 'loss': 'ls', 'max\_depth': 5, 'n\_estimators': 200\}
+-0.603528 (1.125006) with: \{'learning\_rate': 0.1, 'loss': 'ls', 'max\_depth': 5, 'n\_estimators': 300\}
+-0.603528 (1.125006) with: \{'learning\_rate': 0.1, 'loss': 'ls', 'max\_depth': 5, 'n\_estimators': 400\}
+-0.640928 (1.185217) with: \{'learning\_rate': 0.1, 'loss': 'ls', 'max\_depth': 10, 'n\_estimators': 50\}
+-0.642677 (1.183426) with: \{'learning\_rate': 0.1, 'loss': 'ls', 'max\_depth': 10, 'n\_estimators': 100\}
+-0.642677 (1.183426) with: \{'learning\_rate': 0.1, 'loss': 'ls', 'max\_depth': 10, 'n\_estimators': 200\}
+-0.642677 (1.183426) with: \{'learning\_rate': 0.1, 'loss': 'ls', 'max\_depth': 10, 'n\_estimators': 300\}
+-0.642677 (1.183426) with: \{'learning\_rate': 0.1, 'loss': 'ls', 'max\_depth': 10, 'n\_estimators': 400\}
+-0.576830 (1.122151) with: \{'learning\_rate': 0.1, 'loss': 'lad', 'max\_depth': 3, 'n\_estimators': 50\}
+-0.529366 (1.098449) with: \{'learning\_rate': 0.1, 'loss': 'lad', 'max\_depth': 3, 'n\_estimators': 100\}
+-0.496066 (1.090463) with: \{'learning\_rate': 0.1, 'loss': 'lad', 'max\_depth': 3, 'n\_estimators': 200\}
+-0.441450 (0.964052) with: \{'learning\_rate': 0.1, 'loss': 'lad', 'max\_depth': 3, 'n\_estimators': 300\}
+-0.440834 (0.962032) with: \{'learning\_rate': 0.1, 'loss': 'lad', 'max\_depth': 3, 'n\_estimators': 400\}
+-0.496165 (0.980065) with: \{'learning\_rate': 0.1, 'loss': 'lad', 'max\_depth': 5, 'n\_estimators': 50\}
+-0.465744 (0.908966) with: \{'learning\_rate': 0.1, 'loss': 'lad', 'max\_depth': 5, 'n\_estimators': 100\}
+-0.419548 (0.774036) with: \{'learning\_rate': 0.1, 'loss': 'lad', 'max\_depth': 5, 'n\_estimators': 200\}
+-0.423945 (0.774417) with: \{'learning\_rate': 0.1, 'loss': 'lad', 'max\_depth': 5, 'n\_estimators': 300\}
+-0.425479 (0.773348) with: \{'learning\_rate': 0.1, 'loss': 'lad', 'max\_depth': 5, 'n\_estimators': 400\}
+-0.538067 (1.053899) with: \{'learning\_rate': 0.1, 'loss': 'lad', 'max\_depth': 10, 'n\_estimators': 50\}
+-0.474322 (0.886442) with: \{'learning\_rate': 0.1, 'loss': 'lad', 'max\_depth': 10, 'n\_estimators': 100\}
+-0.482463 (0.879457) with: \{'learning\_rate': 0.1, 'loss': 'lad', 'max\_depth': 10, 'n\_estimators': 200\}
+-0.481937 (0.872306) with: \{'learning\_rate': 0.1, 'loss': 'lad', 'max\_depth': 10, 'n\_estimators': 300\}
+-0.480288 (0.867200) with: \{'learning\_rate': 0.1, 'loss': 'lad', 'max\_depth': 10, 'n\_estimators': 400\}
+-0.352966 (0.683797) with: \{'learning\_rate': 0.1, 'loss': 'huber', 'max\_depth': 3, 'n\_estimators': 50\}
+-0.298967 (0.501622) with: \{'learning\_rate': 0.1, 'loss': 'huber', 'max\_depth': 3, 'n\_estimators': 100\}
+-0.298264 (0.496013) with: \{'learning\_rate': 0.1, 'loss': 'huber', 'max\_depth': 3, 'n\_estimators': 200\}
+-0.297865 (0.496583) with: \{'learning\_rate': 0.1, 'loss': 'huber', 'max\_depth': 3, 'n\_estimators': 300\}
+-0.297306 (0.496757) with: \{'learning\_rate': 0.1, 'loss': 'huber', 'max\_depth': 3, 'n\_estimators': 400\}
+-0.482769 (0.981412) with: \{'learning\_rate': 0.1, 'loss': 'huber', 'max\_depth': 5, 'n\_estimators': 50\}
+-0.392254 (0.802226) with: \{'learning\_rate': 0.1, 'loss': 'huber', 'max\_depth': 5, 'n\_estimators': 100\}
+-0.375939 (0.744768) with: \{'learning\_rate': 0.1, 'loss': 'huber', 'max\_depth': 5, 'n\_estimators': 200\}
+-0.375915 (0.744761) with: \{'learning\_rate': 0.1, 'loss': 'huber', 'max\_depth': 5, 'n\_estimators': 300\}
+-0.375915 (0.744761) with: \{'learning\_rate': 0.1, 'loss': 'huber', 'max\_depth': 5, 'n\_estimators': 400\}
+-0.535116 (0.972534) with: \{'learning\_rate': 0.1, 'loss': 'huber', 'max\_depth': 10, 'n\_estimators': 50\}
+-0.509317 (0.872616) with: \{'learning\_rate': 0.1, 'loss': 'huber', 'max\_depth': 10, 'n\_estimators': 100\}
+-0.509317 (0.872616) with: \{'learning\_rate': 0.1, 'loss': 'huber', 'max\_depth': 10, 'n\_estimators': 200\}
+-0.509317 (0.872616) with: \{'learning\_rate': 0.1, 'loss': 'huber', 'max\_depth': 10, 'n\_estimators': 300\}
+-0.509317 (0.872616) with: \{'learning\_rate': 0.1, 'loss': 'huber', 'max\_depth': 10, 'n\_estimators': 400\}
+-0.369147 (0.545384) with: \{'learning\_rate': 0.1, 'loss': 'quantile', 'max\_depth': 3, 'n\_estimators': 50\}
+-0.363545 (0.541156) with: \{'learning\_rate': 0.1, 'loss': 'quantile', 'max\_depth': 3, 'n\_estimators': 100\}
+-0.362796 (0.541224) with: \{'learning\_rate': 0.1, 'loss': 'quantile', 'max\_depth': 3, 'n\_estimators': 200\}
+-0.362679 (0.541208) with: \{'learning\_rate': 0.1, 'loss': 'quantile', 'max\_depth': 3, 'n\_estimators': 300\}
+-0.362696 (0.541193) with: \{'learning\_rate': 0.1, 'loss': 'quantile', 'max\_depth': 3, 'n\_estimators': 400\}
+-0.315717 (0.487487) with: \{'learning\_rate': 0.1, 'loss': 'quantile', 'max\_depth': 5, 'n\_estimators': 50\}
+-0.314979 (0.489597) with: \{'learning\_rate': 0.1, 'loss': 'quantile', 'max\_depth': 5, 'n\_estimators': 100\}
+-0.315484 (0.492925) with: \{'learning\_rate': 0.1, 'loss': 'quantile', 'max\_depth': 5, 'n\_estimators': 200\}
+-0.315550 (0.493329) with: \{'learning\_rate': 0.1, 'loss': 'quantile', 'max\_depth': 5, 'n\_estimators': 300\}
+-0.314899 (0.493002) with: \{'learning\_rate': 0.1, 'loss': 'quantile', 'max\_depth': 5, 'n\_estimators': 400\}
+-0.315140 (0.518772) with: \{'learning\_rate': 0.1, 'loss': 'quantile', 'max\_depth': 10, 'n\_estimators': 50\}
+-0.308384 (0.519203) with: \{'learning\_rate': 0.1, 'loss': 'quantile', 'max\_depth': 10, 'n\_estimators': 100\}
+-0.308161 (0.518713) with: \{'learning\_rate': 0.1, 'loss': 'quantile', 'max\_depth': 10, 'n\_estimators': 200\}
+-0.307671 (0.519124) with: \{'learning\_rate': 0.1, 'loss': 'quantile', 'max\_depth': 10, 'n\_estimators': 300\}
+-0.307742 (0.519116) with: \{'learning\_rate': 0.1, 'loss': 'quantile', 'max\_depth': 10, 'n\_estimators': 400\}
+-0.312378 (0.687468) with: \{'learning\_rate': 0.05, 'loss': 'ls', 'max\_depth': 3, 'n\_estimators': 50\}
+-0.301215 (0.633983) with: \{'learning\_rate': 0.05, 'loss': 'ls', 'max\_depth': 3, 'n\_estimators': 100\}
+-0.300571 (0.630877) with: \{'learning\_rate': 0.05, 'loss': 'ls', 'max\_depth': 3, 'n\_estimators': 200\}
+-0.300223 (0.631132) with: \{'learning\_rate': 0.05, 'loss': 'ls', 'max\_depth': 3, 'n\_estimators': 300\}
+-0.300361 (0.631630) with: \{'learning\_rate': 0.05, 'loss': 'ls', 'max\_depth': 3, 'n\_estimators': 400\}
+-0.550324 (1.111935) with: \{'learning\_rate': 0.05, 'loss': 'ls', 'max\_depth': 5, 'n\_estimators': 50\}
+-0.560449 (1.097768) with: \{'learning\_rate': 0.05, 'loss': 'ls', 'max\_depth': 5, 'n\_estimators': 100\}
+-0.560337 (1.095227) with: \{'learning\_rate': 0.05, 'loss': 'ls', 'max\_depth': 5, 'n\_estimators': 200\}
+-0.560231 (1.095186) with: \{'learning\_rate': 0.05, 'loss': 'ls', 'max\_depth': 5, 'n\_estimators': 300\}
+-0.560243 (1.095217) with: \{'learning\_rate': 0.05, 'loss': 'ls', 'max\_depth': 5, 'n\_estimators': 400\}
+-0.599839 (1.208798) with: \{'learning\_rate': 0.05, 'loss': 'ls', 'max\_depth': 10, 'n\_estimators': 50\}
+-0.627088 (1.195359) with: \{'learning\_rate': 0.05, 'loss': 'ls', 'max\_depth': 10, 'n\_estimators': 100\}
+-0.629101 (1.193611) with: \{'learning\_rate': 0.05, 'loss': 'ls', 'max\_depth': 10, 'n\_estimators': 200\}
+-0.629101 (1.193611) with: \{'learning\_rate': 0.05, 'loss': 'ls', 'max\_depth': 10, 'n\_estimators': 300\}
+-0.629101 (1.193611) with: \{'learning\_rate': 0.05, 'loss': 'ls', 'max\_depth': 10, 'n\_estimators': 400\}
+-0.638177 (1.184384) with: \{'learning\_rate': 0.05, 'loss': 'lad', 'max\_depth': 3, 'n\_estimators': 50\}
+-0.580872 (1.140657) with: \{'learning\_rate': 0.05, 'loss': 'lad', 'max\_depth': 3, 'n\_estimators': 100\}
+-0.538673 (1.029513) with: \{'learning\_rate': 0.05, 'loss': 'lad', 'max\_depth': 3, 'n\_estimators': 200\}
+-0.495157 (0.920584) with: \{'learning\_rate': 0.05, 'loss': 'lad', 'max\_depth': 3, 'n\_estimators': 300\}
+-0.479908 (0.922537) with: \{'learning\_rate': 0.05, 'loss': 'lad', 'max\_depth': 3, 'n\_estimators': 400\}
+-0.605132 (1.127312) with: \{'learning\_rate': 0.05, 'loss': 'lad', 'max\_depth': 5, 'n\_estimators': 50\}
+-0.545006 (1.070205) with: \{'learning\_rate': 0.05, 'loss': 'lad', 'max\_depth': 5, 'n\_estimators': 100\}
+-0.432260 (0.790261) with: \{'learning\_rate': 0.05, 'loss': 'lad', 'max\_depth': 5, 'n\_estimators': 200\}
+-0.431985 (0.777835) with: \{'learning\_rate': 0.05, 'loss': 'lad', 'max\_depth': 5, 'n\_estimators': 300\}
+-0.431782 (0.777804) with: \{'learning\_rate': 0.05, 'loss': 'lad', 'max\_depth': 5, 'n\_estimators': 400\}
+-0.582606 (1.067403) with: \{'learning\_rate': 0.05, 'loss': 'lad', 'max\_depth': 10, 'n\_estimators': 50\}
+-0.460754 (0.872437) with: \{'learning\_rate': 0.05, 'loss': 'lad', 'max\_depth': 10, 'n\_estimators': 100\}
+-0.427638 (0.736547) with: \{'learning\_rate': 0.05, 'loss': 'lad', 'max\_depth': 10, 'n\_estimators': 200\}
+-0.423099 (0.708750) with: \{'learning\_rate': 0.05, 'loss': 'lad', 'max\_depth': 10, 'n\_estimators': 300\}
+-0.424136 (0.708378) with: \{'learning\_rate': 0.05, 'loss': 'lad', 'max\_depth': 10, 'n\_estimators': 400\}
+-0.561663 (1.104827) with: \{'learning\_rate': 0.05, 'loss': 'huber', 'max\_depth': 3, 'n\_estimators': 50\}
+-0.362328 (0.697828) with: \{'learning\_rate': 0.05, 'loss': 'huber', 'max\_depth': 3, 'n\_estimators': 100\}
+-0.321491 (0.556327) with: \{'learning\_rate': 0.05, 'loss': 'huber', 'max\_depth': 3, 'n\_estimators': 200\}
+-0.319988 (0.544025) with: \{'learning\_rate': 0.05, 'loss': 'huber', 'max\_depth': 3, 'n\_estimators': 300\}
+-0.320347 (0.543485) with: \{'learning\_rate': 0.05, 'loss': 'huber', 'max\_depth': 3, 'n\_estimators': 400\}
+-0.619243 (1.133292) with: \{'learning\_rate': 0.05, 'loss': 'huber', 'max\_depth': 5, 'n\_estimators': 50\}
+-0.448249 (0.844801) with: \{'learning\_rate': 0.05, 'loss': 'huber', 'max\_depth': 5, 'n\_estimators': 100\}
+-0.353459 (0.585748) with: \{'learning\_rate': 0.05, 'loss': 'huber', 'max\_depth': 5, 'n\_estimators': 200\}
+-0.372421 (0.582719) with: \{'learning\_rate': 0.05, 'loss': 'huber', 'max\_depth': 5, 'n\_estimators': 300\}
+-0.371792 (0.581744) with: \{'learning\_rate': 0.05, 'loss': 'huber', 'max\_depth': 5, 'n\_estimators': 400\}
+-0.622504 (1.208830) with: \{'learning\_rate': 0.05, 'loss': 'huber', 'max\_depth': 10, 'n\_estimators': 50\}
+-0.547560 (1.068206) with: \{'learning\_rate': 0.05, 'loss': 'huber', 'max\_depth': 10, 'n\_estimators': 100\}
+-0.483268 (0.893602) with: \{'learning\_rate': 0.05, 'loss': 'huber', 'max\_depth': 10, 'n\_estimators': 200\}
+-0.483268 (0.893602) with: \{'learning\_rate': 0.05, 'loss': 'huber', 'max\_depth': 10, 'n\_estimators': 300\}
+-0.483268 (0.893602) with: \{'learning\_rate': 0.05, 'loss': 'huber', 'max\_depth': 10, 'n\_estimators': 400\}
+-0.378242 (0.528008) with: \{'learning\_rate': 0.05, 'loss': 'quantile', 'max\_depth': 3, 'n\_estimators': 50\}
+-0.340270 (0.512829) with: \{'learning\_rate': 0.05, 'loss': 'quantile', 'max\_depth': 3, 'n\_estimators': 100\}
+-0.329743 (0.496996) with: \{'learning\_rate': 0.05, 'loss': 'quantile', 'max\_depth': 3, 'n\_estimators': 200\}
+-0.329315 (0.497214) with: \{'learning\_rate': 0.05, 'loss': 'quantile', 'max\_depth': 3, 'n\_estimators': 300\}
+-0.329991 (0.499664) with: \{'learning\_rate': 0.05, 'loss': 'quantile', 'max\_depth': 3, 'n\_estimators': 400\}
+-0.382167 (0.590590) with: \{'learning\_rate': 0.05, 'loss': 'quantile', 'max\_depth': 5, 'n\_estimators': 50\}
+-0.332238 (0.558362) with: \{'learning\_rate': 0.05, 'loss': 'quantile', 'max\_depth': 5, 'n\_estimators': 100\}
+-0.327838 (0.559316) with: \{'learning\_rate': 0.05, 'loss': 'quantile', 'max\_depth': 5, 'n\_estimators': 200\}
+-0.327432 (0.559425) with: \{'learning\_rate': 0.05, 'loss': 'quantile', 'max\_depth': 5, 'n\_estimators': 300\}
+-0.327035 (0.559552) with: \{'learning\_rate': 0.05, 'loss': 'quantile', 'max\_depth': 5, 'n\_estimators': 400\}
+-0.370890 (0.560045) with: \{'learning\_rate': 0.05, 'loss': 'quantile', 'max\_depth': 10, 'n\_estimators': 50\}
+-0.330377 (0.544446) with: \{'learning\_rate': 0.05, 'loss': 'quantile', 'max\_depth': 10, 'n\_estimators': 100\}
+-0.325344 (0.544642) with: \{'learning\_rate': 0.05, 'loss': 'quantile', 'max\_depth': 10, 'n\_estimators': 200\}
+-0.325668 (0.545680) with: \{'learning\_rate': 0.05, 'loss': 'quantile', 'max\_depth': 10, 'n\_estimators': 300\}
+-0.325433 (0.545832) with: \{'learning\_rate': 0.05, 'loss': 'quantile', 'max\_depth': 10, 'n\_estimators': 400\}
+-0.606407 (1.127287) with: \{'learning\_rate': 0.01, 'loss': 'ls', 'max\_depth': 3, 'n\_estimators': 50\}
+-0.437827 (0.922098) with: \{'learning\_rate': 0.01, 'loss': 'ls', 'max\_depth': 3, 'n\_estimators': 100\}
+-0.328605 (0.722814) with: \{'learning\_rate': 0.01, 'loss': 'ls', 'max\_depth': 3, 'n\_estimators': 200\}
+-0.302300 (0.648169) with: \{'learning\_rate': 0.01, 'loss': 'ls', 'max\_depth': 3, 'n\_estimators': 300\}
+-0.295612 (0.623948) with: \{'learning\_rate': 0.01, 'loss': 'ls', 'max\_depth': 3, 'n\_estimators': 400\}
+-0.672568 (1.320870) with: \{'learning\_rate': 0.01, 'loss': 'ls', 'max\_depth': 5, 'n\_estimators': 50\}
+-0.578909 (1.253825) with: \{'learning\_rate': 0.01, 'loss': 'ls', 'max\_depth': 5, 'n\_estimators': 100\}
+-0.549405 (1.146068) with: \{'learning\_rate': 0.01, 'loss': 'ls', 'max\_depth': 5, 'n\_estimators': 200\}
+-0.559794 (1.117342) with: \{'learning\_rate': 0.01, 'loss': 'ls', 'max\_depth': 5, 'n\_estimators': 300\}
+-0.566620 (1.113976) with: \{'learning\_rate': 0.01, 'loss': 'ls', 'max\_depth': 5, 'n\_estimators': 400\}
+-0.673442 (1.320106) with: \{'learning\_rate': 0.01, 'loss': 'ls', 'max\_depth': 10, 'n\_estimators': 50\}
+-0.583868 (1.268571) with: \{'learning\_rate': 0.01, 'loss': 'ls', 'max\_depth': 10, 'n\_estimators': 100\}
+-0.587704 (1.213570) with: \{'learning\_rate': 0.01, 'loss': 'ls', 'max\_depth': 10, 'n\_estimators': 200\}
+-0.609888 (1.195550) with: \{'learning\_rate': 0.01, 'loss': 'ls', 'max\_depth': 10, 'n\_estimators': 300\}
+-0.620703 (1.189910) with: \{'learning\_rate': 0.01, 'loss': 'ls', 'max\_depth': 10, 'n\_estimators': 400\}
+-0.993654 (1.418694) with: \{'learning\_rate': 0.01, 'loss': 'lad', 'max\_depth': 3, 'n\_estimators': 50\}
+-0.917467 (1.377827) with: \{'learning\_rate': 0.01, 'loss': 'lad', 'max\_depth': 3, 'n\_estimators': 100\}
+-0.655759 (1.173488) with: \{'learning\_rate': 0.01, 'loss': 'lad', 'max\_depth': 3, 'n\_estimators': 200\}
+-0.601244 (1.132824) with: \{'learning\_rate': 0.01, 'loss': 'lad', 'max\_depth': 3, 'n\_estimators': 300\}
+-0.583722 (1.120922) with: \{'learning\_rate': 0.01, 'loss': 'lad', 'max\_depth': 3, 'n\_estimators': 400\}
+-0.994062 (1.419431) with: \{'learning\_rate': 0.01, 'loss': 'lad', 'max\_depth': 5, 'n\_estimators': 50\}
+-0.901013 (1.348530) with: \{'learning\_rate': 0.01, 'loss': 'lad', 'max\_depth': 5, 'n\_estimators': 100\}
+-0.632246 (1.137501) with: \{'learning\_rate': 0.01, 'loss': 'lad', 'max\_depth': 5, 'n\_estimators': 200\}
+-0.557519 (1.063475) with: \{'learning\_rate': 0.01, 'loss': 'lad', 'max\_depth': 5, 'n\_estimators': 300\}
+-0.540122 (1.030906) with: \{'learning\_rate': 0.01, 'loss': 'lad', 'max\_depth': 5, 'n\_estimators': 400\}
+-0.992681 (1.416842) with: \{'learning\_rate': 0.01, 'loss': 'lad', 'max\_depth': 10, 'n\_estimators': 50\}
+-0.905364 (1.370365) with: \{'learning\_rate': 0.01, 'loss': 'lad', 'max\_depth': 10, 'n\_estimators': 100\}
+-0.627551 (1.156865) with: \{'learning\_rate': 0.01, 'loss': 'lad', 'max\_depth': 10, 'n\_estimators': 200\}
+-0.531250 (1.018723) with: \{'learning\_rate': 0.01, 'loss': 'lad', 'max\_depth': 10, 'n\_estimators': 300\}
+-0.477051 (0.931535) with: \{'learning\_rate': 0.01, 'loss': 'lad', 'max\_depth': 10, 'n\_estimators': 400\}
+-0.788988 (1.285450) with: \{'learning\_rate': 0.01, 'loss': 'huber', 'max\_depth': 3, 'n\_estimators': 50\}
+-0.639709 (1.159020) with: \{'learning\_rate': 0.01, 'loss': 'huber', 'max\_depth': 3, 'n\_estimators': 100\}
+-0.564805 (1.088589) with: \{'learning\_rate': 0.01, 'loss': 'huber', 'max\_depth': 3, 'n\_estimators': 200\}
+-0.471642 (0.948671) with: \{'learning\_rate': 0.01, 'loss': 'huber', 'max\_depth': 3, 'n\_estimators': 300\}
+-0.384470 (0.762670) with: \{'learning\_rate': 0.01, 'loss': 'huber', 'max\_depth': 3, 'n\_estimators': 400\}
+-0.839858 (1.332242) with: \{'learning\_rate': 0.01, 'loss': 'huber', 'max\_depth': 5, 'n\_estimators': 50\}
+-0.708979 (1.188340) with: \{'learning\_rate': 0.01, 'loss': 'huber', 'max\_depth': 5, 'n\_estimators': 100\}
+-0.610331 (1.097022) with: \{'learning\_rate': 0.01, 'loss': 'huber', 'max\_depth': 5, 'n\_estimators': 200\}
+-0.590167 (1.057801) with: \{'learning\_rate': 0.01, 'loss': 'huber', 'max\_depth': 5, 'n\_estimators': 300\}
+-0.507145 (0.920508) with: \{'learning\_rate': 0.01, 'loss': 'huber', 'max\_depth': 5, 'n\_estimators': 400\}
+-0.847664 (1.328797) with: \{'learning\_rate': 0.01, 'loss': 'huber', 'max\_depth': 10, 'n\_estimators': 50\}
+-0.753612 (1.260691) with: \{'learning\_rate': 0.01, 'loss': 'huber', 'max\_depth': 10, 'n\_estimators': 100\}
+-0.622266 (1.110712) with: \{'learning\_rate': 0.01, 'loss': 'huber', 'max\_depth': 10, 'n\_estimators': 200\}
+-0.579935 (1.063799) with: \{'learning\_rate': 0.01, 'loss': 'huber', 'max\_depth': 10, 'n\_estimators': 300\}
+-0.559828 (1.061784) with: \{'learning\_rate': 0.01, 'loss': 'huber', 'max\_depth': 10, 'n\_estimators': 400\}
+-0.688068 (0.958133) with: \{'learning\_rate': 0.01, 'loss': 'quantile', 'max\_depth': 3, 'n\_estimators': 50\}
+-0.509347 (0.658263) with: \{'learning\_rate': 0.01, 'loss': 'quantile', 'max\_depth': 3, 'n\_estimators': 100\}
+-0.388485 (0.562209) with: \{'learning\_rate': 0.01, 'loss': 'quantile', 'max\_depth': 3, 'n\_estimators': 200\}
+-0.331552 (0.510530) with: \{'learning\_rate': 0.01, 'loss': 'quantile', 'max\_depth': 3, 'n\_estimators': 300\}
+-0.318966 (0.509098) with: \{'learning\_rate': 0.01, 'loss': 'quantile', 'max\_depth': 3, 'n\_estimators': 400\}
+-0.694594 (0.953968) with: \{'learning\_rate': 0.01, 'loss': 'quantile', 'max\_depth': 5, 'n\_estimators': 50\}
+-0.512087 (0.648626) with: \{'learning\_rate': 0.01, 'loss': 'quantile', 'max\_depth': 5, 'n\_estimators': 100\}
+-0.381645 (0.526700) with: \{'learning\_rate': 0.01, 'loss': 'quantile', 'max\_depth': 5, 'n\_estimators': 200\}
+-0.329600 (0.519701) with: \{'learning\_rate': 0.01, 'loss': 'quantile', 'max\_depth': 5, 'n\_estimators': 300\}
+-0.310818 (0.511625) with: \{'learning\_rate': 0.01, 'loss': 'quantile', 'max\_depth': 5, 'n\_estimators': 400\}
+-0.696753 (0.953252) with: \{'learning\_rate': 0.01, 'loss': 'quantile', 'max\_depth': 10, 'n\_estimators': 50\}
+-0.512645 (0.651590) with: \{'learning\_rate': 0.01, 'loss': 'quantile', 'max\_depth': 10, 'n\_estimators': 100\}
+-0.388755 (0.550477) with: \{'learning\_rate': 0.01, 'loss': 'quantile', 'max\_depth': 10, 'n\_estimators': 200\}
+-0.319421 (0.501763) with: \{'learning\_rate': 0.01, 'loss': 'quantile', 'max\_depth': 10, 'n\_estimators': 300\}
+-0.296049 (0.491727) with: \{'learning\_rate': 0.01, 'loss': 'quantile', 'max\_depth': 10, 'n\_estimators': 400\}
+Best: -0.289528 using \{'learning\_rate': 0.1, 'loss': 'ls', 'max\_depth': 3, 'n\_estimators': 300\}
+
+    \end{Verbatim}
+
+    So
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}223}]:} \PY{n}{model} \PY{o}{=} \PY{n}{GradientBoostingRegressor}\PY{p}{(}\PY{o}{*}\PY{o}{*}\PY{n}{grid\PYZus{}result}\PY{o}{.}\PY{n}{best\PYZus{}params\PYZus{}}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}224}]:} \PY{n}{model}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}224}]:} GradientBoostingRegressor(alpha=0.9, criterion='friedman\_mse', init=None,
+                       learning\_rate=0.1, loss='ls', max\_depth=3, max\_features=None,
+                       max\_leaf\_nodes=None, min\_impurity\_decrease=0.0,
+                       min\_impurity\_split=None, min\_samples\_leaf=1,
+                       min\_samples\_split=2, min\_weight\_fraction\_leaf=0.0,
+                       n\_estimators=300, presort='auto', random\_state=None,
+                       subsample=1.0, verbose=0, warm\_start=False)
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}225}]:} \PY{k+kn}{from} \PY{n+nn}{sklearn}\PY{n+nn}{.}\PY{n+nn}{metrics} \PY{k}{import} \PY{n}{mean\PYZus{}squared\PYZus{}error}
+          \PY{n}{y\PYZus{}pred} \PY{o}{=} \PY{n}{model}\PY{o}{.}\PY{n}{predict}\PY{p}{(}\PY{n}{X\PYZus{}test}\PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{n}{mean\PYZus{}squared\PYZus{}error}\PY{p}{(}\PY{n}{y\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}pred}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+0.36232661107619896
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}226}]:} \PY{n}{compare} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{DataFrame}\PY{p}{(}\PY{p}{\PYZob{}}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Prediction}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{n}{y\PYZus{}pred}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Test Data}\PY{l+s+s1}{\PYZsq{}} \PY{p}{:} \PY{n}{y\PYZus{}test}\PY{o}{.}\PY{n}{flatten}\PY{p}{(}\PY{p}{)}\PY{p}{\PYZcb{}}\PY{p}{)}
+          \PY{n}{compare}\PY{o}{.}\PY{n}{head}\PY{p}{(}\PY{l+m+mi}{10}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}226}]:}    Prediction  Test Data
+          0   -0.349741  -0.529010
+          1   -0.338426  -0.419116
+          2   -0.153162  -0.363055
+          3    2.322078   0.984878
+          4    1.885398   3.303815
+          5   -0.370476  -0.475171
+          6   -0.377834  -0.585905
+          7   -0.046461   0.097545
+          8   -0.349484  -0.536913
+          9   -0.326438  -0.444637
+\end{Verbatim}
+            
+    Let's descale
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}230}]:} \PY{n}{actual\PYZus{}y\PYZus{}test} \PY{o}{=} \PY{n}{scalery}\PY{o}{.}\PY{n}{inverse\PYZus{}transform}\PY{p}{(}\PY{n}{y\PYZus{}test}\PY{p}{)}\PY{o}{.}\PY{n}{flatten}\PY{p}{(}\PY{p}{)}
+          \PY{n}{actual\PYZus{}predicted} \PY{o}{=} \PY{n}{scalery}\PY{o}{.}\PY{n}{inverse\PYZus{}transform}\PY{p}{(}\PY{n}{y\PYZus{}pred}\PY{p}{)}
+          \PY{n}{diff} \PY{o}{=} \PY{n+nb}{abs}\PY{p}{(}\PY{n}{actual\PYZus{}y\PYZus{}test} \PY{o}{\PYZhy{}} \PY{n}{actual\PYZus{}predicted}\PY{p}{)}
+          
+          \PY{n}{compare\PYZus{}actual} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{DataFrame}\PY{p}{(}\PY{p}{\PYZob{}}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Test Data}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{n}{actual\PYZus{}y\PYZus{}test}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Predicted views}\PY{l+s+s1}{\PYZsq{}} \PY{p}{:} \PY{n}{actual\PYZus{}predicted}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Difference}\PY{l+s+s1}{\PYZsq{}} \PY{p}{:} \PY{n}{diff}\PY{p}{\PYZcb{}}\PY{p}{)}
+          
+          \PY{n}{compare\PYZus{}actual} \PY{o}{=} \PY{n}{compare\PYZus{}actual}\PY{o}{.}\PY{n}{astype}\PY{p}{(}\PY{n+nb}{int}\PY{p}{)}
+          \PY{n}{compare\PYZus{}actual}\PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Test Data}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Predicted views}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Difference}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}\PY{o}{.}\PY{n}{head}\PY{p}{(}\PY{l+m+mi}{10}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}230}]:}    Test Data  Predicted views  Difference
+          0       9978            37085       27107
+          1      26595            38796       12201
+          2      35072            66809       31737
+          3     238892           441089      202197
+          4     589537           375059      214477
+          5      18119            33949       15830
+          6       1375            32837       31462
+          7     104719            82943       21775
+          8       8783            37124       28341
+          9      22736            40608       17872
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}228}]:} \PY{n}{np}\PY{o}{.}\PY{n}{set\PYZus{}printoptions}\PY{p}{(}\PY{n}{formatter}\PY{o}{=}\PY{p}{\PYZob{}}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{float\PYZus{}kind}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+si}{\PYZob{}:f\PYZcb{}}\PY{l+s+s1}{\PYZsq{}}\PY{o}{.}\PY{n}{format}\PY{p}{\PYZcb{}}\PY{p}{)}
+          \PY{n}{important\PYZus{}features\PYZus{}dict} \PY{o}{=} \PY{p}{\PYZob{}}\PY{p}{\PYZcb{}}
+          \PY{k}{for} \PY{n}{x}\PY{p}{,}\PY{n}{i} \PY{o+ow}{in} \PY{n+nb}{zip}\PY{p}{(}\PY{n}{X}\PY{o}{.}\PY{n}{columns}\PY{p}{,} \PY{n}{model}\PY{o}{.}\PY{n}{feature\PYZus{}importances\PYZus{}}\PY{p}{)}\PY{p}{:}
+              \PY{n}{important\PYZus{}features\PYZus{}dict}\PY{p}{[}\PY{n}{x}\PY{p}{]}\PY{o}{=}\PY{n}{i}
+          
+          
+          \PY{n}{important\PYZus{}features\PYZus{}list} \PY{o}{=} \PY{n+nb}{sorted}\PY{p}{(}\PY{n}{important\PYZus{}features\PYZus{}dict}\PY{p}{,}
+                                           \PY{n}{key}\PY{o}{=}\PY{n}{important\PYZus{}features\PYZus{}dict}\PY{o}{.}\PY{n}{get}\PY{p}{,}
+                                           \PY{n}{reverse}\PY{o}{=}\PY{k+kc}{True}\PY{p}{)}
+          
+          \PY{k}{for} \PY{n}{feature} \PY{o+ow}{in} \PY{n}{important\PYZus{}features\PYZus{}list}\PY{p}{:}
+              \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s2}{: }\PY{l+s+si}{\PYZpc{}f}\PY{l+s+s2}{\PYZdq{}} \PY{o}{\PYZpc{}} \PY{p}{(}\PY{n}{feature}\PY{p}{,} \PY{n}{important\PYZus{}features\PYZus{}dict}\PY{p}{[}\PY{n}{feature}\PY{p}{]}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+like\_count: 0.157566
+comment\_count: 0.083433
+dislike\_count: 0.068754
+entropy: 0.067336
+blurriness: 0.060509
+n\_keywords: 0.054015
+keyword\_length: 0.049715
+avg\_color\_r: 0.049344
+avg\_color\_b: 0.048850
+avg\_color\_g: 0.048818
+character\_count: 0.046719
+google\_hits: 0.042824
+created\_second: 0.040307
+created\_minute: 0.034012
+brightness: 0.028513
+created\_hour: 0.019080
+punctuation\_count: 0.014174
+sentiment\_vader: 0.013227
+word\_count: 0.011739
+created\_day: 0.008017
+created\_month: 0.007740
+event\_TEDxRiodelaPlata2017: 0.006784
+event\_TEDxRiodelaPlata2012: 0.006389
+event\_TEDxRiodelaPlata2016: 0.005892
+event\_TEDxRiodelaPlata2013: 0.004568
+event\_TEDxBuenosAires2010: 0.003785
+event\_TEDxRiodelaPlataED2015: 0.003708
+sentiment\_blob\_polarity: 0.003611
+event\_TEDxJoven@RiodelaPlata2012: 0.002403
+event\_TEDxJoven@RiodelaPlata2011: 0.002388
+event\_TEDxRiodelaPlata2011: 0.002077
+sentiment\_blob\_subjectivity: 0.001431
+event\_TEDxRiodelaPlata2015: 0.000678
+event\_TEDxChange: 0.000671
+event\_TEDxRiodelaPlata2014: 0.000612
+event\_CanalTEDxRiodelaPlata: 0.000313
+contrast: 0.000000
+overexposure: 0.000000
+created\_year: 0.000000
+event\_TEDxRiodelaPlata2010: 0.000000
+event\_TEDxRiodelaPlataSalon2016: 0.000000
+
+    \end{Verbatim}
+
+    Some heavy reengineering in the features need to be done.
+
+
+    % Add a bibliography block to the postdoc
+    
+    
+    
+    \end{document}
